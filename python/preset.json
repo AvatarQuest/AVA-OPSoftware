@@ -1,0 +1,32 @@
+{
+    "ports":[ "/dev/tty.usbserial-FT4TCRQV" ],
+    "baud rates": "auto",
+    "protocol versions": [ 2.0 ],
+    "motors":[
+        {
+            "id": 11,
+            "alias": "motor11",
+            "model": "XM430-W350"
+        },
+        {
+            "id": 12,
+            "alias": "motor12",
+            "model": "XM430-W350"
+        },
+        {
+            "id": 13,
+            "alias": "motor13",
+            "model": "XM430-W350"
+        },
+        {
+            "id": 14,
+            "alias": "motor14",
+            "model": "XM430-W350"
+        },
+        {
+            "id": 15,
+            "alias": "motor15",
+            "model": "XM430-W350"
+        }
+    ]
+}
