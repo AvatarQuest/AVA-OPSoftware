@@ -17,8 +17,8 @@
 
 // Default setting
 #define DXL_ID                          11                   // Dynamixel ID: 1
-#define BAUDRATE                        1000000 
-#define DEVICENAME                      "/dev/ttyUSB0"      // Check which port is being used on your controller
+#define BAUDRATE                        57600 
+#define DEVICENAME                      "/dev/tty.usbserial-FT4TCRQV"      // Check which port is being used on your controller
                                                             // ex) Windows: "COM1"   Linux: "/dev/ttyUSB0" Mac: "/dev/tty.usbserial-*"
 
 class DynamixelMotor {
@@ -60,6 +60,7 @@ class DynamixelMotor {
             if (this->portHandler->setBaudRate(this->baudrate)) {
                 std::cout << "Set baudrate to " << this->baudrate << " succesfully" << std::endl;
             } else {
+                this->close();
                 std::cout << "Failed to set baudrate to " << this->baudrate << std::endl;
                 return false;
             }

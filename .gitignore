@@ -138,4 +138,5 @@ dmypy.json
 # Prerequisites
 *.d
 
+# !*docs/build/
 
