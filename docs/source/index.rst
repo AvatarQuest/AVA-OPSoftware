@@ -7,7 +7,7 @@ Guide
    :caption: Contents:
    :maxdepth: 2
 
-   license
+   c++docs
       
 
 Contents
@@ -16,3 +16,6 @@ Contents
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+
+

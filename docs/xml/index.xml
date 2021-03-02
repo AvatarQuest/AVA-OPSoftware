@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="class_dynamixel_motor" kind="class"><name>DynamixelMotor</name>
+    <member refid="class_dynamixel_motor_1a8e50d584c65e0da28be270a2fea1d565" kind="variable"><name>id</name></member>
+    <member refid="class_dynamixel_motor_1a56e74eebafa45d820ce5a29049dd083e" kind="variable"><name>baudrate</name></member>
+    <member refid="class_dynamixel_motor_1a8a95aa39ae137fee22dc8f5d2efa95c5" kind="variable"><name>port</name></member>
+    <member refid="class_dynamixel_motor_1a10a04f95bfed29b7e5db0a93b18f210b" kind="variable"><name>portHandler</name></member>
+    <member refid="class_dynamixel_motor_1a82336f1c1fa00d95087d7eff364e6504" kind="variable"><name>packetHandler</name></member>
+    <member refid="class_dynamixel_motor_1a75c95986ba511548cdf4c139a75e2179" kind="function"><name>DynamixelMotor</name></member>
+    <member refid="class_dynamixel_motor_1a95332aa7e1721c9e8fed11b8374d6068" kind="function"><name>DynamixelMotor</name></member>
+    <member refid="class_dynamixel_motor_1af1dd11564ddcb81e6378746158ccda36" kind="function"><name>init</name></member>
+    <member refid="class_dynamixel_motor_1abd308177fcb5e02f2d958db483aec3b2" kind="function"><name>close</name></member>
+  </compound>
+  <compound refid="_dynamixel_motor_8cpp" kind="file"><name>DynamixelMotor.cpp</name>
+    <member refid="_dynamixel_motor_8cpp_1a277f7abca2044f354abe265252cb9252" kind="define"><name>PROTOCOL_VERSION</name></member>
+    <member refid="_dynamixel_motor_8cpp_1a25e19aa97ff345af42413b33592e5e87" kind="define"><name>DXL_ID</name></member>
+    <member refid="_dynamixel_motor_8cpp_1a734bbab06e1a9fd2e5522db0221ff6e3" kind="define"><name>BAUDRATE</name></member>
+    <member refid="_dynamixel_motor_8cpp_1abca33c097566d788d5163e433fc84150" kind="define"><name>DEVICENAME</name></member>
+    <member refid="_dynamixel_motor_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a277f7abca2044f354abe265252cb9252" kind="define"><name>PROTOCOL_VERSION</name></member>
+    <member refid="main_8cpp_1a25e19aa97ff345af42413b33592e5e87" kind="define"><name>DXL_ID</name></member>
+    <member refid="main_8cpp_1a734bbab06e1a9fd2e5522db0221ff6e3" kind="define"><name>BAUDRATE</name></member>
+    <member refid="main_8cpp_1abca33c097566d788d5163e433fc84150" kind="define"><name>DEVICENAME</name></member>
+    <member refid="main_8cpp_1a160f6d2893bb6b89ab3ad5d863c20e3d" kind="function"><name>getch</name></member>
+    <member refid="main_8cpp_1a97e9b1fe8d4c010474637a654aad6566" kind="function"><name>kbhit</name></member>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_b2bca091c87127f5da307455ce418719" kind="dir"><name>c++</name>
+  </compound>
+</doxygenindex>

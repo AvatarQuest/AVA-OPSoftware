@@ -20,17 +20,32 @@
 #define BAUDRATE                        57600 
 #define DEVICENAME                      "/dev/tty.usbserial-FT4TCRQV"      // Check which port is being used on your controller
                                                             // ex) Windows: "COM1"   Linux: "/dev/ttyUSB0" Mac: "/dev/tty.usbserial-*"
-
+/**
+ * @brief A class to easily control a single dynamixel motor
+ */
 class DynamixelMotor {
     private:
         uint id, baudrate;
         std::string port;
 
     public:
+        /**
+         * The port handler to the corrosponding port
+         */
         dynamixel::PortHandler *portHandler;
+        /**
+         * The packet handler for the corrspoding baudrate
+         */
         dynamixel::PacketHandler *packetHandler;
-
-        DynamixelMotor(int id, int baudrate, std::string port) {
+        
+        /**
+         * @brief Construct a new Dynamixel Motor object
+         * 
+         * @param id The integer id of the dynamixel
+         * @param baudrate The integer baudrate of the dynamixel
+         * @param port The port path as a string
+         */
+        DynamixelMotor(uint id, uint baudrate, std::string port) {
             this->id = id;
             this->baudrate = baudrate;
             this->port = port;
@@ -39,7 +54,16 @@ class DynamixelMotor {
             this->packetHandler = dynamixel::PacketHandler::getPacketHandler(2.0);
         }
 
-        DynamixelMotor(int id, int baudrate, std::string port, dynamixel::PortHandler *portHandler, dynamixel::PacketHandler *packetHandler) {
+        /**
+         * @brief Construct a new Dynamixel Motor object with packet and port handler injection
+         * 
+         * @param id The integer id of the dynamixel
+         * @param baudrate The integer baudrate of the dynamixel
+         * @param port The port path as a string 
+         * @param portHandler The dynamixel port handler pointer
+         * @param packetHandler The dynamixel packet handler pointer
+         */
+        DynamixelMotor(uint id, uint baudrate, std::string port, dynamixel::PortHandler *portHandler, dynamixel::PacketHandler *packetHandler) {
             this->id = id;
             this->baudrate = baudrate;
             this->port = port;
@@ -48,6 +72,12 @@ class DynamixelMotor {
             this->packetHandler = packetHandler;
         }
 
+        /**
+         * @brief A method to set up the inital port and packet handler. No need to run this if port and packet handler pointers were already given in the constructor
+         * 
+         * @return true The initialization succeeded
+         * @return false The initialization failed
+         */
         bool init() {
             if (this->portHandler->openPort()) {
                 std::cout << "Opened port " << this->port << " succesfully" << std::endl;
@@ -68,6 +98,9 @@ class DynamixelMotor {
             return true;
         }
 
+        /**
+         * @brief Closes the port for the corrosponsong motor
+         */
         void close() {
             this->portHandler->closePort();
         }

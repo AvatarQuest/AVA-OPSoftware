@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structdoc" kind="struct" language="C++" prot="public">
+    <compoundname>doc</compoundname>
+    <includes refid="test_8h" local="no">test.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdoc_1a74d4568ba2f80dfa73cd5c3cdd6c8319" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doc::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <briefdescription>
+<para>Test the class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c++/test.h" line="11" column="10" bodyfile="c++/doc_test.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A documentation test class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c++/test.h" line="6" column="1" bodyfile="c++/test.h" bodystart="6" bodyend="12"/>
+    <listofallmembers>
+      <member refid="structdoc_1a74d4568ba2f80dfa73cd5c3cdd6c8319" prot="public" virt="non-virtual"><scope>doc</scope><name>test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

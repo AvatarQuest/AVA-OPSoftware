@@ -53,5 +53,7 @@
         "random": "cpp",
         "set": "cpp",
         "string": "cpp"
-    }
+    },
+    "restructuredtext.languageServer.disabled": true,
+    "cmake.sourceDirectory": "${workspaceFolder}/."
 }

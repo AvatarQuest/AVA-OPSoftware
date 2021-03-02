@@ -30,9 +30,14 @@ release = '0.0.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['autoapi.extension']
+extensions = ['autoapi.extension', 'breathe']
 autoapi_dirs = ['../../src/python/AVA']
 autoapi_ignore = ['**/ros/*']
+
+breathe_projects = {
+    "AVAOPSoftware": "../xml/",
+}
+breathe_default_project = "AVAOPSoftware"
 
 
 # Add any paths that contain templates here, relative to this directory.

@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_dynamixel_motor" kind="class" language="C++" prot="public">
+    <compoundname>DynamixelMotor</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_dynamixel_motor_1a8e50d584c65e0da28be270a2fea1d565" prot="private" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint DynamixelMotor::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c++/DynamixelMotor.cpp" line="28" column="14" bodyfile="c++/DynamixelMotor.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dynamixel_motor_1a56e74eebafa45d820ce5a29049dd083e" prot="private" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint DynamixelMotor::baudrate</definition>
+        <argsstring></argsstring>
+        <name>baudrate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c++/DynamixelMotor.cpp" line="28" column="17" bodyfile="c++/DynamixelMotor.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dynamixel_motor_1a8a95aa39ae137fee22dc8f5d2efa95c5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string DynamixelMotor::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c++/DynamixelMotor.cpp" line="29" column="21" bodyfile="c++/DynamixelMotor.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_dynamixel_motor_1a10a04f95bfed29b7e5db0a93b18f210b" prot="public" static="no" mutable="no">
+        <type>dynamixel::PortHandler *</type>
+        <definition>dynamixel::PortHandler* DynamixelMotor::portHandler</definition>
+        <argsstring></argsstring>
+        <name>portHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The port handler to the corrosponding port </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c++/DynamixelMotor.cpp" line="35" column="32" bodyfile="c++/DynamixelMotor.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dynamixel_motor_1a82336f1c1fa00d95087d7eff364e6504" prot="public" static="no" mutable="no">
+        <type>dynamixel::PacketHandler *</type>
+        <definition>dynamixel::PacketHandler* DynamixelMotor::packetHandler</definition>
+        <argsstring></argsstring>
+        <name>packetHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The packet handler for the corrspoding baudrate </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c++/DynamixelMotor.cpp" line="39" column="34" bodyfile="c++/DynamixelMotor.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dynamixel_motor_1a75c95986ba511548cdf4c139a75e2179" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DynamixelMotor::DynamixelMotor</definition>
+        <argsstring>(uint id, uint baudrate, std::string port)</argsstring>
+        <name>DynamixelMotor</name>
+        <param>
+          <type>uint</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>baudrate</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Dynamixel Motor object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The integer id of the dynamixel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baudrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The integer baudrate of the dynamixel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The port path as a string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c++/DynamixelMotor.cpp" line="48" column="9" bodyfile="c++/DynamixelMotor.cpp" bodystart="48" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dynamixel_motor_1a95332aa7e1721c9e8fed11b8374d6068" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DynamixelMotor::DynamixelMotor</definition>
+        <argsstring>(uint id, uint baudrate, std::string port, dynamixel::PortHandler *portHandler, dynamixel::PacketHandler *packetHandler)</argsstring>
+        <name>DynamixelMotor</name>
+        <param>
+          <type>uint</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>baudrate</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>dynamixel::PortHandler *</type>
+          <declname>portHandler</declname>
+        </param>
+        <param>
+          <type>dynamixel::PacketHandler *</type>
+          <declname>packetHandler</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Dynamixel Motor object with packet and port handler injection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The integer id of the dynamixel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baudrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The integer baudrate of the dynamixel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The port path as a string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>portHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dynamixel port handler pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>packetHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dynamixel packet handler pointer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c++/DynamixelMotor.cpp" line="66" column="9" bodyfile="c++/DynamixelMotor.cpp" bodystart="66" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dynamixel_motor_1af1dd11564ddcb81e6378746158ccda36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DynamixelMotor::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+<para>A method to set up the inital port and packet handler. No need to run this if port and packet handler pointers were already given in the constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true The initialization succeeded </para>
+</simplesect>
+<simplesect kind="return"><para>false The initialization failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c++/DynamixelMotor.cpp" line="81" column="14" bodyfile="c++/DynamixelMotor.cpp" bodystart="81" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dynamixel_motor_1abd308177fcb5e02f2d958db483aec3b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DynamixelMotor::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+<para>Closes the port for the corrosponsong motor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c++/DynamixelMotor.cpp" line="104" column="14" bodyfile="c++/DynamixelMotor.cpp" bodystart="104" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to easily control a single dynamixel motor. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c++/DynamixelMotor.cpp" line="26" column="1" bodyfile="c++/DynamixelMotor.cpp" bodystart="26" bodyend="107"/>
+    <listofallmembers>
+      <member refid="class_dynamixel_motor_1a56e74eebafa45d820ce5a29049dd083e" prot="private" virt="non-virtual"><scope>DynamixelMotor</scope><name>baudrate</name></member>
+      <member refid="class_dynamixel_motor_1abd308177fcb5e02f2d958db483aec3b2" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>close</name></member>
+      <member refid="class_dynamixel_motor_1a75c95986ba511548cdf4c139a75e2179" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>DynamixelMotor</name></member>
+      <member refid="class_dynamixel_motor_1a95332aa7e1721c9e8fed11b8374d6068" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>DynamixelMotor</name></member>
+      <member refid="class_dynamixel_motor_1a8e50d584c65e0da28be270a2fea1d565" prot="private" virt="non-virtual"><scope>DynamixelMotor</scope><name>id</name></member>
+      <member refid="class_dynamixel_motor_1af1dd11564ddcb81e6378746158ccda36" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>init</name></member>
+      <member refid="class_dynamixel_motor_1a82336f1c1fa00d95087d7eff364e6504" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>packetHandler</name></member>
+      <member refid="class_dynamixel_motor_1a8a95aa39ae137fee22dc8f5d2efa95c5" prot="private" virt="non-virtual"><scope>DynamixelMotor</scope><name>port</name></member>
+      <member refid="class_dynamixel_motor_1a10a04f95bfed29b7e5db0a93b18f210b" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>portHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
