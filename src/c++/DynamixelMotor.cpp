@@ -20,6 +20,7 @@
 #define BAUDRATE                        57600 
 #define DEVICENAME                      "/dev/tty.usbserial-FT4TCRQV"      // Check which port is being used on your controller
                                                             // ex) Windows: "COM1"   Linux: "/dev/ttyUSB0" Mac: "/dev/tty.usbserial-*"
+
 /**
  * @brief A class to easily control a single dynamixel motor
  */
@@ -30,11 +31,11 @@ class DynamixelMotor {
 
     public:
         /**
-         * The port handler to the corrosponding port
+         * The port handler to the corresponding port
          */
         dynamixel::PortHandler *portHandler;
         /**
-         * The packet handler for the corrspoding baudrate
+         * The packet handler for the corresponding baudrate
          */
         dynamixel::PacketHandler *packetHandler;
         

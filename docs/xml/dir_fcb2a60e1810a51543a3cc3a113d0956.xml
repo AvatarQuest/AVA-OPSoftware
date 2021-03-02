@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
-  <compounddef id="dir_b2bca091c87127f5da307455ce418719" kind="dir">
-    <compoundname>c++</compoundname>
+  <compounddef id="dir_fcb2a60e1810a51543a3cc3a113d0956" kind="dir">
+    <compoundname>/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++</compoundname>
     <innerfile refid="_dynamixel_motor_8cpp">DynamixelMotor.cpp</innerfile>
     <innerfile refid="main_8cpp">main.cpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="c++/"/>
+    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/"/>
   </compounddef>
 </doxygen>

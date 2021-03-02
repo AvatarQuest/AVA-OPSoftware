@@ -198,6 +198,7 @@ class ArmPositionController:
         self.arm.set_torque(ids, True)
         self.move(0, 0, delay=1)
 
+
 if __name__ == "__main__":
     arm = Arm(ids, offsets)
     controller = ArmPositionController(arm, rotation_motor)
