@@ -20,6 +20,26 @@
 #define BAUDRATE                        57600 
 #define DEVICENAME                      "/dev/tty.usbserial-FT4TCRQV"      // Check which port is being used on your controller
                                                             // ex) Windows: "COM1"   Linux: "/dev/ttyUSB0" Mac: "/dev/tty.usbserial-*"
+/**
+ * @brief A structure to deal with address table values
+ * 
+ */
+typedef struct AddressTable {
+    typedef uint address;
+    address TORQUE_ENABLE;
+    address GOAL_POSITION;
+    address PRESENT_POSITION;
+
+    AddressTable() {};
+} AddressTable;
+
+typedef struct XM430W350T_TABLE: AddressTable {
+    XM430W350T_TABLE() {
+        TORQUE_ENABLE = 64;
+        GOAL_POSITION = 116;
+        PRESENT_POSITION = 132;
+    }
+} XM430W350T_TABLE;
 
 /**
  * @brief A class to easily control a single dynamixel motor
@@ -30,6 +50,11 @@ class DynamixelMotor {
         std::string port;
 
     public:
+
+        /**
+         * The address table with memory location values
+         */
+        AddressTable addressTable;
         /**
          * The port handler to the corresponding port
          */
@@ -46,10 +71,11 @@ class DynamixelMotor {
          * @param baudrate The integer baudrate of the dynamixel
          * @param port The port path as a string
          */
-        DynamixelMotor(uint id, uint baudrate, std::string port) {
+        DynamixelMotor(uint id, uint baudrate, std::string port, AddressTable addressTable) {
             this->id = id;
             this->baudrate = baudrate;
             this->port = port;
+            this->addressTable = addressTable;
 
             this->portHandler = dynamixel::PortHandler::getPortHandler(port.c_str());
             this->packetHandler = dynamixel::PacketHandler::getPacketHandler(2.0);
@@ -64,10 +90,11 @@ class DynamixelMotor {
          * @param portHandler The dynamixel port handler pointer
          * @param packetHandler The dynamixel packet handler pointer
          */
-        DynamixelMotor(uint id, uint baudrate, std::string port, dynamixel::PortHandler *portHandler, dynamixel::PacketHandler *packetHandler) {
+        DynamixelMotor(uint id, uint baudrate, std::string port, AddressTable addressTable, dynamixel::PortHandler *portHandler, dynamixel::PacketHandler *packetHandler) {
             this->id = id;
             this->baudrate = baudrate;
             this->port = port;
+            this->addressTable = addressTable;
 
             this->portHandler = portHandler;
             this->packetHandler = packetHandler;
@@ -84,7 +111,7 @@ class DynamixelMotor {
                 std::cout << "Opened port " << this->port << " succesfully" << std::endl;
             } else {
                 std::cout << "Failed to open port " << this->port << std::endl;
-                std::cout << "Did you run \"sudo chmod a+rw " << this->port << "\"?" << std::endl;
+                std::cout << "Did you run \"sudo chmod a+rw " << this->port << "\"? Check if the port is being used by another program" << std::endl;
                 return false;
             }
  
@@ -100,6 +127,55 @@ class DynamixelMotor {
         }
 
         /**
+         * @brief Pings the dynamixel
+         * 
+         * @return true The ping succeeded
+         * @return false The ping failed
+         */
+        bool ping() {
+            uint8_t error = 0;                          
+            uint16_t model_number;
+
+            int result = this->packetHandler->ping(this->portHandler, this->id, &model_number, &error);
+            bool success = this->checkCommResult(result, error);
+            if (success) {
+                std::cout << "[ID:" << this->id <<"] ping Succeeded" << std::endl;
+                return true;
+            }
+            return false;
+        }
+        
+        /**
+         * @brief Reads the current position of the dynamixel
+         * 
+         * @return double The value in dxl units of the present posiiton of the servo
+         */
+        double readPosition() {
+            int32_t position;
+            uint8_t error = 0;
+
+            int result = this->packetHandler->read4ByteTxRx(this->portHandler, this->id, this->addressTable.PRESENT_POSITION, (uint32_t*)&position, &error);
+            bool success = this->checkCommResult(result, error);
+
+            if (success) {
+                return position;
+            }
+            return 0.0;
+        }    
+
+        bool checkCommResult(int result, uint8_t error) {
+            if (result != COMM_SUCCESS) {
+                std::cout << this->packetHandler->getTxRxResult(result) << std::endl;
+                return false;
+            } else if (error != 0) {
+                std::cout << this->packetHandler->getRxPacketError(error) << std::endl;
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        /**
          * @brief Closes the port for the corrosponsong motor
          */
         void close() {
@@ -108,8 +184,16 @@ class DynamixelMotor {
 };
 
 int main() {
-    DynamixelMotor motor = DynamixelMotor(DXL_ID, BAUDRATE, DEVICENAME);
+    AddressTable table = XM430W350T_TABLE();
+
+    DynamixelMotor motor = DynamixelMotor(DXL_ID, BAUDRATE, DEVICENAME, table);
     if (!motor.init()) {
         exit(1);
-    } 
+    }
+
+    motor.ping();
+
+    // while (true) {
+        std::cout << "position: " << motor.readPosition() << std::endl;
+    // }
 }
