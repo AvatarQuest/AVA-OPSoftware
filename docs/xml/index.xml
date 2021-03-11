@@ -1,21 +1,37 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="struct_address_table" kind="struct"><name>AddressTable</name>
+    <member refid="struct_address_table_1a2126fee86d1589dae6413265f97b0af8" kind="typedef"><name>address</name></member>
+    <member refid="struct_address_table_1a9789d710082a93e7817219128c428328" kind="variable"><name>TORQUE_ENABLE</name></member>
+    <member refid="struct_address_table_1a87b81becbc57e9c7cf79baf3b6bd3e10" kind="variable"><name>GOAL_POSITION</name></member>
+    <member refid="struct_address_table_1ae1ceef88e58d0e80fbef5a3afe5781b9" kind="variable"><name>PRESENT_POSITION</name></member>
+    <member refid="struct_address_table_1a98d63e3be6ff565d9fd6ba73b58db3cf" kind="function"><name>AddressTable</name></member>
+  </compound>
   <compound refid="class_dynamixel_motor" kind="class"><name>DynamixelMotor</name>
     <member refid="class_dynamixel_motor_1a8e50d584c65e0da28be270a2fea1d565" kind="variable"><name>id</name></member>
     <member refid="class_dynamixel_motor_1a56e74eebafa45d820ce5a29049dd083e" kind="variable"><name>baudrate</name></member>
     <member refid="class_dynamixel_motor_1a8a95aa39ae137fee22dc8f5d2efa95c5" kind="variable"><name>port</name></member>
+    <member refid="class_dynamixel_motor_1ae9b51e69f5a77733938a48c878044881" kind="variable"><name>addressTable</name></member>
     <member refid="class_dynamixel_motor_1a10a04f95bfed29b7e5db0a93b18f210b" kind="variable"><name>portHandler</name></member>
     <member refid="class_dynamixel_motor_1a82336f1c1fa00d95087d7eff364e6504" kind="variable"><name>packetHandler</name></member>
-    <member refid="class_dynamixel_motor_1a75c95986ba511548cdf4c139a75e2179" kind="function"><name>DynamixelMotor</name></member>
-    <member refid="class_dynamixel_motor_1a95332aa7e1721c9e8fed11b8374d6068" kind="function"><name>DynamixelMotor</name></member>
+    <member refid="class_dynamixel_motor_1afaf1eeff689e2c201288cc27f5824dc9" kind="function"><name>DynamixelMotor</name></member>
+    <member refid="class_dynamixel_motor_1ac8de3520118a0d989cfcf6079c018d97" kind="function"><name>DynamixelMotor</name></member>
     <member refid="class_dynamixel_motor_1af1dd11564ddcb81e6378746158ccda36" kind="function"><name>init</name></member>
+    <member refid="class_dynamixel_motor_1a18f2840844cccf45203a98a92fbdaf3b" kind="function"><name>ping</name></member>
+    <member refid="class_dynamixel_motor_1ac4a1b7b7178b2cc4f3282f1f2128159e" kind="function"><name>readPosition</name></member>
+    <member refid="class_dynamixel_motor_1a496eb35fcb792840127a8b95b1080670" kind="function"><name>checkCommResult</name></member>
     <member refid="class_dynamixel_motor_1abd308177fcb5e02f2d958db483aec3b2" kind="function"><name>close</name></member>
+  </compound>
+  <compound refid="struct_x_m430_w350_t___t_a_b_l_e" kind="struct"><name>XM430W350T_TABLE</name>
+    <member refid="struct_x_m430_w350_t___t_a_b_l_e_1ae1bd84050fba26c1d71691fb6af61baf" kind="function"><name>XM430W350T_TABLE</name></member>
   </compound>
   <compound refid="_dynamixel_motor_8cpp" kind="file"><name>DynamixelMotor.cpp</name>
     <member refid="_dynamixel_motor_8cpp_1a277f7abca2044f354abe265252cb9252" kind="define"><name>PROTOCOL_VERSION</name></member>
     <member refid="_dynamixel_motor_8cpp_1a25e19aa97ff345af42413b33592e5e87" kind="define"><name>DXL_ID</name></member>
     <member refid="_dynamixel_motor_8cpp_1a734bbab06e1a9fd2e5522db0221ff6e3" kind="define"><name>BAUDRATE</name></member>
     <member refid="_dynamixel_motor_8cpp_1abca33c097566d788d5163e433fc84150" kind="define"><name>DEVICENAME</name></member>
+    <member refid="_dynamixel_motor_8cpp_1a38746ae89b08525b692452bf351aa3ce" kind="typedef"><name>AddressTable</name></member>
+    <member refid="_dynamixel_motor_8cpp_1a8f681a5780eb64639f8a5fe968714631" kind="typedef"><name>XM430W350T_TABLE</name></member>
     <member refid="_dynamixel_motor_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
   </compound>
   <compound refid="main_8cpp" kind="file"><name>main.cpp</name>

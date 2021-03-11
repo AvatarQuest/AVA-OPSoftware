@@ -33,7 +33,7 @@ DIR_OBJS   = .objects
 CC          = gcc
 CX          = g++
 CCFLAGS     = -O2 -O3 -D_GNU_SOURCE -Wall $(INCLUDES) -g
-CXFLAGS     = -O2 -O3 -D_GNU_SOURCE -Wall $(INCLUDES) -g
+CXFLAGS     = -O2 -O3 -D_GNU_SOURCE -Wall $(INCLUDES) -g -std=c++11
 LNKCC       = $(CX)
 LNKFLAGS    = $(CXFLAGS) #-Wl,-rpath,$(DIR_THOR)/lib
 
@@ -46,7 +46,8 @@ LIBRARIES  += -ldxl_mac_cpp
 #---------------------------------------------------------------------
 # Files
 #---------------------------------------------------------------------
-SOURCES = DynamixelMotor.cpp \
+SOURCES = DynamixelHelper.cpp \
+		  
     # *** OTHER SOURCES GO HERE ***
 
 OBJECTS  = $(addsuffix .o,$(addprefix $(DIR_OBJS)/,$(basename $(notdir $(SOURCES)))))

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_x_m430_w350_t___t_a_b_l_e" kind="struct" language="C++" prot="public">
+    <compoundname>XM430W350T_TABLE</compoundname>
+    <basecompoundref refid="struct_address_table" prot="public" virt="non-virtual">AddressTable</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_x_m430_w350_t___t_a_b_l_e_1ae1bd84050fba26c1d71691fb6af61baf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>XM430W350T_TABLE::XM430W350T_TABLE</definition>
+        <argsstring>()</argsstring>
+        <name>XM430W350T_TABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" line="37" column="5" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" bodystart="37" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AddressTable</label>
+        <link refid="struct_address_table"/>
+      </node>
+      <node id="1">
+        <label>XM430W350T_TABLE</label>
+        <link refid="struct_x_m430_w350_t___t_a_b_l_e"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AddressTable</label>
+        <link refid="struct_address_table"/>
+      </node>
+      <node id="1">
+        <label>XM430W350T_TABLE</label>
+        <link refid="struct_x_m430_w350_t___t_a_b_l_e"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" line="36" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" bodystart="36" bodyend="42"/>
+    <listofallmembers>
+      <member refid="struct_address_table_1a2126fee86d1589dae6413265f97b0af8" prot="public" virt="non-virtual"><scope>XM430W350T_TABLE</scope><name>address</name></member>
+      <member refid="struct_address_table_1a98d63e3be6ff565d9fd6ba73b58db3cf" prot="public" virt="non-virtual"><scope>XM430W350T_TABLE</scope><name>AddressTable</name></member>
+      <member refid="struct_address_table_1a87b81becbc57e9c7cf79baf3b6bd3e10" prot="public" virt="non-virtual"><scope>XM430W350T_TABLE</scope><name>GOAL_POSITION</name></member>
+      <member refid="struct_address_table_1ae1ceef88e58d0e80fbef5a3afe5781b9" prot="public" virt="non-virtual"><scope>XM430W350T_TABLE</scope><name>PRESENT_POSITION</name></member>
+      <member refid="struct_address_table_1a9789d710082a93e7817219128c428328" prot="public" virt="non-virtual"><scope>XM430W350T_TABLE</scope><name>TORQUE_ENABLE</name></member>
+      <member refid="struct_x_m430_w350_t___t_a_b_l_e_1ae1bd84050fba26c1d71691fb6af61baf" prot="public" virt="non-virtual"><scope>XM430W350T_TABLE</scope><name>XM430W350T_TABLE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_address_table" kind="struct" language="C++" prot="public">
+    <compoundname>AddressTable</compoundname>
+    <derivedcompoundref refid="struct_x_m430_w350_t___t_a_b_l_e" prot="public" virt="non-virtual">XM430W350T_TABLE</derivedcompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="struct_address_table_1a2126fee86d1589dae6413265f97b0af8" prot="public" static="no">
+        <type>uint</type>
+        <definition>typedef uint AddressTable::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" line="28" column="18" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_address_table_1a9789d710082a93e7817219128c428328" prot="public" static="no" mutable="no">
+        <type>address</type>
+        <definition>address AddressTable::TORQUE_ENABLE</definition>
+        <argsstring></argsstring>
+        <name>TORQUE_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" line="29" column="13" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_address_table_1a87b81becbc57e9c7cf79baf3b6bd3e10" prot="public" static="no" mutable="no">
+        <type>address</type>
+        <definition>address AddressTable::GOAL_POSITION</definition>
+        <argsstring></argsstring>
+        <name>GOAL_POSITION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" line="30" column="13" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_address_table_1ae1ceef88e58d0e80fbef5a3afe5781b9" prot="public" static="no" mutable="no">
+        <type>address</type>
+        <definition>address AddressTable::PRESENT_POSITION</definition>
+        <argsstring></argsstring>
+        <name>PRESENT_POSITION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" line="31" column="13" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_address_table_1a98d63e3be6ff565d9fd6ba73b58db3cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AddressTable::AddressTable</definition>
+        <argsstring>()</argsstring>
+        <name>AddressTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" line="33" column="5" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure to deal with address table values. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AddressTable</label>
+        <link refid="struct_address_table"/>
+      </node>
+      <node id="2">
+        <label>XM430W350T_TABLE</label>
+        <link refid="struct_x_m430_w350_t___t_a_b_l_e"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" line="27" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.cpp" bodystart="27" bodyend="34"/>
+    <listofallmembers>
+      <member refid="struct_address_table_1a2126fee86d1589dae6413265f97b0af8" prot="public" virt="non-virtual"><scope>AddressTable</scope><name>address</name></member>
+      <member refid="struct_address_table_1a98d63e3be6ff565d9fd6ba73b58db3cf" prot="public" virt="non-virtual"><scope>AddressTable</scope><name>AddressTable</name></member>
+      <member refid="struct_address_table_1a87b81becbc57e9c7cf79baf3b6bd3e10" prot="public" virt="non-virtual"><scope>AddressTable</scope><name>GOAL_POSITION</name></member>
+      <member refid="struct_address_table_1ae1ceef88e58d0e80fbef5a3afe5781b9" prot="public" virt="non-virtual"><scope>AddressTable</scope><name>PRESENT_POSITION</name></member>
+      <member refid="struct_address_table_1a9789d710082a93e7817219128c428328" prot="public" virt="non-virtual"><scope>AddressTable</scope><name>TORQUE_ENABLE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
