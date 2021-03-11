@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_dynamixel_helper" kind="class" language="C++" prot="public">
+    <compoundname>DynamixelHelper</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_dynamixel_helper_1a9c1243e5a132c1524f7d5ec3c7cb5aa3" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref>, <ref refid="class_dynamixel_motor" kindref="compound">DynamixelMotor</ref>, <ref refid="class_motor_indentifier_hasher" kindref="compound">MotorIndentifierHasher</ref> &gt;</type>
+        <definition>std::unordered_map&lt;MotorIdentifier, DynamixelMotor, MotorIndentifierHasher&gt; DynamixelHelper::motors</definition>
+        <argsstring></argsstring>
+        <name>motors</name>
+        <briefdescription>
+<para>A hash map to deal with each motor with they key as a <ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref> and the value as the <ref refid="class_dynamixel_motor" kindref="compound">DynamixelMotor</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" line="74" column="28" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dynamixel_helper_1aa700feabb2a1d926ffe4dba232891292" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DynamixelHelper::DynamixelHelper</definition>
+        <argsstring>(std::vector&lt; DynamixelMotor &gt; dynamixel_motors)</argsstring>
+        <name>DynamixelHelper</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_dynamixel_motor" kindref="compound">DynamixelMotor</ref> &gt;</type>
+          <declname>dynamixel_motors</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Dynamixel Helper object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dynamixel_motors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of dynamixel motors that need to be controlled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" line="82" column="9" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" bodystart="82" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dynamixel_helper_1a0e98d2e4181249f123b34dbc60f3af9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DynamixelHelper::printAll</definition>
+        <argsstring>()</argsstring>
+        <name>printAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" line="93" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dynamixel_helper_1a4729669ab46ab6d8c9f8dd6e3b67c5b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_dynamixel_motor" kindref="compound">DynamixelMotor</ref></type>
+        <definition>DynamixelMotor DynamixelHelper::selectByMotorIdentifier</definition>
+        <argsstring>(MotorIdentifier identifier)</argsstring>
+        <name>selectByMotorIdentifier</name>
+        <param>
+          <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+          <declname>identifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" line="99" column="24" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" bodystart="99" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" line="68" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" bodystart="68" bodyend="103"/>
+    <listofallmembers>
+      <member refid="class_dynamixel_helper_1aa700feabb2a1d926ffe4dba232891292" prot="public" virt="non-virtual"><scope>DynamixelHelper</scope><name>DynamixelHelper</name></member>
+      <member refid="class_dynamixel_helper_1a9c1243e5a132c1524f7d5ec3c7cb5aa3" prot="private" virt="non-virtual"><scope>DynamixelHelper</scope><name>motors</name></member>
+      <member refid="class_dynamixel_helper_1a0e98d2e4181249f123b34dbc60f3af9e" prot="public" virt="non-virtual"><scope>DynamixelHelper</scope><name>printAll</name></member>
+      <member refid="class_dynamixel_helper_1a4729669ab46ab6d8c9f8dd6e3b67c5b3" prot="public" virt="non-virtual"><scope>DynamixelHelper</scope><name>selectByMotorIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

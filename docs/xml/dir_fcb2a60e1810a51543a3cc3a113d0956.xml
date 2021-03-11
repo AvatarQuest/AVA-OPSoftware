@@ -2,7 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_fcb2a60e1810a51543a3cc3a113d0956" kind="dir">
     <compoundname>/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++</compoundname>
-    <innerfile refid="_dynamixel_motor_8cpp">DynamixelMotor.cpp</innerfile>
+    <innerfile refid="_dynamixel_helper_8cpp">DynamixelHelper.cpp</innerfile>
+    <innerfile refid="_dynamixel_motor_8h">DynamixelMotor.h</innerfile>
     <innerfile refid="main_8cpp">main.cpp</innerfile>
     <briefdescription>
     </briefdescription>
