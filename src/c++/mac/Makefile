@@ -46,7 +46,7 @@ LIBRARIES  += -ldxl_mac_cpp
 #---------------------------------------------------------------------
 # Files
 #---------------------------------------------------------------------
-SOURCES = DynamixelHelper.cpp \
+SOURCES = main.cpp \
 		  
     # *** OTHER SOURCES GO HERE ***
 

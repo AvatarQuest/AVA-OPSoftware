@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <string>
+#include <future>
 
 #include "dynamixel_sdk.h"                                  // Uses Dynamixel SDK library
 
@@ -180,9 +181,12 @@ class DynamixelMotor {
         } 
 
         /**
-         * @brief Writes a goal position to the motor
+         * @brief 
          * 
-         * @param position Desired position
+         * @param position The position in dynamixel units
+         * @param movingThreshold The margin of error in the movement 
+         * @return true Moving succeded
+         * @return false Moving failed
          */
         bool writePosition(double position, uint movingThreshold) {
             uint8_t error = 0;
@@ -198,6 +202,13 @@ class DynamixelMotor {
             } while (abs(position - current_position) > movingThreshold); 
 
             return true;
+        }
+
+        bool setGoal(double position) {
+           uint8_t error = 0;
+           int result = packetHandler->write4ByteTxRx(portHandler, id, addressTable.GOAL_POSITION, position, &error);
+
+            return checkCommResult(result, error);
         }
 
         /**

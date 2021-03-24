@@ -1,30 +1,3 @@
-/*******************************************************************************
-* Copyright 2017 ROBOTIS CO., LTD.
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*     http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*******************************************************************************/
-
-/* Author: Ryu Woon Jung (Leon) */
-
-//
-// *********     ping Example      *********
-//
-//
-// Available Dynamixel model on this example : All models using Protocol 2.0
-// This example is tested with a Dynamixel PRO 54-200, and an USB2DYNAMIXEL
-// Be sure that Dynamixel PRO properties are already set as %% ID : 1 / Baudnum : 1 (Baudrate : 57600)
-//
-
 #if defined(__linux__) || defined(__APPLE__)
 #include <fcntl.h>
 #include <termios.h>
@@ -35,129 +8,54 @@
 
 #include <stdio.h>
 #include <iostream>
+#include <chrono>
+#include <thread>
 
-#include "dynamixel_sdk.h"                                  // Uses Dynamixel SDK library
+#include "dynamixel_sdk.h"  
+#include "ArmController.h"
 
-// Protocol version
-#define PROTOCOL_VERSION                2.0                 // See which protocol version is used in the Dynamixel
+int main() {
+    const std::string port = "/dev/tty.usbserial-FT4TCRQV";
+    const uint baudrate = 57600;
+    const AddressTable table = XM430W350T_TABLE();
+    std::unordered_map<MotorIdentifier, AddressTable, MotorIndentifierHasher> motors;
 
-// Default setting
-#define DXL_ID                          11                   // Dynamixel ID: 1
-#define BAUDRATE                        1000000 
-#define DEVICENAME                      "/dev/tty.usbserial-FT4TCRQV"      // Check which port is being used on your controller
-                                                            // ex) Windows: "COM1"   Linux: "/dev/ttyUSB0" Mac: "/dev/tty.usbserial-*"
+    motors.insert(std::make_pair(MotorIdentifier(12, baudrate, port), table));
+    motors.insert(std::make_pair(MotorIdentifier(13, baudrate, port), table));
+    motors.insert(std::make_pair(MotorIdentifier(14, baudrate, port), table));
+    motors.insert(std::make_pair(MotorIdentifier(15, baudrate, port), table));
+    // DynamixelMotor motor11 = DynamixelMotor(11, baudrate, port, table);
+    // DynamixelMotor motor12 = DynamixelMotor(12, baudrate, port, table);
+    // DynamixelMotor motor13 = DynamixelMotor(13, baudrate, port, table);
+    // DynamixelMotor motor14 = DynamixelMotor(14, baudrate, port, table);
+    // DynamixelMotor motor15 = DynamixelMotor(15, baudrate, port, table);
 
-int getch()
-{
-#if defined(__linux__) || defined(__APPLE__)
-  struct termios oldt, newt;
-  int ch;
-  tcgetattr(STDIN_FILENO, &oldt);
-  newt = oldt;
-  newt.c_lflag &= ~(ICANON | ECHO);
-  tcsetattr(STDIN_FILENO, TCSANOW, &newt);
-  ch = getchar();
-  tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
-  return ch;
-#elif defined(_WIN32) || defined(_WIN64)
-  return _getch();
-#endif
-}
+    // std::cout << motor11 << std::endl;
 
-int kbhit(void)
-{
-#if defined(__linux__) || defined(__APPLE__)
-  struct termios oldt, newt;
-  int ch;
-  int oldf;
+    // std::vector<DynamixelMotor> motors = {motor11, motor12, motor13, motor14, motor15}; 
 
-  tcgetattr(STDIN_FILENO, &oldt);
-  newt = oldt;
-  newt.c_lflag &= ~(ICANON | ECHO);
-  tcsetattr(STDIN_FILENO, TCSANOW, &newt);
-  oldf = fcntl(STDIN_FILENO, F_GETFL, 0);
-  fcntl(STDIN_FILENO, F_SETFL, oldf | O_NONBLOCK);
+    DynamixelHelper helper =  DynamixelHelper(motors);
+    MotorIdentifier id14 = MotorIdentifier(14, baudrate, port);
+    MotorIdentifier id13 = MotorIdentifier(13, baudrate, port);
+    MotorIdentifier id12 = MotorIdentifier(12, baudrate, port);
 
-  ch = getchar();
+    DynamixelMotor motor14 = helper.getByMotorIdentifier(id14);
+    DynamixelMotor motor13 = helper.getByMotorIdentifier(id13);
+    DynamixelMotor motor12 = helper.getByMotorIdentifier(id12);
 
-  tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
-  fcntl(STDIN_FILENO, F_SETFL, oldf);
+    motor12.setTorque(true);
+    motor13.setTorque(true);
+    motor14.setTorque(true);
 
-  if (ch != EOF)
-  {
-    ungetc(ch, stdin);
-    return 1;
-  }
+    motor12.setGoal(2635);
+    motor14.setGoal(920);
+    // helper.writePositionAsync(id12, 2635, 10);
+    // helper.writePositionAsync(id14, 920, 10);
 
-  return 0;
-#elif defined(_WIN32) || defined(_WIN64)
-  return _kbhit();
-#endif
-}
+    // std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    
+    
+    // std::cout << motorid12 << std::endl;
 
-int main()
-{
-  // Initialize PortHandler instance
-  // Set the port path
-  // Get methods and members of PortHandlerLinux or PortHandlerWindows
-  dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler(DEVICENAME);
-
-  // Initialize PacketHandler instance
-  // Set the protocol version
-  // Get methods and members of Protocol1PacketHandler or Protocol2PacketHandler
-  dynamixel::PacketHandler *packetHandler = dynamixel::PacketHandler::getPacketHandler(PROTOCOL_VERSION);
-
-  int dxl_comm_result = COMM_TX_FAIL;             // Communication result
-
-  uint8_t dxl_error = 0;                          // Dynamixel error
-  uint16_t dxl_model_number;                      // Dynamixel model number
-
-  // Open port
-  if (portHandler->openPort())
-  {
-    printf("Succeeded to open the port!\n");
-  }
-  else
-  {
-    printf("Failed to open the port!\n");
-    printf("Press any key to terminate...\n");
-    getch();
-    return 0;
-  }
-
-  // Set port baudrate
-  if (portHandler->setBaudRate(BAUDRATE))
-  {
-    printf("Succeeded to change the baudrate!\n");
-  }
-  else
-  {
-    printf("Failed to change the baudrate!\n");
-    printf("Press any key to terminate...\n");
-    getch();
-    return 0;
-  }
-
-  // Try to ping the Dynamixel
-  // Get Dynamixel model number
-  // std::cout << "Model Number: " << dxl_model_number << std::endl;
-
-  dxl_comm_result = packetHandler->ping(portHandler, DXL_ID, &dxl_model_number, &dxl_error);
-  if (dxl_comm_result != COMM_SUCCESS)
-  {
-    printf("%s\n", packetHandler->getTxRxResult(dxl_comm_result));
-  }
-  else if (dxl_error != 0)
-  {
-    printf("%s\n", packetHandler->getRxPacketError(dxl_error));
-  }
-  else
-  {
-    printf("[ID:%03d] ping Succeeded. Dynamixel model number : %d\n", DXL_ID, dxl_model_number);
-  }
-
-  // Close port
-  portHandler->closePort();
-
-  return 0;
+    // helper.printAll();
 }
