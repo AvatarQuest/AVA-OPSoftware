@@ -1,0 +1,798 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_arm_controller" kind="class" language="C++" prot="public">
+    <compoundname>ArmController</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_arm_controller_1a6f057d90bdb723e9887d8a43786487cc" prot="private" static="no" mutable="no">
+        <type><ref refid="class_dynamixel_helper" kindref="compound">DynamixelHelper</ref></type>
+        <definition>DynamixelHelper ArmController::helper</definition>
+        <argsstring></argsstring>
+        <name>helper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="21" column="25" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_arm_controller_1aa48069e5b6c8a4f1a3b85744d082c94a" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+        <definition>MotorIdentifier ArmController::rotation_motor</definition>
+        <argsstring></argsstring>
+        <name>rotation_motor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="22" column="25" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_arm_controller_1ab1aca74abd0182df08c1be04f9ed7cd0" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+        <definition>MotorIdentifier ArmController::shoulder</definition>
+        <argsstring></argsstring>
+        <name>shoulder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="22" column="40" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_arm_controller_1a1ada56913a90b8245996f023fdd0b860" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+        <definition>MotorIdentifier ArmController::elbow</definition>
+        <argsstring></argsstring>
+        <name>elbow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="22" column="49" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_arm_controller_1ae6275874b7bb2aaac4efc4c7c44b2712" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+        <definition>MotorIdentifier ArmController::wrist</definition>
+        <argsstring></argsstring>
+        <name>wrist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="22" column="55" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_arm_controller_1aa7a4808eb50492a9e38f483a909ef9e1" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+        <definition>MotorIdentifier ArmController::claw</definition>
+        <argsstring></argsstring>
+        <name>claw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="22" column="61" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_arm_controller_1a7f114f1575cc7ec06536f0f6998735f0" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ArmController::a1</definition>
+        <argsstring></argsstring>
+        <name>a1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="23" column="16" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_arm_controller_1a67e90896f91f77c9ec7d0493c2c6a59b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ArmController::a2</definition>
+        <argsstring></argsstring>
+        <name>a2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="23" column="19" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_arm_controller_1a02b816069b4798d08f620a00bcb9dac5" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ArmController::a3</definition>
+        <argsstring></argsstring>
+        <name>a3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="23" column="22" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_arm_controller_1aca319343c3422c9a6abbd885ef913c34" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ArmController::offsets[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>offsets</name>
+        <initializer>= {0.0, 0.0, 0.0, 0.0, 0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="24" column="16" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_arm_controller_1ae8455b95f07d1fca1e92cdd4c4da084a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ArmController::debug</definition>
+        <argsstring></argsstring>
+        <name>debug</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="25" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_arm_controller_1ad4b217563401605597ba3d288eaf998d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double ArmController::thetaToPos</definition>
+        <argsstring>(double theta)</argsstring>
+        <name>thetaToPos</name>
+        <param>
+          <type>double</type>
+          <declname>theta</declname>
+        </param>
+        <briefdescription>
+<para>Converts between the dynamixel unit of 0-4096 to angle in degrees. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle to convert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double The dynamixel unit output </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="33" column="16" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="33" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_arm_controller_1af61e6cbbcae3f26eee757fd91e8af326" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ArmController::ArmController</definition>
+        <argsstring>(MotorIdentifier rotation_motor, MotorIdentifier shoulder, MotorIdentifier elbow, MotorIdentifier wrist, MotorIdentifier claw, AddressTable table, double a1, double a2, double a3)</argsstring>
+        <name>ArmController</name>
+        <param>
+          <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+          <declname>rotation_motor</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+          <declname>shoulder</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+          <declname>elbow</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+          <declname>wrist</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+          <declname>claw</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_address_table" kindref="compound">AddressTable</ref></type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a3</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Arm Controller object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>helper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Construct a new Arm Controller object</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation_motor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bottom rotation motor that can move the entire arm </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shoulder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second motor from the bottom </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>elbow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The motor in the middle of the arm that acts like an elbow </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wrist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The motor that controls the movement of the claw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>claw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The claw motor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address for all the motors </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length for a1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length for a2 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lenght for a3 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="58" column="9" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="58" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1adbf9f75f0adc7d0d909b612da6af0ef5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ArmController::ArmController</definition>
+        <argsstring>(DynamixelHelper helper, MotorIdentifier rotation_motor, MotorIdentifier shoulder, MotorIdentifier elbow, MotorIdentifier wrist, MotorIdentifier claw, double a1, double a2, double a3)</argsstring>
+        <name>ArmController</name>
+        <param>
+          <type><ref refid="class_dynamixel_helper" kindref="compound">DynamixelHelper</ref></type>
+          <declname>helper</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+          <declname>rotation_motor</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+          <declname>shoulder</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+          <declname>elbow</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+          <declname>wrist</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+          <declname>claw</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a3</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Arm Controller object, this construtor can be used when you are using different motor addresstables and can supply a custom helper object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>helper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="class_dynamixel_helper" kindref="compound">DynamixelHelper</ref> object with the 5 motors for the arm </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotation_motor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bottom rotation motor that can move the entire arm </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shoulder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second motor from the bottom </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>elbow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The motor in the middle of the arm that acts like an elbow </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wrist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The motor that controls the movement of the claw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>claw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The claw motor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length for a1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length for a2 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lenght for a3 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="93" column="9" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="93" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1afacecd5f6cb95ab03dd3285a8931f10c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArmController::setOffsets</definition>
+        <argsstring>(double new_offsets[])</argsstring>
+        <name>setOffsets</name>
+        <param>
+          <type>double</type>
+          <declname>new_offsets</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="107" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="107" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1ae47e667153616fc5dc8be7dbf0b05e6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArmController::setDebug</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>setDebug</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="115" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="115" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1a82e1a369a5f5a3ba4cf84eccb9c91597" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArmController::setAngle</definition>
+        <argsstring>(MotorIdentifier id, double angle)</argsstring>
+        <name>setAngle</name>
+        <param>
+          <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Set the angle of a motor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref> for the motor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the angle you need to set the motor to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="125" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="125" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1a5e5e83690dbe803d3d9086a2bbcf8437" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArmController::setRotationMotorAngle</definition>
+        <argsstring>(double angle)</argsstring>
+        <name>setRotationMotorAngle</name>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>A method to conveniently set the angle of the rotation motor with a optional offset from the setOffset method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle to set the motor to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="138" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="138" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1ae27a517c3e277fb0d92b9d86c021498d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArmController::setShoulderAngle</definition>
+        <argsstring>(double angle)</argsstring>
+        <name>setShoulderAngle</name>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>A method to conveniently set the angle of the shoulder with a optional offset from the setOffset method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle to set the motor to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="147" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="147" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1a378bf2844dcdaefe94a3b42ca7f70693" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArmController::setElbowAngle</definition>
+        <argsstring>(double angle)</argsstring>
+        <name>setElbowAngle</name>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>A method to conveniently set the angle of the elbow with a optional offset from the setOffset method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle to set the motor to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="156" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1aacb070b41d75f2073066338364f1a7f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArmController::setWristAngle</definition>
+        <argsstring>(double angle)</argsstring>
+        <name>setWristAngle</name>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>A method to conveniently set the angle of the wrist with a optional offset from the setOffset method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle to set the motor to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="165" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="165" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1af4e99e8b9d0fa93d1c6dfaf425938311" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArmController::setClawAngle</definition>
+        <argsstring>(double angle)</argsstring>
+        <name>setClawAngle</name>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>A method to conveniently set the angle of the claw with a optional offset from the setOffset method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle to set the motor to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="174" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="174" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1aaf58f3b0e55fb9621d00f3574dda52ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArmController::setAllTorque</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>setAllTorque</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="178" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="178" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1a8263b1bcaac7ac6701671fd349c5ef11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* ArmController::ik</definition>
+        <argsstring>(double px, double py)</argsstring>
+        <name>ik</name>
+        <param>
+          <type>double</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>py</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>px</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>py</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int[] of angle values for the shoulder, elbow and wrist </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="193" column="13" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="193" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1a65a42e910e548c23c8abd362fffaf6e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_dynamixel_helper" kindref="compound">DynamixelHelper</ref></type>
+        <definition>DynamixelHelper ArmController::getHelper</definition>
+        <argsstring>()</argsstring>
+        <name>getHelper</name>
+        <briefdescription>
+<para>Get the Helper object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="class_dynamixel_helper" kindref="compound">DynamixelHelper</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="202" column="25" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="202" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1a26ff908c1367608142727f13daa0a1cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_dynamixel_motor" kindref="compound">DynamixelMotor</ref></type>
+        <definition>DynamixelMotor ArmController::getMotor</definition>
+        <argsstring>(MotorIdentifier id)</argsstring>
+        <name>getMotor</name>
+        <param>
+          <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Get a motor from the dynamixel helper. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The motor idenfier of the motor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_dynamixel_motor" kindref="compound">DynamixelMotor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="212" column="24" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="212" bodyend="214"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="19" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="19" bodyend="217"/>
+    <listofallmembers>
+      <member refid="class_arm_controller_1a7f114f1575cc7ec06536f0f6998735f0" prot="private" virt="non-virtual"><scope>ArmController</scope><name>a1</name></member>
+      <member refid="class_arm_controller_1a67e90896f91f77c9ec7d0493c2c6a59b" prot="private" virt="non-virtual"><scope>ArmController</scope><name>a2</name></member>
+      <member refid="class_arm_controller_1a02b816069b4798d08f620a00bcb9dac5" prot="private" virt="non-virtual"><scope>ArmController</scope><name>a3</name></member>
+      <member refid="class_arm_controller_1af61e6cbbcae3f26eee757fd91e8af326" prot="public" virt="non-virtual"><scope>ArmController</scope><name>ArmController</name></member>
+      <member refid="class_arm_controller_1adbf9f75f0adc7d0d909b612da6af0ef5" prot="public" virt="non-virtual"><scope>ArmController</scope><name>ArmController</name></member>
+      <member refid="class_arm_controller_1aa7a4808eb50492a9e38f483a909ef9e1" prot="private" virt="non-virtual"><scope>ArmController</scope><name>claw</name></member>
+      <member refid="class_arm_controller_1ae8455b95f07d1fca1e92cdd4c4da084a" prot="private" virt="non-virtual"><scope>ArmController</scope><name>debug</name></member>
+      <member refid="class_arm_controller_1a1ada56913a90b8245996f023fdd0b860" prot="private" virt="non-virtual"><scope>ArmController</scope><name>elbow</name></member>
+      <member refid="class_arm_controller_1a65a42e910e548c23c8abd362fffaf6e6" prot="public" virt="non-virtual"><scope>ArmController</scope><name>getHelper</name></member>
+      <member refid="class_arm_controller_1a26ff908c1367608142727f13daa0a1cf" prot="public" virt="non-virtual"><scope>ArmController</scope><name>getMotor</name></member>
+      <member refid="class_arm_controller_1a6f057d90bdb723e9887d8a43786487cc" prot="private" virt="non-virtual"><scope>ArmController</scope><name>helper</name></member>
+      <member refid="class_arm_controller_1a8263b1bcaac7ac6701671fd349c5ef11" prot="public" virt="non-virtual"><scope>ArmController</scope><name>ik</name></member>
+      <member refid="class_arm_controller_1aca319343c3422c9a6abbd885ef913c34" prot="private" virt="non-virtual"><scope>ArmController</scope><name>offsets</name></member>
+      <member refid="class_arm_controller_1aa48069e5b6c8a4f1a3b85744d082c94a" prot="private" virt="non-virtual"><scope>ArmController</scope><name>rotation_motor</name></member>
+      <member refid="class_arm_controller_1aaf58f3b0e55fb9621d00f3574dda52ff" prot="public" virt="non-virtual"><scope>ArmController</scope><name>setAllTorque</name></member>
+      <member refid="class_arm_controller_1a82e1a369a5f5a3ba4cf84eccb9c91597" prot="public" virt="non-virtual"><scope>ArmController</scope><name>setAngle</name></member>
+      <member refid="class_arm_controller_1af4e99e8b9d0fa93d1c6dfaf425938311" prot="public" virt="non-virtual"><scope>ArmController</scope><name>setClawAngle</name></member>
+      <member refid="class_arm_controller_1ae47e667153616fc5dc8be7dbf0b05e6a" prot="public" virt="non-virtual"><scope>ArmController</scope><name>setDebug</name></member>
+      <member refid="class_arm_controller_1a378bf2844dcdaefe94a3b42ca7f70693" prot="public" virt="non-virtual"><scope>ArmController</scope><name>setElbowAngle</name></member>
+      <member refid="class_arm_controller_1afacecd5f6cb95ab03dd3285a8931f10c" prot="public" virt="non-virtual"><scope>ArmController</scope><name>setOffsets</name></member>
+      <member refid="class_arm_controller_1a5e5e83690dbe803d3d9086a2bbcf8437" prot="public" virt="non-virtual"><scope>ArmController</scope><name>setRotationMotorAngle</name></member>
+      <member refid="class_arm_controller_1ae27a517c3e277fb0d92b9d86c021498d" prot="public" virt="non-virtual"><scope>ArmController</scope><name>setShoulderAngle</name></member>
+      <member refid="class_arm_controller_1aacb070b41d75f2073066338364f1a7f1" prot="public" virt="non-virtual"><scope>ArmController</scope><name>setWristAngle</name></member>
+      <member refid="class_arm_controller_1ab1aca74abd0182df08c1be04f9ed7cd0" prot="private" virt="non-virtual"><scope>ArmController</scope><name>shoulder</name></member>
+      <member refid="class_arm_controller_1ad4b217563401605597ba3d288eaf998d" prot="private" virt="non-virtual"><scope>ArmController</scope><name>thetaToPos</name></member>
+      <member refid="class_arm_controller_1ae6275874b7bb2aaac4efc4c7c44b2712" prot="private" virt="non-virtual"><scope>ArmController</scope><name>wrist</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -80,7 +80,8 @@
         "condition_variable": "cpp",
         "list": "cpp",
         "ranges": "cpp",
-        "stop_token": "cpp"
+        "stop_token": "cpp",
+        "future": "cpp"
     },
     "restructuredtext.languageServer.disabled": true,
     "cmake.sourceDirectory": "${workspaceFolder}/.",

@@ -45,7 +45,13 @@ class DynamixelMotor {
     protected:
         bool checkCommResult(int result, uint8_t error) {
             if (result != COMM_SUCCESS) {
-                std::cout << packetHandler->getTxRxResult(result) << std::endl;
+                std::string output = packetHandler->getTxRxResult(result);
+                
+                std::cout << output << std::endl;
+                
+                if (output.find("Failed transmit instruction packet!") != std::string::npos) {
+                    std::cout << "You might be seeing this error because there is no power to the motor or another application is using the port (port busy)" << std::endl;
+                }
                 return false;
             } else if (error != 0) {
                 std::cout << packetHandler->getRxPacketError(error) << std::endl;
@@ -108,14 +114,29 @@ class DynamixelMotor {
 
         friend std::ostream & operator << (std::ostream &out, const DynamixelMotor &motor);
 
+        /**
+         * @brief Get the id 
+         * 
+         * @return int 
+         */
         int getId() {
             return id;
         }
 
+        /**
+         * @brief Get the baudrate 
+         * 
+         * @return int 
+         */
         int getBaudrate() {
             return baudrate;
         }
-
+        
+        /**
+         * @brief Get the port 
+         * 
+         * @return std::string 
+         */
         std::string getPort() {
             return port;
         }

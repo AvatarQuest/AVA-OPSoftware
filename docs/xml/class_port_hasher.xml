@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_port_hasher" kind="class" language="C++" prot="public">
+    <compoundname>PortHasher</compoundname>
+    <includes refid="_dynamixel_helper_8h" local="no">DynamixelHelper.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_port_hasher_1a756593868ac7383116129acb311538b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t PortHasher::operator()</definition>
+        <argsstring>(const Port &amp;m) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="struct_port" kindref="compound">Port</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>The method to create a hash based on baudrate, and port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The port to hash </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>size_t The hash </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="102" column="16" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="102" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to create unqiue hashes for a <ref refid="struct_port" kindref="compound">Port</ref> object. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="94" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="94" bodyend="107"/>
+    <listofallmembers>
+      <member refid="class_port_hasher_1a756593868ac7383116129acb311538b2" prot="public" virt="non-virtual"><scope>PortHasher</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

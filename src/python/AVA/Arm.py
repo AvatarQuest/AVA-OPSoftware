@@ -202,8 +202,9 @@ class ArmPositionController:
 if __name__ == "__main__":
     arm = Arm(ids, offsets)
     controller = ArmPositionController(arm, rotation_motor)
+    print(controller.ik(0, 0))
     # controller.move(10, 10)
-    controller.start_reboot_sequence()
+    # controller.start_reboot_sequence()
     # arm.set_angle(11, 180)
     # arm.reboot(15)
     

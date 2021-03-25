@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="class_motor_indentifier_hasher" kind="class" language="C++" prot="public">
     <compoundname>MotorIndentifierHasher</compoundname>
+    <includes refid="_dynamixel_helper_8h" local="no">DynamixelHelper.h</includes>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="class_motor_indentifier_hasher_1ae84471186050487d8cb021565264c5bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>size_t</type>
@@ -31,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" line="60" column="16" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" bodystart="60" bodyend="65"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="82" column="16" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="82" bodyend="87"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -39,7 +40,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" line="52" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" bodystart="52" bodyend="66"/>
+    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="74" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="74" bodyend="88"/>
     <listofallmembers>
       <member refid="class_motor_indentifier_hasher_1ae84471186050487d8cb021565264c5bf" prot="public" virt="non-virtual"><scope>MotorIndentifierHasher</scope><name>operator()</name></member>
     </listofallmembers>

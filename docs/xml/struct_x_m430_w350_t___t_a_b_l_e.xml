@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="29" column="5" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="29" bodyend="33"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="30" column="5" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="30" bodyend="34"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -46,7 +46,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="28" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="28" bodyend="34"/>
+    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="29" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="29" bodyend="35"/>
     <listofallmembers>
       <member refid="struct_address_table_1a2126fee86d1589dae6413265f97b0af8" prot="public" virt="non-virtual"><scope>XM430W350T_TABLE</scope><name>address</name></member>
       <member refid="struct_address_table_1a98d63e3be6ff565d9fd6ba73b58db3cf" prot="public" virt="non-virtual"><scope>XM430W350T_TABLE</scope><name>AddressTable</name></member>

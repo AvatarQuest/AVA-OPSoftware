@@ -88,13 +88,13 @@ class MotorIndentifierHasher {
 };
 
 /**
- * @brief A class to create unqiue hashes for a MotorIdentifier
+ * @brief A class to create unqiue hashes for a Port object 
  * 
  */
 class PortHasher { 
     public: 
         /**
-         * @brief The method to create a hash based on id, baudrate, and port
+         * @brief The method to create a hash based on baudrate, and port
          * 
          * @param m The port to hash
          * @return size_t The hash
@@ -133,11 +133,11 @@ class DynamixelHelper {
             }
         }
 
-        /**
-         * @brief Construct a new Dynamixel Helper object and initializes all port handlers. 
-         * 
-         * @param motors A vector of MotorIndentifiers
-         */
+       /**
+        * @brief Construct a new Dynamixel Helper object and shares a pool of port handlers betweeen motors, use this over the other contructor ehen you can
+        * 
+        * @param motor_map A map including a motor identifier as the key and the address table of the corrospoding motor as the value
+        */
         DynamixelHelper(std::unordered_map<MotorIdentifier, AddressTable, MotorIndentifierHasher> motor_map) {
             std::unordered_map<Port, dynamixel::PortHandler*, PortHasher> portHandlerPool = {};
 
@@ -160,23 +160,38 @@ class DynamixelHelper {
                 this->motors.insert(std::make_pair(id, new_motor));
             }
         }
-
+        
+        /**
+         * @brief A method to print all motors already loaded into the helper
+         * 
+         */
         void printAll() {
             for (auto& motor: motors) {
                 std::cout << motor.second;
             }
         }
 
-        DynamixelMotor selectByMotorIdentifier(MotorIdentifier identifier) {
+        /**
+         * @brief Get a motor by a Motor Identifier object
+         * 
+         * @param identifier The motor identifier
+         * @return DynamixelMotor The motor based on the motor identifier
+         */
+        DynamixelMotor getByMotorIdentifier(MotorIdentifier identifier) {
             return motors[identifier];
         }
 
         bool writePositionAsync(MotorIdentifier indentifier, double position, uint movingThreshold) {
-            DynamixelMotor motor = selectByMotorIdentifier(indentifier);
+            DynamixelMotor motor = getByMotorIdentifier(indentifier);
             auto writePos = std::async(std::launch::async, &DynamixelMotor::writePosition, &motor, position, movingThreshold);
             return writePos.get();
         }
 
+        /**
+         * @brief Write positions to multiple dynamixels
+         * 
+         * @param positions The positions for the corrospoding motor
+         */
         void writePositions(std::unordered_map<MotorIdentifier, double, MotorIndentifierHasher> positions) {
 
         }

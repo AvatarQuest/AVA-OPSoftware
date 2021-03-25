@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="struct_motor_identifier" kind="struct" language="C++" prot="public">
     <compoundname>MotorIdentifier</compoundname>
+    <includes refid="_dynamixel_helper_8h" local="no">DynamixelHelper.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="struct_motor_identifier_1afb91fe142ea7ab84069518e3baa3c1b1" prot="public" static="no" mutable="no">
         <type>uint</type>
@@ -14,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" line="23" column="10" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" bodystart="23" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="23" column="10" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_motor_identifier_1abd7fd4d627c2f3968e0e78c4aeb7a379" prot="public" static="no" mutable="no">
         <type>uint</type>
@@ -27,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" line="24" column="10" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" bodystart="24" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="24" column="10" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_motor_identifier_1ad3410f0555e0aa1067ccbf06cec17e95" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -40,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" line="25" column="17" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" bodystart="25" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="25" column="17" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="25" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -55,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" line="27" column="5" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" bodystart="27" bodyend="27"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="27" column="5" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="27" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="struct_motor_identifier_1ab0dc841906f43821d9fcca0614ade0a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -80,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" line="29" column="5" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" bodystart="29" bodyend="33"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="29" column="5" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="29" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="struct_motor_identifier_1ad3506059a480a9a17f95f92652c2e8dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -112,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" line="42" column="10" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" bodystart="42" bodyend="44"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="42" column="10" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="42" bodyend="44"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -120,7 +121,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" line="22" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.cpp" bodystart="22" bodyend="45"/>
+    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="22" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="22" bodyend="45"/>
     <listofallmembers>
       <member refid="struct_motor_identifier_1abd7fd4d627c2f3968e0e78c4aeb7a379" prot="public" virt="non-virtual"><scope>MotorIdentifier</scope><name>baudrate</name></member>
       <member refid="struct_motor_identifier_1afb91fe142ea7ab84069518e3baa3c1b1" prot="public" virt="non-virtual"><scope>MotorIdentifier</scope><name>id</name></member>

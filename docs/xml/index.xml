@@ -7,11 +7,43 @@
     <member refid="struct_address_table_1ae1ceef88e58d0e80fbef5a3afe5781b9" kind="variable"><name>PRESENT_POSITION</name></member>
     <member refid="struct_address_table_1a98d63e3be6ff565d9fd6ba73b58db3cf" kind="function"><name>AddressTable</name></member>
   </compound>
+  <compound refid="class_arm_controller" kind="class"><name>ArmController</name>
+    <member refid="class_arm_controller_1a6f057d90bdb723e9887d8a43786487cc" kind="variable"><name>helper</name></member>
+    <member refid="class_arm_controller_1aa48069e5b6c8a4f1a3b85744d082c94a" kind="variable"><name>rotation_motor</name></member>
+    <member refid="class_arm_controller_1ab1aca74abd0182df08c1be04f9ed7cd0" kind="variable"><name>shoulder</name></member>
+    <member refid="class_arm_controller_1a1ada56913a90b8245996f023fdd0b860" kind="variable"><name>elbow</name></member>
+    <member refid="class_arm_controller_1ae6275874b7bb2aaac4efc4c7c44b2712" kind="variable"><name>wrist</name></member>
+    <member refid="class_arm_controller_1aa7a4808eb50492a9e38f483a909ef9e1" kind="variable"><name>claw</name></member>
+    <member refid="class_arm_controller_1a7f114f1575cc7ec06536f0f6998735f0" kind="variable"><name>a1</name></member>
+    <member refid="class_arm_controller_1a67e90896f91f77c9ec7d0493c2c6a59b" kind="variable"><name>a2</name></member>
+    <member refid="class_arm_controller_1a02b816069b4798d08f620a00bcb9dac5" kind="variable"><name>a3</name></member>
+    <member refid="class_arm_controller_1aca319343c3422c9a6abbd885ef913c34" kind="variable"><name>offsets</name></member>
+    <member refid="class_arm_controller_1ae8455b95f07d1fca1e92cdd4c4da084a" kind="variable"><name>debug</name></member>
+    <member refid="class_arm_controller_1ad4b217563401605597ba3d288eaf998d" kind="function"><name>thetaToPos</name></member>
+    <member refid="class_arm_controller_1af61e6cbbcae3f26eee757fd91e8af326" kind="function"><name>ArmController</name></member>
+    <member refid="class_arm_controller_1adbf9f75f0adc7d0d909b612da6af0ef5" kind="function"><name>ArmController</name></member>
+    <member refid="class_arm_controller_1afacecd5f6cb95ab03dd3285a8931f10c" kind="function"><name>setOffsets</name></member>
+    <member refid="class_arm_controller_1ae47e667153616fc5dc8be7dbf0b05e6a" kind="function"><name>setDebug</name></member>
+    <member refid="class_arm_controller_1a82e1a369a5f5a3ba4cf84eccb9c91597" kind="function"><name>setAngle</name></member>
+    <member refid="class_arm_controller_1a5e5e83690dbe803d3d9086a2bbcf8437" kind="function"><name>setRotationMotorAngle</name></member>
+    <member refid="class_arm_controller_1ae27a517c3e277fb0d92b9d86c021498d" kind="function"><name>setShoulderAngle</name></member>
+    <member refid="class_arm_controller_1a378bf2844dcdaefe94a3b42ca7f70693" kind="function"><name>setElbowAngle</name></member>
+    <member refid="class_arm_controller_1aacb070b41d75f2073066338364f1a7f1" kind="function"><name>setWristAngle</name></member>
+    <member refid="class_arm_controller_1af4e99e8b9d0fa93d1c6dfaf425938311" kind="function"><name>setClawAngle</name></member>
+    <member refid="class_arm_controller_1aaf58f3b0e55fb9621d00f3574dda52ff" kind="function"><name>setAllTorque</name></member>
+    <member refid="class_arm_controller_1a8263b1bcaac7ac6701671fd349c5ef11" kind="function"><name>ik</name></member>
+    <member refid="class_arm_controller_1a65a42e910e548c23c8abd362fffaf6e6" kind="function"><name>getHelper</name></member>
+    <member refid="class_arm_controller_1a26ff908c1367608142727f13daa0a1cf" kind="function"><name>getMotor</name></member>
+  </compound>
   <compound refid="class_dynamixel_helper" kind="class"><name>DynamixelHelper</name>
     <member refid="class_dynamixel_helper_1a9c1243e5a132c1524f7d5ec3c7cb5aa3" kind="variable"><name>motors</name></member>
+    <member refid="class_dynamixel_helper_1a420a36f6bb5b6729dff01a60e7cd0583" kind="function"><name>DynamixelHelper</name></member>
     <member refid="class_dynamixel_helper_1aa700feabb2a1d926ffe4dba232891292" kind="function"><name>DynamixelHelper</name></member>
+    <member refid="class_dynamixel_helper_1a926e5947a1ca4366e3bf9cee6ba02ff8" kind="function"><name>DynamixelHelper</name></member>
     <member refid="class_dynamixel_helper_1a0e98d2e4181249f123b34dbc60f3af9e" kind="function"><name>printAll</name></member>
-    <member refid="class_dynamixel_helper_1a4729669ab46ab6d8c9f8dd6e3b67c5b3" kind="function"><name>selectByMotorIdentifier</name></member>
+    <member refid="class_dynamixel_helper_1a750fb89e395c3296bfdb0b4bcf46aaa6" kind="function"><name>getByMotorIdentifier</name></member>
+    <member refid="class_dynamixel_helper_1a759f55a43fa482e4311bd67deba5820f" kind="function"><name>writePositionAsync</name></member>
+    <member refid="class_dynamixel_helper_1a83bf7dca59b27f34fd287278fece1a5e" kind="function"><name>writePositions</name></member>
   </compound>
   <compound refid="class_dynamixel_motor" kind="class"><name>DynamixelMotor</name>
     <member refid="class_dynamixel_motor_1a8e50d584c65e0da28be270a2fea1d565" kind="variable"><name>id</name></member>
@@ -30,6 +62,7 @@
     <member refid="class_dynamixel_motor_1a18f2840844cccf45203a98a92fbdaf3b" kind="function"><name>ping</name></member>
     <member refid="class_dynamixel_motor_1ac7e96ba9eb9337c308a7b6ee59efb052" kind="function"><name>readPosition</name></member>
     <member refid="class_dynamixel_motor_1ab2acc1a2506ed9e733fda172f64f0901" kind="function"><name>writePosition</name></member>
+    <member refid="class_dynamixel_motor_1a553f058d241fc375d08951cfdd4bf5f6" kind="function"><name>setGoal</name></member>
     <member refid="class_dynamixel_motor_1a9e8ccdb0c4dd8a62a91dc7131835633a" kind="function"><name>setTorque</name></member>
     <member refid="class_dynamixel_motor_1abd308177fcb5e02f2d958db483aec3b2" kind="function"><name>close</name></member>
     <member refid="class_dynamixel_motor_1a0648217ce2808fcaedba60a5bdb7c243" kind="friend"><name>operator&lt;&lt;</name></member>
@@ -45,12 +78,24 @@
   <compound refid="class_motor_indentifier_hasher" kind="class"><name>MotorIndentifierHasher</name>
     <member refid="class_motor_indentifier_hasher_1ae84471186050487d8cb021565264c5bf" kind="function"><name>operator()</name></member>
   </compound>
+  <compound refid="struct_port" kind="struct"><name>Port</name>
+    <member refid="struct_port_1a54720037b1ca6b8a23775d2377dc1985" kind="variable"><name>baudrate</name></member>
+    <member refid="struct_port_1aec254fb0e9cce02f944252d02fb956f8" kind="variable"><name>port</name></member>
+    <member refid="struct_port_1a2cfb70a4b6d730e715042d646ec1d960" kind="function"><name>Port</name></member>
+    <member refid="struct_port_1a40a0a11a126f62ff7db61673b2ffb59a" kind="function"><name>Port</name></member>
+    <member refid="struct_port_1a9009b79195cdc23878b222b05aba5745" kind="function"><name>operator==</name></member>
+  </compound>
+  <compound refid="class_port_hasher" kind="class"><name>PortHasher</name>
+    <member refid="class_port_hasher_1a756593868ac7383116129acb311538b2" kind="function"><name>operator()</name></member>
+  </compound>
   <compound refid="struct_x_m430_w350_t___t_a_b_l_e" kind="struct"><name>XM430W350T_TABLE</name>
     <member refid="struct_x_m430_w350_t___t_a_b_l_e_1ae1bd84050fba26c1d71691fb6af61baf" kind="function"><name>XM430W350T_TABLE</name></member>
   </compound>
-  <compound refid="_dynamixel_helper_8cpp" kind="file"><name>DynamixelHelper.cpp</name>
-    <member refid="_dynamixel_helper_8cpp_1a2e8f02d432492ed4115b428ac6bd2af3" kind="typedef"><name>MotorIdentifier</name></member>
-    <member refid="_dynamixel_helper_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  <compound refid="_arm_controller_8h" kind="file"><name>ArmController.h</name>
+  </compound>
+  <compound refid="_dynamixel_helper_8h" kind="file"><name>DynamixelHelper.h</name>
+    <member refid="_dynamixel_helper_8h_1a2e8f02d432492ed4115b428ac6bd2af3" kind="typedef"><name>MotorIdentifier</name></member>
+    <member refid="_dynamixel_helper_8h_1ab8a34c2ba1bce23340aa699773be24d0" kind="typedef"><name>Port</name></member>
   </compound>
   <compound refid="_dynamixel_motor_8h" kind="file"><name>DynamixelMotor.h</name>
     <member refid="_dynamixel_motor_8h_1a38746ae89b08525b692452bf351aa3ce" kind="typedef"><name>AddressTable</name></member>
@@ -58,12 +103,6 @@
     <member refid="_dynamixel_motor_8h_1a279c1ca91b6fa82f5b75e01e5d85bcb1" kind="function"><name>operator&lt;&lt;</name></member>
   </compound>
   <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
-    <member refid="main_8cpp_1a277f7abca2044f354abe265252cb9252" kind="define"><name>PROTOCOL_VERSION</name></member>
-    <member refid="main_8cpp_1a25e19aa97ff345af42413b33592e5e87" kind="define"><name>DXL_ID</name></member>
-    <member refid="main_8cpp_1a734bbab06e1a9fd2e5522db0221ff6e3" kind="define"><name>BAUDRATE</name></member>
-    <member refid="main_8cpp_1abca33c097566d788d5163e433fc84150" kind="define"><name>DEVICENAME</name></member>
-    <member refid="main_8cpp_1a160f6d2893bb6b89ab3ad5d863c20e3d" kind="function"><name>getch</name></member>
-    <member refid="main_8cpp_1a97e9b1fe8d4c010474637a654aad6566" kind="function"><name>kbhit</name></member>
     <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
   </compound>
   <compound refid="dir_fcb2a60e1810a51543a3cc3a113d0956" kind="dir"><name>/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++</name>

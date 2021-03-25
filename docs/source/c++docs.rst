@@ -6,3 +6,6 @@ C++ Docs
 
 .. doxygenclass:: DynamixelHelper
    :members:
+
+.. doxygenclass:: ArmController
+   :members:
