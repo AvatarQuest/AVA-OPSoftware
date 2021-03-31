@@ -9,7 +9,7 @@
     <includes local="yes">dynamixel_sdk.h</includes>
     <includes refid="_arm_controller_8h" local="yes">ArmController.h</includes>
     <incdepgraph>
-      <node id="12">
+      <node id="13">
         <label>DynamixelHelper.h</label>
         <link refid="_dynamixel_helper_8h_source"/>
         <childnode refid="8" relation="include">
@@ -24,10 +24,10 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="13">
+      <node id="14">
         <label>DynamixelMotor.h</label>
         <link refid="_dynamixel_motor_8h_source"/>
         <childnode refid="2" relation="include">
@@ -36,7 +36,7 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
@@ -62,16 +62,25 @@
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
         <childnode refid="12" relation="include">
         </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
       </node>
-      <node id="14">
+      <node id="15">
         <label>future</label>
       </node>
       <node id="10">
         <label>vector</label>
+      </node>
+      <node id="12">
+        <label>math.h</label>
       </node>
       <node id="3">
         <label>iostream</label>
@@ -120,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/main.cpp" line="17" column="5" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/main.cpp" bodystart="17" bodyend="52"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/main.cpp" line="17" column="5" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/main.cpp" bodystart="17" bodyend="58"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -152,8 +161,8 @@
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>port<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/dev/tty.usbserial-FT4TCRQV&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>baudrate<sp/>=<sp/>57600;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_address_table" kindref="compound">AddressTable</ref><sp/>table<sp/>=<sp/><ref refid="struct_x_m430_w350_t___t_a_b_l_e" kindref="compound">XM430W350T_TABLE</ref>();</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unordered_map&lt;MotorIdentifier,<sp/>AddressTable,<sp/>MotorIndentifierHasher&gt;<sp/>motors;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_address_table_base" kindref="compound">AddressTableBase</ref><sp/>table<sp/>=<sp/><ref refid="struct_x_m430_w350_t___t_a_b_l_e" kindref="compound">XM430W350T_TABLE</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unordered_map&lt;MotorIdentifier,<sp/>AddressTableBase,<sp/>MotorIndentifierHasher&gt;<sp/>motors;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref><sp/>rotation_motor<sp/>=<sp/><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref>(11,<sp/>baudrate,<sp/>port);</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref><sp/>shoulder<sp/>=<sp/><sp/><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref>(12,<sp/>baudrate,<sp/>port);</highlight></codeline>
@@ -163,23 +172,29 @@
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_arm_controller" kindref="compound">ArmController</ref><sp/>controller<sp/>=<sp/><ref refid="class_arm_controller" kindref="compound">ArmController</ref>(rotation_motor,<sp/>shoulder,<sp/>elbow,<sp/>wrist,<sp/>claw,<sp/>table,<sp/>a1,<sp/>a2,<sp/>a3);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>controller.setOffsets(offsets);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>controller.setAllTorque(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>controller.<ref refid="class_arm_controller_1aacb070b41d75f2073066338364f1a7f1" kindref="member">setWristAngle</ref>(300);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//160</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//225</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>motor12.setGoal(2635);</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>motor14.setGoal(920);</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>helper.writePositionAsync(id12,<sp/>2635,<sp/>10);</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>helper.writePositionAsync(id14,<sp/>920,<sp/>10);</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::this_thread::sleep_for(std::chrono::milliseconds(1000));</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::cout<sp/>&lt;&lt;<sp/>motorid12<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>helper.printAll();</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>controller.setDebug(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>controller.setAllTorque(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>std::this_thread::sleep_for(std::chrono::milliseconds(1000));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>controller.<ref refid="class_arm_controller_1a30807a7eea22d05fc1e7dafc010431f0" kindref="member">moveArm</ref>(7,<sp/>7);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>controller.<ref refid="class_arm_controller_1a5e5e83690dbe803d3d9086a2bbcf8437" kindref="member">setRotationMotorAngle</ref>(230);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>std::this_thread::sleep_for(std::chrono::milliseconds(3000));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>controller.<ref refid="class_arm_controller_1a30807a7eea22d05fc1e7dafc010431f0" kindref="member">moveArm</ref>(0,<sp/>0);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>std::this_thread::sleep_for(std::chrono::milliseconds(500));<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>controller.<ref refid="class_arm_controller_1a095d671f56b9060f32b99be1b02ed6a2" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>std::this_thread::sleep_for(std::chrono::milliseconds(1000));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>controller.<ref refid="class_arm_controller_1a30807a7eea22d05fc1e7dafc010431f0" kindref="member">moveArm</ref>(5,<sp/>5);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>controller.<ref refid="class_arm_controller_1a5e5e83690dbe803d3d9086a2bbcf8437" kindref="member">setRotationMotorAngle</ref>(160);<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>std::this_thread::sleep_for(std::chrono::milliseconds(1000));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>controller.<ref refid="class_arm_controller_1a30807a7eea22d05fc1e7dafc010431f0" kindref="member">moveArm</ref>(8,<sp/>3);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>controller.<ref refid="class_arm_controller_1a5e5e83690dbe803d3d9086a2bbcf8437" kindref="member">setRotationMotorAngle</ref>(230);<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::this_thread::sleep_for(std::chrono::milliseconds(1000));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>controller.moveArm(10,<sp/>5);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::this_thread::sleep_for(std::chrono::milliseconds(1000));<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>controller.moveArm(10,<sp/>10);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>helper.printAll();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/main.cpp"/>
   </compounddef>

@@ -9,3 +9,9 @@ C++ Docs
 
 .. doxygenclass:: ArmController
    :members:
+
+.. doxygenstruct:: AddressTableBase
+   :members:
+
+.. doxygenstruct:: MotorIdentifier
+   :members:

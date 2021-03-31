@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="102" column="16" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="102" bodyend="106"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="114" column="16" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="114" bodyend="118"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -40,7 +40,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="94" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="94" bodyend="107"/>
+    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="106" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="106" bodyend="119"/>
     <listofallmembers>
       <member refid="class_port_hasher_1a756593868ac7383116129acb311538b2" prot="public" virt="non-virtual"><scope>PortHasher</scope><name>operator()</name></member>
     </listofallmembers>

@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="21" column="25" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="21" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="26" column="25" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_arm_controller_1aa48069e5b6c8a4f1a3b85744d082c94a" prot="private" static="no" mutable="no">
         <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="22" column="25" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="22" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="27" column="25" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_arm_controller_1ab1aca74abd0182df08c1be04f9ed7cd0" prot="private" static="no" mutable="no">
         <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="22" column="40" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="22" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="27" column="40" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_arm_controller_1a1ada56913a90b8245996f023fdd0b860" prot="private" static="no" mutable="no">
         <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="22" column="49" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="22" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="27" column="49" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_arm_controller_1ae6275874b7bb2aaac4efc4c7c44b2712" prot="private" static="no" mutable="no">
         <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="22" column="55" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="22" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="27" column="55" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_arm_controller_1aa7a4808eb50492a9e38f483a909ef9e1" prot="private" static="no" mutable="no">
         <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="22" column="61" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="22" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="27" column="61" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_arm_controller_1a7f114f1575cc7ec06536f0f6998735f0" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="23" column="16" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="23" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="28" column="16" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_arm_controller_1a67e90896f91f77c9ec7d0493c2c6a59b" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="23" column="19" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="23" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="28" column="19" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_arm_controller_1a02b816069b4798d08f620a00bcb9dac5" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="23" column="22" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="23" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="28" column="22" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_arm_controller_1aca319343c3422c9a6abbd885ef913c34" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="24" column="16" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="24" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="29" column="16" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_arm_controller_1ae8455b95f07d1fca1e92cdd4c4da084a" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="25" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="25" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="30" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -178,14 +178,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="33" column="16" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="33" bodyend="35"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="38" column="16" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="38" bodyend="40"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_arm_controller_1af61e6cbbcae3f26eee757fd91e8af326" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_arm_controller_1a4168fce4040bf5cdc59a38864f6294f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>ArmController::ArmController</definition>
-        <argsstring>(MotorIdentifier rotation_motor, MotorIdentifier shoulder, MotorIdentifier elbow, MotorIdentifier wrist, MotorIdentifier claw, AddressTable table, double a1, double a2, double a3)</argsstring>
+        <argsstring>(MotorIdentifier rotation_motor, MotorIdentifier shoulder, MotorIdentifier elbow, MotorIdentifier wrist, MotorIdentifier claw, AddressTableBase table, double a1, double a2, double a3)</argsstring>
         <name>ArmController</name>
         <param>
           <type><ref refid="struct_motor_identifier" kindref="compound">MotorIdentifier</ref></type>
@@ -208,7 +208,7 @@
           <declname>claw</declname>
         </param>
         <param>
-          <type><ref refid="struct_address_table" kindref="compound">AddressTable</ref></type>
+          <type><ref refid="struct_address_table_base" kindref="compound">AddressTableBase</ref></type>
           <declname>table</declname>
         </param>
         <param>
@@ -314,7 +314,7 @@ Construct a new Arm Controller object</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="58" column="9" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="58" bodyend="78"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="63" column="9" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="63" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="class_arm_controller_1adbf9f75f0adc7d0d909b612da6af0ef5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -438,7 +438,7 @@ Construct a new Arm Controller object</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="93" column="9" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="93" bodyend="105"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="98" column="9" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="98" bodyend="110"/>
       </memberdef>
       <memberdef kind="function" id="class_arm_controller_1afacecd5f6cb95ab03dd3285a8931f10c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -456,7 +456,7 @@ Construct a new Arm Controller object</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="107" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="107" bodyend="113"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="112" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="112" bodyend="118"/>
       </memberdef>
       <memberdef kind="function" id="class_arm_controller_1ae47e667153616fc5dc8be7dbf0b05e6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -473,7 +473,7 @@ Construct a new Arm Controller object</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="115" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="115" bodyend="117"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="120" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="120" bodyend="122"/>
       </memberdef>
       <memberdef kind="function" id="class_arm_controller_1a82e1a369a5f5a3ba4cf84eccb9c91597" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -513,7 +513,7 @@ Construct a new Arm Controller object</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="125" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="125" bodyend="131"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="130" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="130" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="class_arm_controller_1a5e5e83690dbe803d3d9086a2bbcf8437" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -541,7 +541,7 @@ Construct a new Arm Controller object</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="138" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="138" bodyend="140"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="143" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="143" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="class_arm_controller_1ae27a517c3e277fb0d92b9d86c021498d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -569,7 +569,7 @@ Construct a new Arm Controller object</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="147" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="147" bodyend="149"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="152" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="152" bodyend="154"/>
       </memberdef>
       <memberdef kind="function" id="class_arm_controller_1a378bf2844dcdaefe94a3b42ca7f70693" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -597,7 +597,7 @@ Construct a new Arm Controller object</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="156" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="156" bodyend="158"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="161" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="161" bodyend="163"/>
       </memberdef>
       <memberdef kind="function" id="class_arm_controller_1aacb070b41d75f2073066338364f1a7f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -625,7 +625,7 @@ Construct a new Arm Controller object</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="165" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="165" bodyend="167"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="170" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="170" bodyend="172"/>
       </memberdef>
       <memberdef kind="function" id="class_arm_controller_1af4e99e8b9d0fa93d1c6dfaf425938311" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -653,7 +653,7 @@ Construct a new Arm Controller object</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="174" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="174" bodyend="176"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="179" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="179" bodyend="181"/>
       </memberdef>
       <memberdef kind="function" id="class_arm_controller_1aaf58f3b0e55fb9621d00f3574dda52ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -670,11 +670,11 @@ Construct a new Arm Controller object</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="178" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="178" bodyend="184"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="183" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="183" bodyend="189"/>
       </memberdef>
-      <memberdef kind="function" id="class_arm_controller_1a8263b1bcaac7ac6701671fd349c5ef11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int *</type>
-        <definition>int* ArmController::ik</definition>
+      <memberdef kind="function" id="class_arm_controller_1aaf5ec1409e93f57c77a99e4c3ea8404a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; ArmController::ik</definition>
         <argsstring>(double px, double py)</argsstring>
         <name>ik</name>
         <param>
@@ -686,6 +686,7 @@ Construct a new Arm Controller object</para>
           <declname>py</declname>
         </param>
         <briefdescription>
+<para>Returns the angles the arm should move each motor to mvove to a specific x, y position in cm in space. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -705,13 +706,119 @@ Construct a new Arm Controller object</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>int[] of angle values for the shoulder, elbow and wrist </para>
+<simplesect kind="return"><para>double[] of angle values for the shoulder, elbow and wrist </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="193" column="13" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="193" bodyend="195"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="198" column="21" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="198" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1a30807a7eea22d05fc1e7dafc010431f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArmController::moveArm</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>moveArm</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Moves the arm to a speicific x, y postion in cm using inverse kinematics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x poisiton in cm </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y position in cm </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="234" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="234" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1a9f159cbbac3506b41d5d333c357141d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArmController::moveArm</definition>
+        <argsstring>(double x, double y, int delay)</argsstring>
+        <name>moveArm</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+<para>Moves the arm to a speicific x, y postion in cm using inverse kinematics witha delay in between each movement. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x poisiton in cm </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y position in cm </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The delay in milliseconds bewteen each movement </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="258" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="258" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arm_controller_1a095d671f56b9060f32b99be1b02ed6a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArmController::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>A method that &quot;zeros&quot; out the arm by rebooting all motors, putting the arm back to 0, 0 and rotating the roation motor to 180 degrees. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="281" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="281" bodyend="301"/>
       </memberdef>
       <memberdef kind="function" id="class_arm_controller_1a65a42e910e548c23c8abd362fffaf6e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_dynamixel_helper" kindref="compound">DynamixelHelper</ref></type>
@@ -728,7 +835,7 @@ Construct a new Arm Controller object</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="202" column="25" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="202" bodyend="204"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="308" column="25" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="308" bodyend="310"/>
       </memberdef>
       <memberdef kind="function" id="class_arm_controller_1a26ff908c1367608142727f13daa0a1cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_dynamixel_motor" kindref="compound">DynamixelMotor</ref></type>
@@ -758,19 +865,19 @@ Construct a new Arm Controller object</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="212" column="24" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="212" bodyend="214"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="318" column="24" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="318" bodyend="320"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="19" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="19" bodyend="217"/>
+    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" line="24" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/ArmController.h" bodystart="24" bodyend="323"/>
     <listofallmembers>
       <member refid="class_arm_controller_1a7f114f1575cc7ec06536f0f6998735f0" prot="private" virt="non-virtual"><scope>ArmController</scope><name>a1</name></member>
       <member refid="class_arm_controller_1a67e90896f91f77c9ec7d0493c2c6a59b" prot="private" virt="non-virtual"><scope>ArmController</scope><name>a2</name></member>
       <member refid="class_arm_controller_1a02b816069b4798d08f620a00bcb9dac5" prot="private" virt="non-virtual"><scope>ArmController</scope><name>a3</name></member>
-      <member refid="class_arm_controller_1af61e6cbbcae3f26eee757fd91e8af326" prot="public" virt="non-virtual"><scope>ArmController</scope><name>ArmController</name></member>
+      <member refid="class_arm_controller_1a4168fce4040bf5cdc59a38864f6294f2" prot="public" virt="non-virtual"><scope>ArmController</scope><name>ArmController</name></member>
       <member refid="class_arm_controller_1adbf9f75f0adc7d0d909b612da6af0ef5" prot="public" virt="non-virtual"><scope>ArmController</scope><name>ArmController</name></member>
       <member refid="class_arm_controller_1aa7a4808eb50492a9e38f483a909ef9e1" prot="private" virt="non-virtual"><scope>ArmController</scope><name>claw</name></member>
       <member refid="class_arm_controller_1ae8455b95f07d1fca1e92cdd4c4da084a" prot="private" virt="non-virtual"><scope>ArmController</scope><name>debug</name></member>
@@ -778,8 +885,11 @@ Construct a new Arm Controller object</para>
       <member refid="class_arm_controller_1a65a42e910e548c23c8abd362fffaf6e6" prot="public" virt="non-virtual"><scope>ArmController</scope><name>getHelper</name></member>
       <member refid="class_arm_controller_1a26ff908c1367608142727f13daa0a1cf" prot="public" virt="non-virtual"><scope>ArmController</scope><name>getMotor</name></member>
       <member refid="class_arm_controller_1a6f057d90bdb723e9887d8a43786487cc" prot="private" virt="non-virtual"><scope>ArmController</scope><name>helper</name></member>
-      <member refid="class_arm_controller_1a8263b1bcaac7ac6701671fd349c5ef11" prot="public" virt="non-virtual"><scope>ArmController</scope><name>ik</name></member>
+      <member refid="class_arm_controller_1aaf5ec1409e93f57c77a99e4c3ea8404a" prot="public" virt="non-virtual"><scope>ArmController</scope><name>ik</name></member>
+      <member refid="class_arm_controller_1a30807a7eea22d05fc1e7dafc010431f0" prot="public" virt="non-virtual"><scope>ArmController</scope><name>moveArm</name></member>
+      <member refid="class_arm_controller_1a9f159cbbac3506b41d5d333c357141d0" prot="public" virt="non-virtual"><scope>ArmController</scope><name>moveArm</name></member>
       <member refid="class_arm_controller_1aca319343c3422c9a6abbd885ef913c34" prot="private" virt="non-virtual"><scope>ArmController</scope><name>offsets</name></member>
+      <member refid="class_arm_controller_1a095d671f56b9060f32b99be1b02ed6a2" prot="public" virt="non-virtual"><scope>ArmController</scope><name>reset</name></member>
       <member refid="class_arm_controller_1aa48069e5b6c8a4f1a3b85744d082c94a" prot="private" virt="non-virtual"><scope>ArmController</scope><name>rotation_motor</name></member>
       <member refid="class_arm_controller_1aaf58f3b0e55fb9621d00f3574dda52ff" prot="public" virt="non-virtual"><scope>ArmController</scope><name>setAllTorque</name></member>
       <member refid="class_arm_controller_1a82e1a369a5f5a3ba4cf84eccb9c91597" prot="public" virt="non-virtual"><scope>ArmController</scope><name>setAngle</name></member>

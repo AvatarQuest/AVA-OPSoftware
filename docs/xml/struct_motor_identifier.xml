@@ -10,12 +10,13 @@
         <argsstring></argsstring>
         <name>id</name>
         <briefdescription>
+<para>The id of the motor. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="23" column="10" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="23" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="27" column="10" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_motor_identifier_1abd7fd4d627c2f3968e0e78c4aeb7a379" prot="public" static="no" mutable="no">
         <type>uint</type>
@@ -23,12 +24,13 @@
         <argsstring></argsstring>
         <name>baudrate</name>
         <briefdescription>
+<para>The baudrate of the motor. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="24" column="10" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="24" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="32" column="10" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_motor_identifier_1ad3410f0555e0aa1067ccbf06cec17e95" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -36,12 +38,13 @@
         <argsstring></argsstring>
         <name>port</name>
         <briefdescription>
+<para>The port of the motor. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="25" column="17" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="25" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="37" column="17" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -56,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="27" column="5" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="27" bodyend="27"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="39" column="5" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="39" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="struct_motor_identifier_1ab0dc841906f43821d9fcca0614ade0a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -81,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="29" column="5" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="29" bodyend="33"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="41" column="5" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="41" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="struct_motor_identifier_1ad3506059a480a9a17f95f92652c2e8dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -113,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="42" column="10" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="42" bodyend="44"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="54" column="10" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="54" bodyend="56"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -121,7 +124,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="22" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="22" bodyend="45"/>
+    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" line="22" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelHelper.h" bodystart="22" bodyend="57"/>
     <listofallmembers>
       <member refid="struct_motor_identifier_1abd7fd4d627c2f3968e0e78c4aeb7a379" prot="public" virt="non-virtual"><scope>MotorIdentifier</scope><name>baudrate</name></member>
       <member refid="struct_motor_identifier_1afb91fe142ea7ab84069518e3baa3c1b1" prot="public" virt="non-virtual"><scope>MotorIdentifier</scope><name>id</name></member>

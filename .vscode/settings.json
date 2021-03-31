@@ -81,7 +81,8 @@
         "list": "cpp",
         "ranges": "cpp",
         "stop_token": "cpp",
-        "future": "cpp"
+        "future": "cpp",
+        "unordered_set": "cpp"
     },
     "restructuredtext.languageServer.disabled": true,
     "cmake.sourceDirectory": "${workspaceFolder}/.",

@@ -22,8 +22,8 @@ int main() {
 
     const std::string port = "/dev/tty.usbserial-FT4TCRQV";
     const uint baudrate = 57600;
-    const AddressTable table = XM430W350T_TABLE();
-    std::unordered_map<MotorIdentifier, AddressTable, MotorIndentifierHasher> motors;
+    const AddressTableBase table = XM430W350T_TABLE();
+    std::unordered_map<MotorIdentifier, AddressTableBase, MotorIndentifierHasher> motors;
 
     MotorIdentifier rotation_motor = MotorIdentifier(11, baudrate, port);
     MotorIdentifier shoulder =  MotorIdentifier(12, baudrate, port);
@@ -36,19 +36,23 @@ int main() {
     controller.setDebug(true);
 
     controller.setAllTorque(true);
-    // controller.setWristAngle(300);
+
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    controller.moveArm(7, 7);
+    controller.setRotationMotorAngle(230);
+    std::this_thread::sleep_for(std::chrono::milliseconds(3000));
     controller.moveArm(0, 0);
-//160
-//225
-    // motor12.setGoal(2635);
-    // motor14.setGoal(920);
-    // helper.writePositionAsync(id12, 2635, 10);
-    // helper.writePositionAsync(id14, 920, 10);
-
+    std::this_thread::sleep_for(std::chrono::milliseconds(500));   
+    controller.reset();
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    controller.moveArm(5, 5);
+    controller.setRotationMotorAngle(160); 
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    controller.moveArm(8, 3);
+    controller.setRotationMotorAngle(230); 
     // std::this_thread::sleep_for(std::chrono::milliseconds(1000));
-    
-    
-    // std::cout << motorid12 << std::endl;
-
+    // controller.moveArm(10, 5);
+    // std::this_thread::sleep_for(std::chrono::milliseconds(1000)); 
+    // controller.moveArm(10, 10);
     // helper.printAll();
 }

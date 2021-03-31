@@ -20,8 +20,20 @@
  * 
  */
 typedef struct MotorIdentifier {
+    /**
+     * @brief The id of the motor
+     * 
+     */
     uint id;
+    /**
+     * @brief The baudrate of the motor
+     * 
+     */
     uint baudrate;
+    /**
+     * @brief The port of the motor
+     * 
+     */
     std::string port;
 
     MotorIdentifier() {}
@@ -138,7 +150,7 @@ class DynamixelHelper {
         * 
         * @param motor_map A map including a motor identifier as the key and the address table of the corrospoding motor as the value
         */
-        DynamixelHelper(std::unordered_map<MotorIdentifier, AddressTable, MotorIndentifierHasher> motor_map) {
+        DynamixelHelper(std::unordered_map<MotorIdentifier, AddressTableBase, MotorIndentifierHasher> motor_map) {
             std::unordered_map<Port, dynamixel::PortHandler*, PortHasher> portHandlerPool = {};
 
             for (auto motor : motor_map) {
@@ -181,6 +193,10 @@ class DynamixelHelper {
             return motors[identifier];
         }
 
+        /**
+         * @brief Test method, dont use
+         * 
+         */
         bool writePositionAsync(MotorIdentifier indentifier, double position, uint movingThreshold) {
             DynamixelMotor motor = getByMotorIdentifier(indentifier);
             auto writePos = std::async(std::launch::async, &DynamixelMotor::writePosition, &motor, position, movingThreshold);

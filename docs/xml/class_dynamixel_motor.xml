@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="42" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="42" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="54" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_dynamixel_motor_1a56e74eebafa45d820ce5a29049dd083e" prot="private" static="no" mutable="no">
         <type>uint</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="42" column="17" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="42" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="54" column="17" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_dynamixel_motor_1a8a95aa39ae137fee22dc8f5d2efa95c5" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -41,13 +41,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="43" column="21" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="43" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="55" column="21" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="class_dynamixel_motor_1ae9b51e69f5a77733938a48c878044881" prot="public" static="no" mutable="no">
-        <type><ref refid="struct_address_table" kindref="compound">AddressTable</ref></type>
-        <definition>AddressTable DynamixelMotor::addressTable</definition>
+      <memberdef kind="variable" id="class_dynamixel_motor_1a72d89e48f3b8ad7be5c3ec28a49c9858" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_address_table_base" kindref="compound">AddressTableBase</ref></type>
+        <definition>AddressTableBase DynamixelMotor::addressTable</definition>
         <argsstring></argsstring>
         <name>addressTable</name>
         <briefdescription>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="68" column="22" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="68" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="80" column="26" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_dynamixel_motor_1a10a04f95bfed29b7e5db0a93b18f210b" prot="public" static="no" mutable="no">
         <type>dynamixel::PortHandler *</type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="72" column="32" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="72" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="84" column="32" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_dynamixel_motor_1a82336f1c1fa00d95087d7eff364e6504" prot="public" static="no" mutable="no">
         <type>dynamixel::PacketHandler *</type>
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="76" column="34" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="76" bodyend="-1"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="88" column="34" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="88" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -108,14 +108,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="46" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="46" bodyend="62"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="58" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="58" bodyend="74"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_dynamixel_motor_1a10b7d448972a3ade8e9c91bf0e48ca68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_dynamixel_motor_1a4f8614d5c62d5e56efbdc512de8160fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>DynamixelMotor::DynamixelMotor</definition>
-        <argsstring>(uint id=0, uint baudrate=0, std::string port=nullptr, AddressTable addressTable=AddressTable())</argsstring>
+        <argsstring>(uint id=0, uint baudrate=0, std::string port=nullptr, AddressTableBase addressTable=AddressTableBase())</argsstring>
         <name>DynamixelMotor</name>
         <param>
           <type>uint</type>
@@ -133,9 +133,9 @@
           <defval>nullptr</defval>
         </param>
         <param>
-          <type><ref refid="struct_address_table" kindref="compound">AddressTable</ref></type>
+          <type><ref refid="struct_address_table_base" kindref="compound">AddressTableBase</ref></type>
           <declname>addressTable</declname>
-          <defval><ref refid="struct_address_table" kindref="compound">AddressTable</ref>()</defval>
+          <defval><ref refid="struct_address_table_base" kindref="compound">AddressTableBase</ref>()</defval>
         </param>
         <briefdescription>
 <para>Construct a new Dynamixel Motor object. </para>
@@ -178,12 +178,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="86" column="9" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="86" bodyend="94"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="98" column="9" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="98" bodyend="106"/>
       </memberdef>
-      <memberdef kind="function" id="class_dynamixel_motor_1ac8de3520118a0d989cfcf6079c018d97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_dynamixel_motor_1a7e6a0f58c9848f4f84e8bca8b28fab4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>DynamixelMotor::DynamixelMotor</definition>
-        <argsstring>(uint id, uint baudrate, std::string port, AddressTable addressTable, dynamixel::PortHandler *portHandler, dynamixel::PacketHandler *packetHandler)</argsstring>
+        <argsstring>(uint id, uint baudrate, std::string port, AddressTableBase addressTable, dynamixel::PortHandler *portHandler, dynamixel::PacketHandler *packetHandler)</argsstring>
         <name>DynamixelMotor</name>
         <param>
           <type>uint</type>
@@ -198,7 +198,7 @@
           <declname>port</declname>
         </param>
         <param>
-          <type><ref refid="struct_address_table" kindref="compound">AddressTable</ref></type>
+          <type><ref refid="struct_address_table_base" kindref="compound">AddressTableBase</ref></type>
           <declname>addressTable</declname>
         </param>
         <param>
@@ -258,7 +258,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="105" column="9" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="105" bodyend="113"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="117" column="9" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="117" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="class_dynamixel_motor_1a497f29d608ad325deaae34cd35913ea9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -275,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="122" column="13" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="122" bodyend="124"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="134" column="13" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="134" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="class_dynamixel_motor_1a3386dc38db17fd8684a5e8234852b64b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -292,7 +292,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="131" column="13" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="131" bodyend="133"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="143" column="13" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="143" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="class_dynamixel_motor_1aac65e5f317465460da6577dab6a1dde9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
@@ -309,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="140" column="21" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="140" bodyend="142"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="152" column="21" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="152" bodyend="154"/>
       </memberdef>
       <memberdef kind="function" id="class_dynamixel_motor_1af1dd11564ddcb81e6378746158ccda36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -328,7 +328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="150" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="150" bodyend="168"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="162" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="162" bodyend="180"/>
       </memberdef>
       <memberdef kind="function" id="class_dynamixel_motor_1a18f2840844cccf45203a98a92fbdaf3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -347,7 +347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="176" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="176" bodyend="187"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="188" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="188" bodyend="199"/>
       </memberdef>
       <memberdef kind="function" id="class_dynamixel_motor_1ac7e96ba9eb9337c308a7b6ee59efb052" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int32_t</type>
@@ -364,7 +364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="194" column="17" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="194" bodyend="202"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="206" column="17" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="206" bodyend="214"/>
       </memberdef>
       <memberdef kind="function" id="class_dynamixel_motor_1ab2acc1a2506ed9e733fda172f64f0901" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -407,7 +407,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="212" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="212" bodyend="226"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="224" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="224" bodyend="238"/>
       </memberdef>
       <memberdef kind="function" id="class_dynamixel_motor_1a553f058d241fc375d08951cfdd4bf5f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -424,7 +424,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="228" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="228" bodyend="233"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="240" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="240" bodyend="245"/>
       </memberdef>
       <memberdef kind="function" id="class_dynamixel_motor_1a9e8ccdb0c4dd8a62a91dc7131835633a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -456,7 +456,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="242" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="242" bodyend="246"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="254" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="254" bodyend="258"/>
       </memberdef>
       <memberdef kind="function" id="class_dynamixel_motor_1abd308177fcb5e02f2d958db483aec3b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -470,7 +470,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="251" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="251" bodyend="253"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="263" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="263" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dynamixel_motor_1aa3b70205c94bb7b82712870aaf8d8d37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DynamixelMotor::reboot</definition>
+        <argsstring>()</argsstring>
+        <name>reboot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="267" column="14" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="267" bodyend="271"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -493,7 +506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="115" column="16"/>
+        <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="127" column="16"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -510,18 +523,18 @@
         </childnode>
       </node>
       <node id="2">
-        <label>AddressTable</label>
-        <link refid="struct_address_table"/>
+        <label>AddressTableBase</label>
+        <link refid="struct_address_table_base"/>
       </node>
     </collaborationgraph>
-    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="40" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="40" bodyend="254"/>
+    <location file="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" line="52" column="1" bodyfile="/Users/adityapawar/Documents/GitHub/AVA-OPSoftware/src/c++/DynamixelMotor.h" bodystart="52" bodyend="272"/>
     <listofallmembers>
-      <member refid="class_dynamixel_motor_1ae9b51e69f5a77733938a48c878044881" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>addressTable</name></member>
+      <member refid="class_dynamixel_motor_1a72d89e48f3b8ad7be5c3ec28a49c9858" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>addressTable</name></member>
       <member refid="class_dynamixel_motor_1a56e74eebafa45d820ce5a29049dd083e" prot="private" virt="non-virtual"><scope>DynamixelMotor</scope><name>baudrate</name></member>
       <member refid="class_dynamixel_motor_1a496eb35fcb792840127a8b95b1080670" prot="protected" virt="non-virtual"><scope>DynamixelMotor</scope><name>checkCommResult</name></member>
       <member refid="class_dynamixel_motor_1abd308177fcb5e02f2d958db483aec3b2" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>close</name></member>
-      <member refid="class_dynamixel_motor_1a10b7d448972a3ade8e9c91bf0e48ca68" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>DynamixelMotor</name></member>
-      <member refid="class_dynamixel_motor_1ac8de3520118a0d989cfcf6079c018d97" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>DynamixelMotor</name></member>
+      <member refid="class_dynamixel_motor_1a4f8614d5c62d5e56efbdc512de8160fd" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>DynamixelMotor</name></member>
+      <member refid="class_dynamixel_motor_1a7e6a0f58c9848f4f84e8bca8b28fab4a" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>DynamixelMotor</name></member>
       <member refid="class_dynamixel_motor_1a3386dc38db17fd8684a5e8234852b64b" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>getBaudrate</name></member>
       <member refid="class_dynamixel_motor_1a497f29d608ad325deaae34cd35913ea9" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>getId</name></member>
       <member refid="class_dynamixel_motor_1aac65e5f317465460da6577dab6a1dde9" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>getPort</name></member>
@@ -533,6 +546,7 @@
       <member refid="class_dynamixel_motor_1a8a95aa39ae137fee22dc8f5d2efa95c5" prot="private" virt="non-virtual"><scope>DynamixelMotor</scope><name>port</name></member>
       <member refid="class_dynamixel_motor_1a10a04f95bfed29b7e5db0a93b18f210b" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>portHandler</name></member>
       <member refid="class_dynamixel_motor_1ac7e96ba9eb9337c308a7b6ee59efb052" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>readPosition</name></member>
+      <member refid="class_dynamixel_motor_1aa3b70205c94bb7b82712870aaf8d8d37" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>reboot</name></member>
       <member refid="class_dynamixel_motor_1a553f058d241fc375d08951cfdd4bf5f6" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>setGoal</name></member>
       <member refid="class_dynamixel_motor_1a9e8ccdb0c4dd8a62a91dc7131835633a" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>setTorque</name></member>
       <member refid="class_dynamixel_motor_1ab2acc1a2506ed9e733fda172f64f0901" prot="public" virt="non-virtual"><scope>DynamixelMotor</scope><name>writePosition</name></member>

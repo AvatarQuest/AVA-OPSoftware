@@ -17,16 +17,28 @@
  * @brief A structure to deal with address table values
  * 
  */
-typedef struct AddressTable {
+typedef struct AddressTableBase {
     typedef uint address;
+    /**
+     * @brief The address for enabling the torque of the motor
+     * 
+     */
     address TORQUE_ENABLE;
+    /**
+     * @brief The address for setting the goal position of the motor
+     * 
+     */
     address GOAL_POSITION;
+    /**
+     * @brief The address for getting the present postion of the motor
+     * 
+     */
     address PRESENT_POSITION;
 
-    AddressTable() {};
-} AddressTable;
+    AddressTableBase() {};
+} AddressTableBase;
 
-typedef struct XM430W350T_TABLE: AddressTable {
+typedef struct XM430W350T_TABLE: AddressTableBase {
     XM430W350T_TABLE() {
         TORQUE_ENABLE = 64;
         GOAL_POSITION = 116;
@@ -65,7 +77,7 @@ class DynamixelMotor {
         /**
          * The address table with memory location values
          */
-        AddressTable addressTable;
+        AddressTableBase addressTable;
         /**
          * The port handler to the corresponding port
          */
@@ -83,7 +95,7 @@ class DynamixelMotor {
          * @param port The port of the motor
          * @param addressTable The address table of the specific model of the dynamixel containing the memory values
          */
-        DynamixelMotor(uint id=0, uint baudrate=0, std::string port=nullptr, AddressTable addressTable=AddressTable()) {
+        DynamixelMotor(uint id=0, uint baudrate=0, std::string port=nullptr, AddressTableBase addressTable=AddressTableBase()) {
             this->id = id;
             this->baudrate = baudrate;
             this->port = port;
@@ -102,7 +114,7 @@ class DynamixelMotor {
          * @param portHandler The dynamixel port handler pointer
          * @param packetHandler The dynamixel packet handler pointer
          */
-        DynamixelMotor(uint id, uint baudrate, std::string port, AddressTable addressTable, dynamixel::PortHandler *portHandler, dynamixel::PacketHandler *packetHandler) {
+        DynamixelMotor(uint id, uint baudrate, std::string port, AddressTableBase addressTable, dynamixel::PortHandler *portHandler, dynamixel::PacketHandler *packetHandler) {
             this->id = id;
             this->baudrate = baudrate;
             this->port = port;
@@ -152,7 +164,7 @@ class DynamixelMotor {
                 std::cout << "Opened port " << port << " succesfully" << std::endl;
             } else {
                 std::cout << "Failed to open port " << port << std::endl;
-                std::cout << "Did you run \"sudo chmod a+rw " << port << "\"? Check if the port is being used by another program" << std::endl;
+                std::cout << "Did you run \"sudo chmod a+rw " << port << "\"? Also check if the port is being used by another program." << std::endl;
                 return false;
             }
  
@@ -251,15 +263,21 @@ class DynamixelMotor {
         void close() {
             portHandler->closePort();
         }
+
+        bool reboot() {
+            uint8_t error;
+            int result = packetHandler->reboot(portHandler, id, &error);
+            return checkCommResult(result, error);
+        }
 };
 
 std::ostream & operator << (std::ostream &out, DynamixelMotor &motor) {
-    out << "Dynamixel Motor - ID: " << motor.getId() << ", Baudrate: " << motor.getBaudrate() << ", Port: " << motor.getPort() << std::endl; 
+    out << "Dynamixel Motor - ID: " << motor.getId() << ", Baudrate: " << motor.getBaudrate() << ", Port: " << motor.getPort(); 
     return out; 
 } 
 
 // int main() {
-//     AddressTable table = XM430W350T_TABLE();
+//     AddressTableBase table = XM430W350T_TABLE();
 
 //     DynamixelMotor motor = DynamixelMotor(12, 57600, "/dev/tty.usbserial-FT4TCRQV", table);
 //     if (!motor.init()) {

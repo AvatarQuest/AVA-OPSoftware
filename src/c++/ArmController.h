@@ -12,6 +12,9 @@
 #include <string>
 #include <vector>
 #include <cmath>
+#include <math.h>
+#include <chrono>
+#include <thread>
 
 #include "dynamixel_sdk.h"                                  // Uses Dynamixel SDK library
 #include "DynamixelHelper.h"
@@ -57,7 +60,7 @@ class ArmController {
          * @param a2 The length for a2
          * @param a3 The lenght for a3
          */
-        ArmController(MotorIdentifier rotation_motor, MotorIdentifier shoulder, MotorIdentifier elbow, MotorIdentifier wrist, MotorIdentifier claw, AddressTable table, double a1, double a2, double a3) {
+        ArmController(MotorIdentifier rotation_motor, MotorIdentifier shoulder, MotorIdentifier elbow, MotorIdentifier wrist, MotorIdentifier claw, AddressTableBase table, double a1, double a2, double a3) {
             this->rotation_motor = rotation_motor;
             this->shoulder = shoulder;
             this->elbow = elbow;
@@ -68,7 +71,7 @@ class ArmController {
             this->a2 = a2;
             this->a3 = a3;
 
-            std::unordered_map<MotorIdentifier, AddressTable, MotorIndentifierHasher> motor_map;
+            std::unordered_map<MotorIdentifier, AddressTableBase, MotorIndentifierHasher> motor_map;
 
             motor_map[rotation_motor] = table;
             motor_map[shoulder] = table;
@@ -127,7 +130,7 @@ class ArmController {
         void setAngle(MotorIdentifier id, double angle) {
             DynamixelMotor motor = helper.getByMotorIdentifier(id);
             if (debug) {
-                std::cout << "Moving: " << motor << ", to angle " << angle << std::endl;
+                std::cout << "Moving: " << motor << " to angle " << angle << std::endl;
             }
             motor.setGoal(thetaToPos(angle));
         }
@@ -186,7 +189,7 @@ class ArmController {
         }
         
         /**
-         * @brief 
+         * @brief Returns the angles the arm should move each motor to mvove to a specific x, y position in cm in space
          * 
          * @param px 
          * @param py 
@@ -222,14 +225,79 @@ class ArmController {
             return angles;
         }
 
+        /**
+         * @brief Moves the arm to a speicific x, y postion in cm using inverse kinematics
+         * 
+         * @param x The x poisiton in cm
+         * @param y The y position in cm
+         */
         void moveArm(double x, double y) {
             std::vector<double> angles = ik(x, y);
-            std::cout << angles[0] << std::endl;
-            std::cout << angles[1] << std::endl;
-            std::cout << angles[2] << std::endl;
+            if (std::isnan(angles[0]) || std::isnan(angles[0]) || std::isnan(angles[0])) {
+                std::cout << "Invalid position, not moving the arm" << std::endl;
+                return;
+            } 
+            if (debug) {
+                std::cout << angles[0] << std::endl;
+                std::cout << angles[1] << std::endl;
+                std::cout << angles[2] << std::endl;
+            }
+                
             setShoulderAngle(angles[0]);
             setElbowAngle(angles[1]);
             setWristAngle(angles[2]);
+        }
+
+        /**
+         * @brief Moves the arm to a speicific x, y postion in cm using inverse kinematics witha delay in between each movement
+         * 
+         * @param x The x poisiton in cm
+         * @param y The y position in cm
+         * @param delay The delay in milliseconds bewteen each movement
+         */
+        void moveArm(double x, double y, int delay) {
+            std::vector<double> angles = ik(x, y);
+            if (std::isnan(angles[0]) || std::isnan(angles[0]) || std::isnan(angles[0])) {
+                std::cout << "Invalid position, not moving the arm" << std::endl;
+                return;
+            } 
+            if (debug) {
+                std::cout << "Shoulder moving to: " << angles[0] << std::endl;
+                std::cout << "Elbow moving to: " << angles[1] << std::endl;
+                std::cout << "Wrist moving to: " << angles[2] << std::endl;
+            }
+            
+            setShoulderAngle(angles[0]);
+            std::this_thread::sleep_for(std::chrono::milliseconds(delay));
+            setElbowAngle(angles[1]);
+            std::this_thread::sleep_for(std::chrono::milliseconds(delay));
+            setWristAngle(angles[2]);
+        }
+
+        /**
+         * @brief A method that "zeros" out the arm by rebooting all motors, putting the arm back to 0, 0 and rotating the roation motor to 180 degrees
+         * 
+         */
+        void reset() {
+            setAllTorque(false);
+
+            bool error = false;
+            if (!helper.getByMotorIdentifier(rotation_motor).reboot()) error = true;
+            if (!helper.getByMotorIdentifier(shoulder).reboot()) error = true;
+            if (!helper.getByMotorIdentifier(elbow).reboot()) error = true;
+            if (!helper.getByMotorIdentifier(wrist).reboot()) error = true;
+            if (!helper.getByMotorIdentifier(claw).reboot()) error = true;
+
+            if (error) {
+                std::cout << "An error occured while rebooting, not moving the arm to (0, 0)" << std::endl;
+                return;
+            }
+            
+            std::this_thread::sleep_for(std::chrono::milliseconds(3000));
+            setAllTorque(true);
+            moveArm(0, 0, 100);
+            std::this_thread::sleep_for(std::chrono::milliseconds(500));
+            setRotationMotorAngle(180);
         }
 
         /**
