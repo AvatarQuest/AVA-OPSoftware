@@ -7,6 +7,8 @@ using SimpleJSON;
 using ROSBridgeLib.geometry_msgs;
 using ROSBridgeLib.std_msgs;
 
+// no using Debug.Log()
+
 public class InputController : MonoBehaviour
 {
     Rigidbody rb;
@@ -38,7 +40,7 @@ public class InputController : MonoBehaviour
 
         botMsg = new Vector3Msg(xMove, yMove, 0);
         armMsg = new Vector3Msg(xArm, yArm, 0);
-        Debug.Log(botMove);
+        //Debug.Log(botMove);
         
 
         // Debug.Log("Sending MSG");
@@ -49,6 +51,8 @@ public class InputController : MonoBehaviour
         rosObj.GetComponent<ROSInitializer>().ros.Publish(
             VectorPublisher.GetMessageTopic(), armMsg
         );
+
+        // ?
         
     }
 
@@ -85,32 +89,32 @@ public class InputController : MonoBehaviour
         //Moving Arm
         controls.Gameplay.RStick.performed += ctx => {
             armMove = ctx.ReadValue<Vector2>();
-            // Vector3Msg vectorMsg = new Vector3Msg();
+            Vector2Msg armPositionMsg = new Vector2Msg(armMove);
+            //Vector3Msg vectorMsg = new Vector3Msg();
             // vectorMsg.x = armMove.x;
             // vectorMsg.y = armMove.y;
             // vectorMsg.z = 0;
 
-            // msg = new StringMsg("Controlling Arm: " + armMove);
-            // Debug.Log("Sending MSG");
-            // rosObj.GetComponent<ROSInitializer>().ros.Publish(
-            //     VectorPublisher.GetMessageTopic(), msg
-            // );
+            
+            //Debug.Log("Sending MSG");
+            rosObj.GetComponent<ROSInitializer>().ros.Publish(
+                ArmPositionPublisher.GetMessageTopic(), armPositionMsg
+            );
         };
 
         controls.Gameplay.RStick.canceled += ctx => {
             armMove = Vector2.zero;
-            // msg = new StringMsg("STOP Controlling Arm");
-            // Debug.Log("Sending MSG");
-            // rosObj.GetComponent<ROSInitializer>().ros.Publish(
-            //     VectorPublisher.GetMessageTopic(), msg
-            // );
+            rosObj.GetComponent<ROSInitializer>().ros.Publish(
+                ArmPositionPublisher.GetMessageTopic(), armPositionMsg
+            );
         };
 
+        // no such thing as LBumper and RBumper? - Canis
         controls.Gameplay.LBumper.performed += ctx => clawClose();
         controls.Gameplay.LBumper.canceled += ctx => clawCloseDone();
 
         controls.Gameplay.RBumper.performed += ctx => clawOpen();
-        controls.Gameplay.RBumper.canceled += ctx => clawOpen();
+        controls.Gameplay.RBumper.canceled += ctx => clawOpenDone();
         
 
         controls.Gameplay.DUp.performed += ctx => armUp();
@@ -138,7 +142,9 @@ public class InputController : MonoBehaviour
         controls.Gameplay.AButton.performed += ctx => volDown();
     }
 
-    
+
+    // add publishers
+
     //Basic Requirements for Starting and Stopping Input Feeds
     void OnEnable() {
         controls.Gameplay.Enable();
@@ -150,7 +156,8 @@ public class InputController : MonoBehaviour
 
     //Arm Up + Down
     void armUp() {
-       isUp = true; 
+       isUp = true;
+
     }
 
     void armUpDone() {
@@ -193,7 +200,7 @@ public class InputController : MonoBehaviour
 
     //Kill Switch
     void kill() {
-        Debug.Log("Program Kill Switch");
+        //Debug.Log("Program Kill Switch");
     }
 
     //Claw Controls
