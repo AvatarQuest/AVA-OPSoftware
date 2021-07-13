@@ -34,22 +34,32 @@ int main() {
     ArmController controller = ArmController(rotation_motor, shoulder, elbow, wrist, claw, table, a1, a2, a3);
     controller.setOffsets(offsets);
     controller.setDebug(true);
+    controller.reset();
 
     controller.setAllTorque(true);
-
-    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
-    controller.moveArm(7, 7);
-    controller.setRotationMotorAngle(230);
-    std::this_thread::sleep_for(std::chrono::milliseconds(3000));
-    controller.moveArm(0, 0);
-    std::this_thread::sleep_for(std::chrono::milliseconds(500));   
-    controller.reset();
-    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
-    controller.moveArm(5, 5);
-    controller.setRotationMotorAngle(160); 
-    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
-    controller.moveArm(8, 3);
-    controller.setRotationMotorAngle(230); 
+    double angle = 160;
+    
+    for (double i = 0; i < 7; i += 0.5) {
+        controller.setRotationMotorAngle(angle);
+        angle += 2;
+        controller.moveArm(i, i);
+        std::this_thread::sleep_for(std::chrono::milliseconds(30));
+    }
+    // std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    // controller.moveArm(8, 3);
+    // controller.setRotationMotorAngle(230); 
+    // controller.moveArm(7, 7);
+    // controller.setRotationMotorAngle(230);
+    // std::this_thread::sleep_for(std::chrono::milliseconds(3000));
+    // controller.moveArm(0, 0);
+    // std::this_thread::sleep_for(std::chrono::milliseconds(500));   
+    // controller.reset();
+    // std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    // controller.moveArm(5, 5);
+    // controller.setRotationMotorAngle(160); 
+    // std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    // controller.moveArm(8, 3);
+    // controller.setRotationMotorAngle(230); 
     // std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     // controller.moveArm(10, 5);
     // std::this_thread::sleep_for(std::chrono::milliseconds(1000)); 
