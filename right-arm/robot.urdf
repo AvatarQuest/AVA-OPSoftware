@@ -1,515 +1,381 @@
 <robot name="onshape">
-<link name="link_forearm">
+<link name="link_base_link">
 <visual>
-<origin xyz="0.00227752 -0.0347364 0.361461" rpy="-8.47755e-15 0.204049 0.979301" />
+<origin xyz="0.0312733 0.0316299 -0.0407984" rpy="-3.14159 6.52412e-16 9.27658e-32" />
 <geometry>
-<mesh filename="package://wristmountbracket.stl"/>
+<mesh filename="package://.5_hexbearing_1.125_od.stl"/>
 </geometry>
-<material name="wristmountbracket_material">
+<material name=".5_hexbearing_1.125_od_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0312733 0.0316299 -0.0407984" rpy="-3.14159 6.52412e-16 9.27658e-32" />
+<geometry>
+<mesh filename="package://.5_hexbearing_1.125_od.stl"/>
+</geometry>
+<material name=".5_hexbearing_1.125_od_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="-0.050972 -0.0908091 -0.0664109" rpy="1.5708 -1.23179e-14 1.10732" />
+<geometry>
+<mesh filename="package://.5in_hex_collar.stl"/>
+</geometry>
+<material name=".5in_hex_collar_material">
+<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.050972 -0.0908091 -0.0664109" rpy="1.5708 -1.23179e-14 1.10732" />
+<geometry>
+<mesh filename="package://.5in_hex_collar.stl"/>
+</geometry>
+<material name=".5in_hex_collar_material">
+<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="-0.050972 -0.0908091 -0.0376234" rpy="2.96018e-17 4.29356e-16 -0.591496" />
+<geometry>
+<mesh filename="package://baseplaterev2.stl"/>
+</geometry>
+<material name="baseplaterev2_material">
+<color rgba="0.74902 0.74902 0.74902 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.050972 -0.0908091 -0.0376234" rpy="2.96018e-17 4.29356e-16 -0.591496" />
+<geometry>
+<mesh filename="package://baseplaterev2.stl"/>
+</geometry>
+<material name="baseplaterev2_material">
+<color rgba="0.74902 0.74902 0.74902 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.0696264 0.038978 -0.0915984" rpy="4.7541e-17 4.39226e-16 -0.591496" />
+<geometry>
+<mesh filename="package://prototypestand2rev2.stl"/>
+</geometry>
+<material name="prototypestand2rev2_material">
 <color rgba="0.411765 0.411765 0.411765 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="0.00227752 -0.0347364 0.361461" rpy="-8.47755e-15 0.204049 0.979301" />
+<origin xyz="0.0696264 0.038978 -0.0915984" rpy="4.7541e-17 4.39226e-16 -0.591496" />
 <geometry>
-<mesh filename="package://wristmountbracket.stl"/>
+<mesh filename="package://prototypestand2rev2.stl"/>
 </geometry>
-<material name="wristmountbracket_material">
+<material name="prototypestand2rev2_material">
 <color rgba="0.411765 0.411765 0.411765 1.0"/>
 </material>
 </collision>
 <visual>
-<origin xyz="-0.0189681 -0.0304971 0.375502" rpy="-1.36675 5.75605e-15 2.5501" />
+<origin xyz="0.0312733 0.0316299 0.0129016" rpy="-2.16184 -1.5708 0" />
 <geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+<mesh filename="package://neo550.stl"/>
 </geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<material name="neo550_material">
+<color rgba="0.752941 0.752941 0.752941 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0312733 0.0316299 0.0129016" rpy="-2.16184 -1.5708 0" />
+<geometry>
+<mesh filename="package://neo550.stl"/>
+</geometry>
+<material name="neo550_material">
+<color rgba="0.752941 0.752941 0.752941 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="-0.050972 -0.0908091 -0.0559859" rpy="-1.5708 6.96087e-16 2.15452" />
+<geometry>
+<mesh filename="package://24t_htd_pulley_9mm.stl"/>
+</geometry>
+<material name="24t_htd_pulley_9mm_material">
+<color rgba="0.752941 0.752941 0.752941 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.050972 -0.0908091 -0.0559859" rpy="-1.5708 6.96087e-16 2.15452" />
+<geometry>
+<mesh filename="package://24t_htd_pulley_9mm.stl"/>
+</geometry>
+<material name="24t_htd_pulley_9mm_material">
+<color rgba="0.752941 0.752941 0.752941 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.0312733 0.0316299 -0.0221986" rpy="-2.69161 1.5708 0" />
+<geometry>
+<mesh filename="package://217-2742.stl"/>
+</geometry>
+<material name="217-2742_material">
+<color rgba="0.752941 0.752941 0.752941 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0312733 0.0316299 -0.0221986" rpy="-2.69161 1.5708 0" />
+<geometry>
+<mesh filename="package://217-2742.stl"/>
+</geometry>
+<material name="217-2742_material">
+<color rgba="0.752941 0.752941 0.752941 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.0312733 0.0316299 -0.0664109" rpy="-1.5708 -5.74653e-16 -2.76056" />
+<geometry>
+<mesh filename="package://.5in_hex_collar.stl"/>
+</geometry>
+<material name=".5in_hex_collar_material">
+<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0312733 0.0316299 -0.0664109" rpy="-1.5708 -5.74653e-16 -2.76056" />
+<geometry>
+<mesh filename="package://.5in_hex_collar.stl"/>
+</geometry>
+<material name=".5in_hex_collar_material">
+<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.0312733 0.0316299 -0.00294843" rpy="1.5708 -9.38059e-16 2.5501" />
+<geometry>
+<mesh filename="package://217-2816-001_rev1.stl"/>
+</geometry>
+<material name="217-2816-001_rev1_material">
+<color rgba="0.866667 0.909804 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0312733 0.0316299 -0.00294843" rpy="1.5708 -9.38059e-16 2.5501" />
+<geometry>
+<mesh filename="package://217-2816-001_rev1.stl"/>
+</geometry>
+<material name="217-2816-001_rev1_material">
+<color rgba="0.866667 0.909804 1 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.0312733 0.0316299 -0.0664109" rpy="-1.5708 -5.74653e-16 -2.76056" />
+<geometry>
+<mesh filename="package://.5in_hex_collar.stl"/>
+</geometry>
+<material name=".5in_hex_collar_material">
+<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0312733 0.0316299 -0.0664109" rpy="-1.5708 -5.74653e-16 -2.76056" />
+<geometry>
+<mesh filename="package://.5in_hex_collar.stl"/>
+</geometry>
+<material name=".5in_hex_collar_material">
+<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.0312733 0.0316299 -0.0559859" rpy="-1.5708 -5.33776e-16 -2.76056" />
+<geometry>
+<mesh filename="package://18t_htd_pulley_9mm1.stl"/>
+</geometry>
+<material name="18t_htd_pulley_9mm1_material">
+<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0312733 0.0316299 -0.0559859" rpy="-1.5708 -5.33776e-16 -2.76056" />
+<geometry>
+<mesh filename="package://18t_htd_pulley_9mm1.stl"/>
+</geometry>
+<material name="18t_htd_pulley_9mm1_material">
+<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="-0.050972 -0.0908091 -0.0664109" rpy="1.5708 -1.91053e-15 2.47543" />
+<geometry>
+<mesh filename="package://.5in_hex_collar.stl"/>
+</geometry>
+<material name=".5in_hex_collar_material">
+<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.050972 -0.0908091 -0.0664109" rpy="1.5708 -1.91053e-15 2.47543" />
+<geometry>
+<mesh filename="package://.5in_hex_collar.stl"/>
+</geometry>
+<material name=".5in_hex_collar_material">
+<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.0312733 0.0316299 0.0229016" rpy="-1.5708 7.13515e-16 -0.591046" />
+<geometry>
+<mesh filename="package://rs_550_motor_mounting_plate.stl"/>
+</geometry>
+<material name="rs_550_motor_mounting_plate_material">
+<color rgba="0.25098 0.25098 0.25098 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0312733 0.0316299 0.0229016" rpy="-1.5708 7.13515e-16 -0.591046" />
+<geometry>
+<mesh filename="package://rs_550_motor_mounting_plate.stl"/>
+</geometry>
+<material name="rs_550_motor_mounting_plate_material">
+<color rgba="0.25098 0.25098 0.25098 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.0312733 0.0316299 -0.0371986" rpy="2.40948 -1.5708 0" />
+<geometry>
+<mesh filename="package://217-2742.stl"/>
+</geometry>
+<material name="217-2742_material">
+<color rgba="0.752941 0.752941 0.752941 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0312733 0.0316299 -0.0371986" rpy="2.40948 -1.5708 0" />
+<geometry>
+<mesh filename="package://217-2742.stl"/>
+</geometry>
+<material name="217-2742_material">
+<color rgba="0.752941 0.752941 0.752941 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="-0.050972 -0.0908091 -0.0407984" rpy="3.14159 -5.84958e-17 -1.71336" />
+<geometry>
+<mesh filename="package://.5_hexbearing_1.125_od.stl"/>
+</geometry>
+<material name=".5_hexbearing_1.125_od_material">
 <color rgba="0.956863 0.956863 0.956863 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="-0.0189681 -0.0304971 0.375502" rpy="-1.36675 5.75605e-15 2.5501" />
+<origin xyz="-0.050972 -0.0908091 -0.0407984" rpy="3.14159 -5.84958e-17 -1.71336" />
 <geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+<mesh filename="package://.5_hexbearing_1.125_od.stl"/>
 </geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<material name=".5_hexbearing_1.125_od_material">
 <color rgba="0.956863 0.956863 0.956863 1.0"/>
 </material>
 </collision>
 <visual>
-<origin xyz="-0.025444 -0.0304535 0.303942" rpy="-3.06214 -0.188143 -2.56476" />
+<origin xyz="0.0312733 0.0316299 -0.0156484" rpy="1.5708 -3.87577e-16 -0.591496" />
 <geometry>
-<mesh filename="package://forearmbodystandoff.stl"/>
+<mesh filename="package://217-2816-001_rev1.stl"/>
 </geometry>
-<material name="forearmbodystandoff_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
+<material name="217-2816-001_rev1_material">
+<color rgba="0.866667 0.909804 1 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="-0.025444 -0.0304535 0.303942" rpy="-3.06214 -0.188143 -2.56476" />
+<origin xyz="0.0312733 0.0316299 -0.0156484" rpy="1.5708 -3.87577e-16 -0.591496" />
 <geometry>
-<mesh filename="package://forearmbodystandoff.stl"/>
+<mesh filename="package://217-2816-001_rev1.stl"/>
 </geometry>
-<material name="forearmbodystandoff_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
+<material name="217-2816-001_rev1_material">
+<color rgba="0.866667 0.909804 1 1.0"/>
 </material>
 </collision>
 <visual>
-<origin xyz="0.0142362 -0.0528012 0.375502" rpy="-1.36675 5.75605e-15 2.5501" />
+<origin xyz="-0.081081 -0.124245 -0.0775141" rpy="0.591496 1.5708 0" />
 <geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+<mesh filename="package://shoulderyawencoderplate.stl"/>
 </geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.0142362 -0.0528012 0.375502" rpy="-1.36675 5.75605e-15 2.5501" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="0.0167255 -0.0587798 0.303942" rpy="-3.05733 0.18606 1.40761" />
-<geometry>
-<mesh filename="package://forearmbodystandoff.stl"/>
-</geometry>
-<material name="forearmbodystandoff_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.0167255 -0.0587798 0.303942" rpy="-3.05733 0.18606 1.40761" />
-<geometry>
-<mesh filename="package://forearmbodystandoff.stl"/>
-</geometry>
-<material name="forearmbodystandoff_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="0.0141597 -0.0385681 0.378108" rpy="-3.14159 -0.204049 -2.16229" />
-<geometry>
-<mesh filename="package://dc12_w-idle_alt2_36.stl"/>
-</geometry>
-<material name="dc12_w-idle_alt2_36_material">
-<color rgba="0.105882 0.372549 0.666667 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.0141597 -0.0385681 0.378108" rpy="-3.14159 -0.204049 -2.16229" />
-<geometry>
-<mesh filename="package://dc12_w-idle_alt2_36.stl"/>
-</geometry>
-<material name="dc12_w-idle_alt2_36_material">
-<color rgba="0.105882 0.372549 0.666667 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-0.0318325 -0.0399642 0.248574" rpy="1.36675 -4.90854e-15 -0.591496" />
-<geometry>
-<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
-</geometry>
-<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
-<color rgba="0.776471 0.756863 0.737255 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-0.0318325 -0.0399642 0.248574" rpy="1.36675 -4.90854e-15 -0.591496" />
-<geometry>
-<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
-</geometry>
-<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
-<color rgba="0.776471 0.756863 0.737255 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="0.026249 -0.0349177 0.371044" rpy="-1.36675 5.75605e-15 2.5501" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.026249 -0.0349177 0.371044" rpy="-1.36675 5.75605e-15 2.5501" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-0.0102786 -0.0534287 0.252641" rpy="-2.93754 6.19437e-15 2.5501" />
-<geometry>
-<mesh filename="package://elbowjointbracket.stl"/>
-</geometry>
-<material name="elbowjointbracket_material">
+<material name="shoulderyawencoderplate_material">
 <color rgba="0.411765 0.411765 0.411765 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="-0.0102786 -0.0534287 0.252641" rpy="-2.93754 6.19437e-15 2.5501" />
+<origin xyz="-0.081081 -0.124245 -0.0775141" rpy="0.591496 1.5708 0" />
 <geometry>
-<mesh filename="package://elbowjointbracket.stl"/>
+<mesh filename="package://shoulderyawencoderplate.stl"/>
 </geometry>
-<material name="elbowjointbracket_material">
+<material name="shoulderyawencoderplate_material">
 <color rgba="0.411765 0.411765 0.411765 1.0"/>
 </material>
 </collision>
 <visual>
-<origin xyz="-0.0069553 -0.0126136 0.371044" rpy="-1.36675 5.75605e-15 2.5501" />
+<origin xyz="-0.050972 -0.0908091 -0.0915984" rpy="3.12908e-16 2.95481e-16 0.979301" />
 <geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+<mesh filename="package://prototypestand1.stl"/>
 </geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-0.0069553 -0.0126136 0.371044" rpy="-1.36675 5.75605e-15 2.5501" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="0.0103369 -0.0682904 0.248574" rpy="1.36675 -4.90854e-15 -0.591496" />
-<geometry>
-<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
-</geometry>
-<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
-<color rgba="0.776471 0.756863 0.737255 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.0103369 -0.0682904 0.248574" rpy="1.36675 -4.90854e-15 -0.591496" />
-<geometry>
-<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
-</geometry>
-<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
-<color rgba="0.776471 0.756863 0.737255 1.0"/>
-</material>
-</collision>
-<inertial>
-<origin xyz="0 0 0" rpy="0 0 0"/>
-<mass value="0" />
-<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
-</inertial>
-</link>
-
-<link name="link_elbow">
-<visual>
-<origin xyz="6.93889e-17 -5.55112e-17 -0.065" rpy="-3.86325e-18 -2.78565e-16 -3.14159" />
-<geometry>
-<mesh filename="package://dc12_w-idle_alt2_36.stl"/>
-</geometry>
-<material name="dc12_w-idle_alt2_36_material">
-<color rgba="0.105882 0.372549 0.666667 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="6.93889e-17 -5.55112e-17 -0.065" rpy="-3.86325e-18 -2.78565e-16 -3.14159" />
-<geometry>
-<mesh filename="package://dc12_w-idle_alt2_36.stl"/>
-</geometry>
-<material name="dc12_w-idle_alt2_36_material">
-<color rgba="0.105882 0.372549 0.666667 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-0.008 -0.0216 -0.071" rpy="3.14159 1.5708 0" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-0.008 -0.0216 -0.071" rpy="3.14159 1.5708 0" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="0.008 -0.0216 -0.071" rpy="3.14159 1.5708 0" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.008 -0.0216 -0.071" rpy="3.14159 1.5708 0" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-3.19189e-16 -0.14894 -0.0166" rpy="6.29196e-16 -1.5708 0" />
-<geometry>
-<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
-</geometry>
-<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
-<color rgba="0.776471 0.756863 0.737255 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-3.19189e-16 -0.14894 -0.0166" rpy="6.29196e-16 -1.5708 0" />
-<geometry>
-<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
-</geometry>
-<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
-<color rgba="0.776471 0.756863 0.737255 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="0.01778 -0.03525 0.00245" rpy="-1.5708 2.88935e-17 -1.88754e-17" />
-<geometry>
-<mesh filename="package://elbowmotorbracket.stl"/>
-</geometry>
-<material name="elbowmotorbracket_material">
+<material name="prototypestand1_material">
 <color rgba="0.411765 0.411765 0.411765 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="0.01778 -0.03525 0.00245" rpy="-1.5708 2.88935e-17 -1.88754e-17" />
+<origin xyz="-0.050972 -0.0908091 -0.0915984" rpy="3.12908e-16 2.95481e-16 0.979301" />
 <geometry>
-<mesh filename="package://elbowmotorbracket.stl"/>
+<mesh filename="package://prototypestand1.stl"/>
 </geometry>
-<material name="elbowmotorbracket_material">
+<material name="prototypestand1_material">
 <color rgba="0.411765 0.411765 0.411765 1.0"/>
 </material>
 </collision>
 <visual>
-<origin xyz="9.71445e-17 -0.181143 -0.0156648" rpy="-1.342e-15 -2.14185e-15 1.16453" />
+<origin xyz="0.0312733 0.0316299 -0.0294462" rpy="1.5708 -2.8616e-16 -2.23696" />
 <geometry>
-<mesh filename="package://shoulderpitchencodercoupler.stl"/>
+<mesh filename="package://217-2625-003_rev1.stl"/>
 </geometry>
-<material name="shoulderpitchencodercoupler_material">
-<color rgba="0.411765 0.411765 0.411765 1.0"/>
+<material name="217-2625-003_rev1_material">
+<color rgba="0.25098 0.25098 0.25098 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="9.71445e-17 -0.181143 -0.0156648" rpy="-1.342e-15 -2.14185e-15 1.16453" />
+<origin xyz="0.0312733 0.0316299 -0.0294462" rpy="1.5708 -2.8616e-16 -2.23696" />
 <geometry>
-<mesh filename="package://shoulderpitchencodercoupler.stl"/>
+<mesh filename="package://217-2625-003_rev1.stl"/>
 </geometry>
-<material name="shoulderpitchencodercoupler_material">
-<color rgba="0.411765 0.411765 0.411765 1.0"/>
+<material name="217-2625-003_rev1_material">
+<color rgba="0.25098 0.25098 0.25098 1.0"/>
 </material>
 </collision>
 <visual>
-<origin xyz="-0.008 -0.0216 -0.025" rpy="3.14159 1.5708 0" />
+<origin xyz="0.0312733 0.0316299 0.0139016" rpy="-1.5708 -9.38059e-16 2.5501" />
 <geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+<mesh filename="package://217-2625-001_rev1.stl"/>
 </geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
+<material name="217-2625-001_rev1_material">
+<color rgba="0.866667 0.909804 1 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="-0.008 -0.0216 -0.025" rpy="3.14159 1.5708 0" />
+<origin xyz="0.0312733 0.0316299 0.0139016" rpy="-1.5708 -9.38059e-16 2.5501" />
 <geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+<mesh filename="package://217-2625-001_rev1.stl"/>
 </geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
+<material name="217-2625-001_rev1_material">
+<color rgba="0.866667 0.909804 1 1.0"/>
 </material>
 </collision>
 <visual>
-<origin xyz="0.0127 -0.146375 -0.0346975" rpy="-1.5708 4.74888e-16 1.5708" />
+<origin xyz="0.0312733 0.0316299 -0.0154984" rpy="-1.5708 -4.62858e-16 -0.591496" />
 <geometry>
-<mesh filename="package://shoulderpitchbracketrev2.stl"/>
+<mesh filename="package://217-2625-002_rev1.stl"/>
 </geometry>
-<material name="shoulderpitchbracketrev2_material">
-<color rgba="0.411765 0.411765 0.411765 1.0"/>
+<material name="217-2625-002_rev1_material">
+<color rgba="0.866667 0.909804 1 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="0.0127 -0.146375 -0.0346975" rpy="-1.5708 4.74888e-16 1.5708" />
+<origin xyz="0.0312733 0.0316299 -0.0154984" rpy="-1.5708 -4.62858e-16 -0.591496" />
 <geometry>
-<mesh filename="package://shoulderpitchbracketrev2.stl"/>
+<mesh filename="package://217-2625-002_rev1.stl"/>
 </geometry>
-<material name="shoulderpitchbracketrev2_material">
-<color rgba="0.411765 0.411765 0.411765 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="0 2.77556e-17 -0.019" rpy="-3.14159 2.88935e-17 -1.88754e-17" />
-<geometry>
-<mesh filename="package://dc12_w-idle_alt2_36.stl"/>
-</geometry>
-<material name="dc12_w-idle_alt2_36_material">
-<color rgba="0.105882 0.372549 0.666667 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 2.77556e-17 -0.019" rpy="-3.14159 2.88935e-17 -1.88754e-17" />
-<geometry>
-<mesh filename="package://dc12_w-idle_alt2_36.stl"/>
-</geometry>
-<material name="dc12_w-idle_alt2_36_material">
-<color rgba="0.105882 0.372549 0.666667 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="0.008 -0.0216 -0.025" rpy="3.14159 1.5708 0" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.008 -0.0216 -0.025" rpy="3.14159 1.5708 0" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-0.008 -0.0216 -0.059" rpy="3.14159 1.5708 0" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-0.008 -0.0216 -0.059" rpy="3.14159 1.5708 0" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="2.498e-16 -0.0416 -0.0166" rpy="-1.5708 1.16446 -3.14159" />
-<geometry>
-<mesh filename="package://armbodystandoff.stl"/>
-</geometry>
-<material name="armbodystandoff_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="2.498e-16 -0.0416 -0.0166" rpy="-1.5708 1.16446 -3.14159" />
-<geometry>
-<mesh filename="package://armbodystandoff.stl"/>
-</geometry>
-<material name="armbodystandoff_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="4.44089e-16 -0.0416 -0.0674" rpy="-1.5708 -1.48536 3.14159" />
-<geometry>
-<mesh filename="package://armbodystandoff.stl"/>
-</geometry>
-<material name="armbodystandoff_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="4.44089e-16 -0.0416 -0.0674" rpy="-1.5708 -1.48536 3.14159" />
-<geometry>
-<mesh filename="package://armbodystandoff.stl"/>
-</geometry>
-<material name="armbodystandoff_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="0.008 -0.0216 -0.059" rpy="3.14159 1.5708 0" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.008 -0.0216 -0.059" rpy="3.14159 1.5708 0" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="2.08167e-16 -0.14894 -0.0674" rpy="6.29196e-16 -1.5708 0" />
-<geometry>
-<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
-</geometry>
-<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
-<color rgba="0.776471 0.756863 0.737255 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="2.08167e-16 -0.14894 -0.0674" rpy="6.29196e-16 -1.5708 0" />
-<geometry>
-<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
-</geometry>
-<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
-<color rgba="0.776471 0.756863 0.737255 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="0.008 -0.0216 -0.013" rpy="3.14159 1.5708 0" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.008 -0.0216 -0.013" rpy="3.14159 1.5708 0" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-0.008 -0.0216 -0.013" rpy="3.14159 1.5708 0" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-0.008 -0.0216 -0.013" rpy="3.14159 1.5708 0" />
-<geometry>
-<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
-</geometry>
-<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
-<color rgba="0.956863 0.956863 0.956863 1.0"/>
+<material name="217-2625-002_rev1_material">
+<color rgba="0.866667 0.909804 1 1.0"/>
 </material>
 </collision>
 <inertial>
@@ -521,7 +387,7 @@
 
 <link name="link_socket">
 <visual>
-<origin xyz="4.16334e-17 -1.2837e-16 -0.047475" rpy="-1.8874 -1.5708 0" />
+<origin xyz="0.0177283 -3.33067e-16 -0.0893164" rpy="2.21468 7.24799e-15 3.14159" />
 <geometry>
 <mesh filename="package://217-2742.stl"/>
 </geometry>
@@ -530,7 +396,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="4.16334e-17 -1.2837e-16 -0.047475" rpy="-1.8874 -1.5708 0" />
+<origin xyz="0.0177283 -3.33067e-16 -0.0893164" rpy="2.21468 7.24799e-15 3.14159" />
 <geometry>
 <mesh filename="package://217-2742.stl"/>
 </geometry>
@@ -539,7 +405,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="2.77556e-17 -2.01228e-16 -0.0825752" rpy="-2.96606 1.5708 0" />
+<origin xyz="0.0528285 -3.747e-16 -0.0893164" rpy="2.35664 -8.07851e-15 -2.33009e-15" />
 <geometry>
 <mesh filename="package://neo550.stl"/>
 </geometry>
@@ -548,7 +414,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="2.77556e-17 -2.01228e-16 -0.0825752" rpy="-2.96606 1.5708 0" />
+<origin xyz="0.0528285 -3.747e-16 -0.0893164" rpy="2.35664 -8.07851e-15 -2.33009e-15" />
 <geometry>
 <mesh filename="package://neo550.stl"/>
 </geometry>
@@ -557,7 +423,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="5.27356e-16 1.11022e-16 -0.0925752" rpy="1.5708 -2.04307e-15 -1.74633" />
+<origin xyz="0.0628285 2.08167e-16 -0.0893164" rpy="-3.14159 -0.784949 -1.5708" />
 <geometry>
 <mesh filename="package://rs_550_motor_mounting_plate.stl"/>
 </geometry>
@@ -566,7 +432,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="5.27356e-16 1.11022e-16 -0.0925752" rpy="1.5708 -2.04307e-15 -1.74633" />
+<origin xyz="0.0628285 2.08167e-16 -0.0893164" rpy="-3.14159 -0.784949 -1.5708" />
 <geometry>
 <mesh filename="package://rs_550_motor_mounting_plate.stl"/>
 </geometry>
@@ -575,7 +441,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="6.93889e-17 -3.36536e-16 -0.0320502" rpy="-4.39209e-16 3.11949e-17 5.80183e-17" />
+<origin xyz="0.00230351 -4.30211e-16 -0.0893164" rpy="-1.5708 -0.610312 1.5708" />
 <geometry>
 <mesh filename="package://.5_hexbearing_1.125_od.stl"/>
 </geometry>
@@ -584,7 +450,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="6.93889e-17 -3.36536e-16 -0.0320502" rpy="-4.39209e-16 3.11949e-17 5.80183e-17" />
+<origin xyz="0.00230351 -4.30211e-16 -0.0893164" rpy="-1.5708 -0.610312 1.5708" />
 <geometry>
 <mesh filename="package://.5_hexbearing_1.125_od.stl"/>
 </geometry>
@@ -593,7 +459,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="4.57967e-16 5.55112e-17 -0.0402274" rpy="-1.5708 3.04942e-16 -1.5708" />
+<origin xyz="0.0104807 1.11022e-16 -0.0893164" rpy="1.23402e-14 -0.960485 -1.5708" />
 <geometry>
 <mesh filename="package://217-2625-003_rev1.stl"/>
 </geometry>
@@ -602,7 +468,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="4.57967e-16 5.55112e-17 -0.0402274" rpy="-1.5708 3.04942e-16 -1.5708" />
+<origin xyz="0.0104807 1.11022e-16 -0.0893164" rpy="1.23402e-14 -0.960485 -1.5708" />
 <geometry>
 <mesh filename="package://217-2625-003_rev1.stl"/>
 </geometry>
@@ -611,7 +477,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0208145 0.0145573 -0.0365125" rpy="1.5708 -3.74597e-12 -2.53128" />
+<origin xyz="0.00676581 0.0254 -0.0893164" rpy="3.14159 -4.52986e-12 -1.5708" />
 <geometry>
 <mesh filename="package://10-32_x_1.5in_socket_screw.sldprt.stl"/>
 </geometry>
@@ -620,7 +486,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0208145 0.0145573 -0.0365125" rpy="1.5708 -3.74597e-12 -2.53128" />
+<origin xyz="0.00676581 0.0254 -0.0893164" rpy="3.14159 -4.52986e-12 -1.5708" />
 <geometry>
 <mesh filename="package://10-32_x_1.5in_socket_screw.sldprt.stl"/>
 </geometry>
@@ -629,7 +495,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.0208145 -0.0145573 -0.0365125" rpy="1.5708 -3.74539e-12 -2.53128" />
+<origin xyz="0.00676581 -0.0254 -0.0893164" rpy="3.14159 -4.52529e-12 -1.5708" />
 <geometry>
 <mesh filename="package://10-32_x_1.5in_socket_screw.sldprt.stl"/>
 </geometry>
@@ -638,7 +504,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.0208145 -0.0145573 -0.0365125" rpy="1.5708 -3.74539e-12 -2.53128" />
+<origin xyz="0.00676581 -0.0254 -0.0893164" rpy="3.14159 -4.52529e-12 -1.5708" />
 <geometry>
 <mesh filename="package://10-32_x_1.5in_socket_screw.sldprt.stl"/>
 </geometry>
@@ -647,7 +513,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="2.77556e-17 -1.97758e-16 -0.0541752" rpy="1.5708 -1.8146e-16 -1.74588" />
+<origin xyz="0.0244285 -3.88578e-16 -0.0893164" rpy="-3.14159 -0.785398 -1.5708" />
 <geometry>
 <mesh filename="package://217-2625-002_rev1.stl"/>
 </geometry>
@@ -656,7 +522,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="2.77556e-17 -1.97758e-16 -0.0541752" rpy="1.5708 -1.8146e-16 -1.74588" />
+<origin xyz="0.0244285 -3.88578e-16 -0.0893164" rpy="-3.14159 -0.785398 -1.5708" />
 <geometry>
 <mesh filename="package://217-2625-002_rev1.stl"/>
 </geometry>
@@ -665,7 +531,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0 -3.46945e-16 0.020955" rpy="1.11498e-15 -4.72868e-15 0.424329" />
+<origin xyz="-0.0507017 -4.996e-16 -0.0893164" rpy="-1.5708 -0.185983 1.5708" />
 <geometry>
 <mesh filename="package://e8tencodershaft.stl"/>
 </geometry>
@@ -674,7 +540,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0 -3.46945e-16 0.020955" rpy="1.11498e-15 -4.72868e-15 0.424329" />
+<origin xyz="-0.0507017 -4.996e-16 -0.0893164" rpy="-1.5708 -0.185983 1.5708" />
 <geometry>
 <mesh filename="package://e8tencodershaft.stl"/>
 </geometry>
@@ -683,7 +549,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0220746 -0.031563 -0.0297467" rpy="1.5708 -1.0472 -2.53128" />
+<origin xyz="8.26275e-12 -5.63159e-12 -0.0508" rpy="-3.14159 -6.0173e-15 -2.61799" />
 <geometry>
 <mesh filename="package://shoulderyawaxlerev2.stl"/>
 </geometry>
@@ -692,7 +558,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0220746 -0.031563 -0.0297467" rpy="1.5708 -1.0472 -2.53128" />
+<origin xyz="8.26275e-12 -5.63159e-12 -0.0508" rpy="-3.14159 -6.0173e-15 -2.61799" />
 <geometry>
 <mesh filename="package://shoulderyawaxlerev2.stl"/>
 </geometry>
@@ -701,7 +567,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="3.60822e-16 6.245e-17 -0.0667252" rpy="-1.5708 5.3985e-16 1.39571" />
+<origin xyz="0.0369785 4.16334e-17 -0.0893164" rpy="3.14159 0.785398 1.5708" />
 <geometry>
 <mesh filename="package://217-2816-001_rev1.stl"/>
 </geometry>
@@ -710,7 +576,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="3.60822e-16 6.245e-17 -0.0667252" rpy="-1.5708 5.3985e-16 1.39571" />
+<origin xyz="0.0369785 4.16334e-17 -0.0893164" rpy="3.14159 0.785398 1.5708" />
 <geometry>
 <mesh filename="package://217-2816-001_rev1.stl"/>
 </geometry>
@@ -719,7 +585,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="1.80411e-16 -2.60209e-16 -0.0320502" rpy="-0.960485 -1.5708 0" />
+<origin xyz="0.00230351 -2.91434e-16 -0.0893164" rpy="3.14159 4.82664e-15 -3.14159" />
 <geometry>
 <mesh filename="package://shoulderpitchbearingplaterev2.stl"/>
 </geometry>
@@ -728,7 +594,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="1.80411e-16 -2.60209e-16 -0.0320502" rpy="-0.960485 -1.5708 0" />
+<origin xyz="0.00230351 -2.91434e-16 -0.0893164" rpy="3.14159 4.82664e-15 -3.14159" />
 <geometry>
 <mesh filename="package://shoulderpitchbearingplaterev2.stl"/>
 </geometry>
@@ -737,7 +603,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="2.77556e-17 0 -0.0079375" rpy="-5.86466e-18 3.11949e-17 5.80183e-17" />
+<origin xyz="-0.0218092 -2.77556e-16 -0.0893164" rpy="-1.5708 -0.610312 1.5708" />
 <geometry>
 <mesh filename="package://.5_hexbearing_1.125_od.stl"/>
 </geometry>
@@ -746,7 +612,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="2.77556e-17 0 -0.0079375" rpy="-5.86466e-18 3.11949e-17 5.80183e-17" />
+<origin xyz="-0.0218092 -2.77556e-16 -0.0893164" rpy="-1.5708 -0.610312 1.5708" />
 <geometry>
 <mesh filename="package://.5_hexbearing_1.125_od.stl"/>
 </geometry>
@@ -755,7 +621,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="4.02456e-16 -3.46945e-18 -0.0835752" rpy="1.5708 1.03971e-15 1.39571" />
+<origin xyz="0.0538285 2.77556e-17 -0.0893164" rpy="-1.114e-14 0.785398 1.5708" />
 <geometry>
 <mesh filename="package://217-2625-001_rev1.stl"/>
 </geometry>
@@ -764,7 +630,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="4.02456e-16 -3.46945e-18 -0.0835752" rpy="1.5708 1.03971e-15 1.39571" />
+<origin xyz="0.0538285 2.77556e-17 -0.0893164" rpy="-1.114e-14 0.785398 1.5708" />
 <geometry>
 <mesh filename="package://217-2625-001_rev1.stl"/>
 </geometry>
@@ -773,7 +639,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.00363933 -0.00520363 0.02413" rpy="-0.960485 -1.5708 0" />
+<origin xyz="-0.0538767 8.35443e-14 -0.0829664" rpy="-3.14159 -8.01182e-12 3.14159" />
 <geometry>
 <mesh filename="package://shoulderpitchencoderplate.stl"/>
 </geometry>
@@ -782,7 +648,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.00363933 -0.00520363 0.02413" rpy="-0.960485 -1.5708 0" />
+<origin xyz="-0.0538767 8.35443e-14 -0.0829664" rpy="-3.14159 -8.01182e-12 3.14159" />
 <geometry>
 <mesh filename="package://shoulderpitchencoderplate.stl"/>
 </geometry>
@@ -791,7 +657,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0220746 -0.031563 -0.0297467" rpy="-2.18111 1.5708 0" />
+<origin xyz="-6.93889e-18 0 -0.0508" rpy="3.14159 -5.25752e-32 3.26532e-17" />
 <geometry>
 <mesh filename="package://shoulderbaseplaterev2.stl"/>
 </geometry>
@@ -800,7 +666,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0220746 -0.031563 -0.0297467" rpy="-2.18111 1.5708 0" />
+<origin xyz="-6.93889e-18 0 -0.0508" rpy="3.14159 -5.25752e-32 3.26532e-17" />
 <geometry>
 <mesh filename="package://shoulderbaseplaterev2.stl"/>
 </geometry>
@@ -809,7 +675,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="7.63278e-16 -5.10009e-16 -0.032475" rpy="-0.738685 1.5708 0" />
+<origin xyz="0.00272831 4.16334e-17 -0.0893164" rpy="-1.69917 -1.87759e-14 -6.67981e-16" />
 <geometry>
 <mesh filename="package://217-2742.stl"/>
 </geometry>
@@ -818,7 +684,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="7.63278e-16 -5.10009e-16 -0.032475" rpy="-0.738685 1.5708 0" />
+<origin xyz="0.00272831 4.16334e-17 -0.0893164" rpy="-1.69917 -1.87759e-14 -6.67981e-16" />
 <geometry>
 <mesh filename="package://217-2742.stl"/>
 </geometry>
@@ -827,7 +693,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-4.16334e-17 -2.04697e-16 -0.0540252" rpy="-1.5708 6.43772e-17 -1.74588" />
+<origin xyz="0.0242785 -4.30211e-16 -0.0893164" rpy="9.72005e-15 -0.785398 -1.5708" />
 <geometry>
 <mesh filename="package://217-2816-001_rev1.stl"/>
 </geometry>
@@ -836,7 +702,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-4.16334e-17 -2.04697e-16 -0.0540252" rpy="-1.5708 6.43772e-17 -1.74588" />
+<origin xyz="0.0242785 -4.30211e-16 -0.0893164" rpy="9.72005e-15 -0.785398 -1.5708" />
 <geometry>
 <mesh filename="package://217-2816-001_rev1.stl"/>
 </geometry>
@@ -851,383 +717,311 @@
 </inertial>
 </link>
 
-<link name="link_base_link">
+<link name="link_elbow">
 <visual>
-<origin xyz="-2.94903e-17 0.147498 -0.003175" rpy="-3.14159 3.12506e-16 0.591496" />
+<origin xyz="0.166399 -0.0715838 0.0398102" rpy="3.14159 -5.2803e-15 -1.97706" />
 <geometry>
-<mesh filename="package://.5_hexbearing_1.125_od.stl"/>
+<mesh filename="package://dc12_w-idle_alt2_36.stl"/>
 </geometry>
-<material name=".5_hexbearing_1.125_od_material">
+<material name="dc12_w-idle_alt2_36_material">
+<color rgba="0.105882 0.372549 0.666667 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.166399 -0.0715838 0.0398102" rpy="3.14159 -5.2803e-15 -1.97706" />
+<geometry>
+<mesh filename="package://dc12_w-idle_alt2_36.stl"/>
+</geometry>
+<material name="dc12_w-idle_alt2_36_material">
+<color rgba="0.105882 0.372549 0.666667 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.143395 -0.0703968 0.0458102" rpy="1.16453 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
 <color rgba="0.956863 0.956863 0.956863 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="-2.94903e-17 0.147498 -0.003175" rpy="-3.14159 3.12506e-16 0.591496" />
+<origin xyz="0.143395 -0.0703968 0.0458102" rpy="1.16453 -1.5708 0" />
 <geometry>
-<mesh filename="package://.5_hexbearing_1.125_od.stl"/>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
 </geometry>
-<material name=".5_hexbearing_1.125_od_material">
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
 <color rgba="0.956863 0.956863 0.956863 1.0"/>
 </material>
 </collision>
 <visual>
-<origin xyz="-9.79407e-12 -2.01134e-12 -0.0287875" rpy="1.5708 -1.22337e-14 1.69882" />
+<origin xyz="0.149718 -0.0556991 0.0458102" rpy="1.16453 -1.5708 0" />
 <geometry>
-<mesh filename="package://.5in_hex_collar.stl"/>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
 </geometry>
-<material name=".5in_hex_collar_material">
-<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-9.79407e-12 -2.01134e-12 -0.0287875" rpy="1.5708 -1.22337e-14 1.69882" />
-<geometry>
-<mesh filename="package://.5in_hex_collar.stl"/>
-</geometry>
-<material name=".5in_hex_collar_material">
-<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-3.46945e-18 0 0" rpy="-1.2326e-32 -0 -1.48952e-17" />
-<geometry>
-<mesh filename="package://baseplaterev2.stl"/>
-</geometry>
-<material name="baseplaterev2_material">
-<color rgba="0.74902 0.74902 0.74902 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-3.46945e-18 0 0" rpy="-1.2326e-32 -0 -1.48952e-17" />
-<geometry>
-<mesh filename="package://baseplaterev2.stl"/>
-</geometry>
-<material name="baseplaterev2_material">
-<color rgba="0.74902 0.74902 0.74902 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="0.0277399 0.174983 -0.053975" rpy="1.79393e-17 9.86987e-18 1.13656e-11" />
-<geometry>
-<mesh filename="package://prototypestand2rev2.stl"/>
-</geometry>
-<material name="prototypestand2rev2_material">
-<color rgba="0.411765 0.411765 0.411765 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.0277399 0.174983 -0.053975" rpy="1.79393e-17 9.86987e-18 1.13656e-11" />
-<geometry>
-<mesh filename="package://prototypestand2rev2.stl"/>
-</geometry>
-<material name="prototypestand2rev2_material">
-<color rgba="0.411765 0.411765 0.411765 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-7.45931e-17 0.147498 0.050525" rpy="-1.57035 -1.5708 0" />
-<geometry>
-<mesh filename="package://neo550.stl"/>
-</geometry>
-<material name="neo550_material">
-<color rgba="0.752941 0.752941 0.752941 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-7.45931e-17 0.147498 0.050525" rpy="-1.57035 -1.5708 0" />
-<geometry>
-<mesh filename="package://neo550.stl"/>
-</geometry>
-<material name="neo550_material">
-<color rgba="0.752941 0.752941 0.752941 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-9.79448e-12 -2.01161e-12 -0.0183625" rpy="-1.5708 1.10369e-15 2.74601" />
-<geometry>
-<mesh filename="package://24t_htd_pulley_9mm.stl"/>
-</geometry>
-<material name="24t_htd_pulley_9mm_material">
-<color rgba="0.752941 0.752941 0.752941 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-9.79448e-12 -2.01161e-12 -0.0183625" rpy="-1.5708 1.10369e-15 2.74601" />
-<geometry>
-<mesh filename="package://24t_htd_pulley_9mm.stl"/>
-</geometry>
-<material name="24t_htd_pulley_9mm_material">
-<color rgba="0.752941 0.752941 0.752941 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-8.50015e-17 0.147498 0.0154248" rpy="3.00008 1.5708 0" />
-<geometry>
-<mesh filename="package://217-2742.stl"/>
-</geometry>
-<material name="217-2742_material">
-<color rgba="0.752941 0.752941 0.752941 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-8.50015e-17 0.147498 0.0154248" rpy="3.00008 1.5708 0" />
-<geometry>
-<mesh filename="package://217-2742.stl"/>
-</geometry>
-<material name="217-2742_material">
-<color rgba="0.752941 0.752941 0.752941 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-1.83881e-16 0.147498 -0.0287875" rpy="-1.5708 -3.57295e-16 -2.16906" />
-<geometry>
-<mesh filename="package://.5in_hex_collar.stl"/>
-</geometry>
-<material name=".5in_hex_collar_material">
-<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-1.83881e-16 0.147498 -0.0287875" rpy="-1.5708 -3.57295e-16 -2.16906" />
-<geometry>
-<mesh filename="package://.5in_hex_collar.stl"/>
-</geometry>
-<material name=".5in_hex_collar_material">
-<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-9.19403e-17 0.147498 0.034675" rpy="1.5708 -5.08703e-16 -3.14159" />
-<geometry>
-<mesh filename="package://217-2816-001_rev1.stl"/>
-</geometry>
-<material name="217-2816-001_rev1_material">
-<color rgba="0.866667 0.909804 1 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-9.19403e-17 0.147498 0.034675" rpy="1.5708 -5.08703e-16 -3.14159" />
-<geometry>
-<mesh filename="package://217-2816-001_rev1.stl"/>
-</geometry>
-<material name="217-2816-001_rev1_material">
-<color rgba="0.866667 0.909804 1 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-1.83881e-16 0.147498 -0.0287875" rpy="-1.5708 -3.57295e-16 -2.16906" />
-<geometry>
-<mesh filename="package://.5in_hex_collar.stl"/>
-</geometry>
-<material name=".5in_hex_collar_material">
-<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-1.83881e-16 0.147498 -0.0287875" rpy="-1.5708 -3.57295e-16 -2.16906" />
-<geometry>
-<mesh filename="package://.5in_hex_collar.stl"/>
-</geometry>
-<material name=".5in_hex_collar_material">
-<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-1.8735e-16 0.147498 -0.0183625" rpy="-1.5708 -3.16417e-16 -2.16906" />
-<geometry>
-<mesh filename="package://18t_htd_pulley_9mm1.stl"/>
-</geometry>
-<material name="18t_htd_pulley_9mm1_material">
-<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-1.8735e-16 0.147498 -0.0183625" rpy="-1.5708 -3.16417e-16 -2.16906" />
-<geometry>
-<mesh filename="package://18t_htd_pulley_9mm1.stl"/>
-</geometry>
-<material name="18t_htd_pulley_9mm1_material">
-<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-5.37764e-17 -9.99983e-12 -0.0287875" rpy="1.5708 -1.48017e-15 3.06692" />
-<geometry>
-<mesh filename="package://.5in_hex_collar.stl"/>
-</geometry>
-<material name=".5in_hex_collar_material">
-<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-5.37764e-17 -9.99983e-12 -0.0287875" rpy="1.5708 -1.48017e-15 3.06692" />
-<geometry>
-<mesh filename="package://.5in_hex_collar.stl"/>
-</geometry>
-<material name=".5in_hex_collar_material">
-<color rgba="0.0392157 0.0392157 0.0392157 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-5.55112e-17 0.147498 0.060525" rpy="-1.5708 2.84172e-16 0.00044945" />
-<geometry>
-<mesh filename="package://rs_550_motor_mounting_plate.stl"/>
-</geometry>
-<material name="rs_550_motor_mounting_plate_material">
-<color rgba="0.25098 0.25098 0.25098 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-5.55112e-17 0.147498 0.060525" rpy="-1.5708 2.84172e-16 0.00044945" />
-<geometry>
-<mesh filename="package://rs_550_motor_mounting_plate.stl"/>
-</geometry>
-<material name="rs_550_motor_mounting_plate_material">
-<color rgba="0.25098 0.25098 0.25098 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="-7.63278e-17 0.147498 0.0004248" rpy="3.00098 -1.5708 0" />
-<geometry>
-<mesh filename="package://217-2742.stl"/>
-</geometry>
-<material name="217-2742_material">
-<color rgba="0.752941 0.752941 0.752941 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-7.63278e-17 0.147498 0.0004248" rpy="3.00098 -1.5708 0" />
-<geometry>
-<mesh filename="package://217-2742.stl"/>
-</geometry>
-<material name="217-2742_material">
-<color rgba="0.752941 0.752941 0.752941 1.0"/>
-</material>
-</collision>
-<visual>
-<origin xyz="2.94903e-17 -1.00002e-11 -0.003175" rpy="3.14159 -2.71505e-16 -1.12187" />
-<geometry>
-<mesh filename="package://.5_hexbearing_1.125_od.stl"/>
-</geometry>
-<material name=".5_hexbearing_1.125_od_material">
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
 <color rgba="0.956863 0.956863 0.956863 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="2.94903e-17 -1.00002e-11 -0.003175" rpy="3.14159 -2.71505e-16 -1.12187" />
+<origin xyz="0.149718 -0.0556991 0.0458102" rpy="1.16453 -1.5708 0" />
 <geometry>
-<mesh filename="package://.5_hexbearing_1.125_od.stl"/>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
 </geometry>
-<material name=".5_hexbearing_1.125_od_material">
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
 <color rgba="0.956863 0.956863 0.956863 1.0"/>
 </material>
 </collision>
 <visual>
-<origin xyz="-8.32667e-17 0.147498 0.021975" rpy="1.5708 -8.16933e-16 5.0593e-15" />
+<origin xyz="0.0295813 -0.0127257 -0.0085898" rpy="1.97706 1.5708 0" />
 <geometry>
-<mesh filename="package://217-2816-001_rev1.stl"/>
+<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
 </geometry>
-<material name="217-2816-001_rev1_material">
-<color rgba="0.866667 0.909804 1 1.0"/>
+<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
+<color rgba="0.776471 0.756863 0.737255 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="-8.32667e-17 0.147498 0.021975" rpy="1.5708 -8.16933e-16 5.0593e-15" />
+<origin xyz="0.0295813 -0.0127257 -0.0085898" rpy="1.97706 1.5708 0" />
 <geometry>
-<mesh filename="package://217-2816-001_rev1.stl"/>
+<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
 </geometry>
-<material name="217-2816-001_rev1_material">
-<color rgba="0.866667 0.909804 1 1.0"/>
+<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
+<color rgba="0.776471 0.756863 0.737255 1.0"/>
 </material>
 </collision>
 <visual>
-<origin xyz="-0.00635 -0.0445439 -0.0398907" rpy="1.39945e-15 1.5708 0" />
+<origin xyz="0.141044 -0.041321 -0.0276398" rpy="1.5708 -4.32057e-15 1.16453" />
 <geometry>
-<mesh filename="package://shoulderyawencoderplate.stl"/>
+<mesh filename="package://elbowmotorbracket.stl"/>
 </geometry>
-<material name="shoulderyawencoderplate_material">
+<material name="elbowmotorbracket_material">
 <color rgba="0.411765 0.411765 0.411765 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="-0.00635 -0.0445439 -0.0398907" rpy="1.39945e-15 1.5708 0" />
+<origin xyz="0.141044 -0.041321 -0.0276398" rpy="1.5708 -4.32057e-15 1.16453" />
 <geometry>
-<mesh filename="package://shoulderyawencoderplate.stl"/>
+<mesh filename="package://elbowmotorbracket.stl"/>
 </geometry>
-<material name="shoulderyawencoderplate_material">
+<material name="elbowmotorbracket_material">
 <color rgba="0.411765 0.411765 0.411765 1.0"/>
 </material>
 </collision>
 <visual>
-<origin xyz="2.18112e-13 2.70002e-12 -0.053975" rpy="-1.16448e-16 3.25083e-16 1.5708" />
+<origin xyz="3.46945e-18 0 -0.009525" rpy="3.14159 -4.26399e-18 -4.08558e-17" />
 <geometry>
-<mesh filename="package://prototypestand1.stl"/>
+<mesh filename="package://shoulderpitchencodercoupler.stl"/>
 </geometry>
-<material name="prototypestand1_material">
+<material name="shoulderpitchencodercoupler_material">
 <color rgba="0.411765 0.411765 0.411765 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="2.18112e-13 2.70002e-12 -0.053975" rpy="-1.16448e-16 3.25083e-16 1.5708" />
+<origin xyz="3.46945e-18 0 -0.009525" rpy="3.14159 -4.26399e-18 -4.08558e-17" />
 <geometry>
-<mesh filename="package://prototypestand1.stl"/>
+<mesh filename="package://shoulderpitchencodercoupler.stl"/>
 </geometry>
-<material name="prototypestand1_material">
+<material name="shoulderpitchencodercoupler_material">
 <color rgba="0.411765 0.411765 0.411765 1.0"/>
 </material>
 </collision>
 <visual>
-<origin xyz="-7.63278e-17 0.147498 0.0081772" rpy="1.5708 -2.83649e-16 -1.64547" />
+<origin xyz="0.143395 -0.0703968 -0.0001898" rpy="1.16453 -1.5708 0" />
 <geometry>
-<mesh filename="package://217-2625-003_rev1.stl"/>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
 </geometry>
-<material name="217-2625-003_rev1_material">
-<color rgba="0.25098 0.25098 0.25098 1.0"/>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="-7.63278e-17 0.147498 0.0081772" rpy="1.5708 -2.83649e-16 -1.64547" />
+<origin xyz="0.143395 -0.0703968 -0.0001898" rpy="1.16453 -1.5708 0" />
 <geometry>
-<mesh filename="package://217-2625-003_rev1.stl"/>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
 </geometry>
-<material name="217-2625-003_rev1_material">
-<color rgba="0.25098 0.25098 0.25098 1.0"/>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
 </material>
 </collision>
 <visual>
-<origin xyz="-4.68375e-17 0.147498 0.051525" rpy="-1.5708 -5.08703e-16 3.14159" />
+<origin xyz="0.0369567 -0.00207324 0.0095077" rpy="1.5708 2.30469e-16 -0.406262" />
 <geometry>
-<mesh filename="package://217-2625-001_rev1.stl"/>
+<mesh filename="package://shoulderpitchbracketrev2.stl"/>
 </geometry>
-<material name="217-2625-001_rev1_material">
-<color rgba="0.866667 0.909804 1 1.0"/>
+<material name="shoulderpitchbracketrev2_material">
+<color rgba="0.411765 0.411765 0.411765 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="-4.68375e-17 0.147498 0.051525" rpy="-1.5708 -5.08703e-16 3.14159" />
+<origin xyz="0.0369567 -0.00207324 0.0095077" rpy="1.5708 2.30469e-16 -0.406262" />
 <geometry>
-<mesh filename="package://217-2625-001_rev1.stl"/>
+<mesh filename="package://shoulderpitchbracketrev2.stl"/>
 </geometry>
-<material name="217-2625-001_rev1_material">
-<color rgba="0.866667 0.909804 1 1.0"/>
+<material name="shoulderpitchbracketrev2_material">
+<color rgba="0.411765 0.411765 0.411765 1.0"/>
 </material>
 </collision>
 <visual>
-<origin xyz="-7.80626e-17 0.147498 0.022125" rpy="-1.5708 -8.92214e-16 -1.3628e-15" />
+<origin xyz="0.166399 -0.0715838 -0.0061898" rpy="-1.55302e-14 -1.50401e-14 1.16453" />
 <geometry>
-<mesh filename="package://217-2625-002_rev1.stl"/>
+<mesh filename="package://dc12_w-idle_alt2_36.stl"/>
 </geometry>
-<material name="217-2625-002_rev1_material">
-<color rgba="0.866667 0.909804 1 1.0"/>
+<material name="dc12_w-idle_alt2_36_material">
+<color rgba="0.105882 0.372549 0.666667 1.0"/>
 </material>
 </visual>
 <collision>
-<origin xyz="-7.80626e-17 0.147498 0.022125" rpy="-1.5708 -8.92214e-16 -1.3628e-15" />
+<origin xyz="0.166399 -0.0715838 -0.0061898" rpy="-1.55302e-14 -1.50401e-14 1.16453" />
 <geometry>
-<mesh filename="package://217-2625-002_rev1.stl"/>
+<mesh filename="package://dc12_w-idle_alt2_36.stl"/>
 </geometry>
-<material name="217-2625-002_rev1_material">
-<color rgba="0.866667 0.909804 1 1.0"/>
+<material name="dc12_w-idle_alt2_36_material">
+<color rgba="0.105882 0.372549 0.666667 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.149718 -0.0556991 -0.0001898" rpy="1.16453 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.149718 -0.0556991 -0.0001898" rpy="1.16453 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.143395 -0.0703968 0.0338102" rpy="1.16453 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.143395 -0.0703968 0.0338102" rpy="1.16453 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.128185 -0.0551444 -0.0085898" rpy="1.5708 -1.16446 -1.97706" />
+<geometry>
+<mesh filename="package://armbodystandoff.stl"/>
+</geometry>
+<material name="armbodystandoff_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.128185 -0.0551444 -0.0085898" rpy="1.5708 -1.16446 -1.97706" />
+<geometry>
+<mesh filename="package://armbodystandoff.stl"/>
+</geometry>
+<material name="armbodystandoff_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.128185 -0.0551444 0.0422102" rpy="1.5708 1.48536 -1.97706" />
+<geometry>
+<mesh filename="package://armbodystandoff.stl"/>
+</geometry>
+<material name="armbodystandoff_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.128185 -0.0551444 0.0422102" rpy="1.5708 1.48536 -1.97706" />
+<geometry>
+<mesh filename="package://armbodystandoff.stl"/>
+</geometry>
+<material name="armbodystandoff_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.149718 -0.0556991 0.0338102" rpy="1.16453 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.149718 -0.0556991 0.0338102" rpy="1.16453 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.0295813 -0.0127257 0.0422102" rpy="1.97706 1.5708 0" />
+<geometry>
+<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
+</geometry>
+<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
+<color rgba="0.776471 0.756863 0.737255 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0295813 -0.0127257 0.0422102" rpy="1.97706 1.5708 0" />
+<geometry>
+<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
+</geometry>
+<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
+<color rgba="0.776471 0.756863 0.737255 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.149718 -0.0556991 -0.0121898" rpy="1.16453 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.149718 -0.0556991 -0.0121898" rpy="1.16453 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.143395 -0.0703968 -0.0121898" rpy="1.16453 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.143395 -0.0703968 -0.0121898" rpy="1.16453 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
 </material>
 </collision>
 <inertial>
@@ -1237,36 +1031,215 @@
 </inertial>
 </link>
 
-<joint name="part1" type="revolute">
-<origin xyz="0.0511893 -0.073192 -0.0297467" rpy="-0.960485 -1.5708 0" />
-<parent link="link_socket" />
-<child link="link_base_link" />
-<axis xyz="0 0 1"/>
-<limit effort="1" velocity="20" />
-<joint_properties friction="0.0"/>
-</joint>
-
-<joint name="part2" type="revolute">
-<origin xyz="9.71445e-17 -0.181143 -0.0251898" rpy="8.61858e-16 -8.14474e-16 -0.340595" />
-<parent link="link_elbow" />
-<child link="link_socket" />
-<axis xyz="0 0 1"/>
-<limit effort="1" velocity="20" />
-<joint_properties friction="0.0"/>
-</joint>
-
-<joint name="part3" type="revolute">
-<origin xyz="0.0215451 -0.081375 0.226287" rpy="1.5708 0.269717 0.979301" />
-<parent link="link_forearm" />
-<child link="link_elbow" />
-<axis xyz="0 0 1"/>
-<limit effort="1" velocity="20" />
-<joint_properties friction="0.0"/>
-</joint>
+<link name="link_forearm">
+<visual>
+<origin xyz="1.20737e-15 -0.138038 0.042" rpy="1.5708 9.41414e-15 -6.47612e-15" />
+<geometry>
+<mesh filename="package://wristmountbracket.stl"/>
+</geometry>
+<material name="wristmountbracket_material">
+<color rgba="0.411765 0.411765 0.411765 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="1.20737e-15 -0.138038 0.042" rpy="1.5708 9.41414e-15 -6.47612e-15" />
+<geometry>
+<mesh filename="package://wristmountbracket.stl"/>
+</geometry>
+<material name="wristmountbracket_material">
+<color rgba="0.411765 0.411765 0.411765 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="-0.011 -0.1501 0.062" rpy="-9.46704e-15 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.011 -0.1501 0.062" rpy="-9.46704e-15 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="1.52656e-15 -0.0793 0.0674" rpy="1.5708 -0.394966 3.14159" />
+<geometry>
+<mesh filename="package://forearmbodystandoff.stl"/>
+</geometry>
+<material name="forearmbodystandoff_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="1.52656e-15 -0.0793 0.0674" rpy="1.5708 -0.394966 3.14159" />
+<geometry>
+<mesh filename="package://forearmbodystandoff.stl"/>
+</geometry>
+<material name="forearmbodystandoff_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="-0.011 -0.1501 0.022" rpy="-9.46704e-15 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.011 -0.1501 0.022" rpy="-9.46704e-15 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="7.91034e-16 -0.0793 0.0166" rpy="-1.5708 -0.420447 -2.62187e-15" />
+<geometry>
+<mesh filename="package://forearmbodystandoff.stl"/>
+</geometry>
+<material name="forearmbodystandoff_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="7.91034e-16 -0.0793 0.0166" rpy="-1.5708 -0.420447 -2.62187e-15" />
+<geometry>
+<mesh filename="package://forearmbodystandoff.stl"/>
+</geometry>
+<material name="forearmbodystandoff_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="5.13478e-16 -0.155038 0.03" rpy="1.5708 -1.03236e-14 3.14159" />
+<geometry>
+<mesh filename="package://dc12_w-idle_alt2_36.stl"/>
+</geometry>
+<material name="dc12_w-idle_alt2_36_material">
+<color rgba="0.105882 0.372549 0.666667 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="5.13478e-16 -0.155038 0.03" rpy="1.5708 -1.03236e-14 3.14159" />
+<geometry>
+<mesh filename="package://dc12_w-idle_alt2_36.stl"/>
+</geometry>
+<material name="dc12_w-idle_alt2_36_material">
+<color rgba="0.105882 0.372549 0.666667 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="6.93889e-16 -0.0227596 0.0674" rpy="-3.14159 1.5708 0" />
+<geometry>
+<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
+</geometry>
+<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
+<color rgba="0.776471 0.756863 0.737255 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="6.93889e-16 -0.0227596 0.0674" rpy="-3.14159 1.5708 0" />
+<geometry>
+<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
+</geometry>
+<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
+<color rgba="0.776471 0.756863 0.737255 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.011 -0.1501 0.022" rpy="-9.46704e-15 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.011 -0.1501 0.022" rpy="-9.46704e-15 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0 -0.0269125 0.042" rpy="-1.5708 -1.5708 0" />
+<geometry>
+<mesh filename="package://elbowjointbracket.stl"/>
+</geometry>
+<material name="elbowjointbracket_material">
+<color rgba="0.411765 0.411765 0.411765 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.0269125 0.042" rpy="-1.5708 -1.5708 0" />
+<geometry>
+<mesh filename="package://elbowjointbracket.stl"/>
+</geometry>
+<material name="elbowjointbracket_material">
+<color rgba="0.411765 0.411765 0.411765 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.011 -0.1501 0.062" rpy="-9.46704e-15 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.011 -0.1501 0.062" rpy="-9.46704e-15 -1.5708 0" />
+<geometry>
+<mesh filename="package://92290a752_type_316_ss_socket_head_cap_screw.stl"/>
+</geometry>
+<material name="92290a752_type_316_ss_socket_head_cap_screw_material">
+<color rgba="0.956863 0.956863 0.956863 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="1.17961e-15 -0.0227596 0.0166" rpy="-3.14159 1.5708 0" />
+<geometry>
+<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
+</geometry>
+<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
+<color rgba="0.776471 0.756863 0.737255 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="1.17961e-15 -0.0227596 0.0166" rpy="-3.14159 1.5708 0" />
+<geometry>
+<mesh filename="package://10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt.stl"/>
+</geometry>
+<material name="10-32_x_0.75in_buttonhead_locking_screw_mcmaster_92360a252.sldprt_material">
+<color rgba="0.776471 0.756863 0.737255 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
 
 <link name="link_claw">
 <visual>
-<origin xyz="-0.0335459 -0.0240206 -0.0576" rpy="-1.5708 5.37406e-16 -0.523599" />
+<origin xyz="-0.0335459 -0.0240206 -0.0576" rpy="-1.5708 -3.17064e-14 -0.523599" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -1275,7 +1248,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.0335459 -0.0240206 -0.0576" rpy="-1.5708 5.37406e-16 -0.523599" />
+<origin xyz="-0.0335459 -0.0240206 -0.0576" rpy="-1.5708 -3.17064e-14 -0.523599" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -1284,7 +1257,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0370809 -0.0001 -0.0438" rpy="1.5708 3.64594e-15 0.3817" />
+<origin xyz="0.0370809 -0.0001 -0.0438" rpy="1.5708 -3.83243e-14 0.3817" />
 <geometry>
 <mesh filename="package://pr33_ifb-a01.stl"/>
 </geometry>
@@ -1293,7 +1266,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0370809 -0.0001 -0.0438" rpy="1.5708 3.64594e-15 0.3817" />
+<origin xyz="0.0370809 -0.0001 -0.0438" rpy="1.5708 -3.83243e-14 0.3817" />
 <geometry>
 <mesh filename="package://pr33_ifb-a01.stl"/>
 </geometry>
@@ -1302,7 +1275,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.0110311 -0.00805897 -0.0365" rpy="1.08933e-17 -1.3072e-18 -3.14159" />
+<origin xyz="-0.0110311 -0.00805897 -0.0365" rpy="1.50545e-17 -1.04441e-16 3.14159" />
 <geometry>
 <mesh filename="package://wbh_m2_5x10.stl"/>
 </geometry>
@@ -1311,7 +1284,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.0110311 -0.00805897 -0.0365" rpy="1.08933e-17 -1.3072e-18 -3.14159" />
+<origin xyz="-0.0110311 -0.00805897 -0.0365" rpy="1.50545e-17 -1.04441e-16 3.14159" />
 <geometry>
 <mesh filename="package://wbh_m2_5x10.stl"/>
 </geometry>
@@ -1320,7 +1293,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0225809 -0.0001 -0.0980657" rpy="-6.53077e-18 1.5708 0" />
+<origin xyz="0.0225809 -0.0001 -0.0980657" rpy="-9.23739e-15 1.5708 0" />
 <geometry>
 <mesh filename="package://pr33_spd-a01.stl"/>
 </geometry>
@@ -1329,7 +1302,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0225809 -0.0001 -0.0980657" rpy="-6.53077e-18 1.5708 0" />
+<origin xyz="0.0225809 -0.0001 -0.0980657" rpy="-9.23739e-15 1.5708 0" />
 <geometry>
 <mesh filename="package://pr33_spd-a01.stl"/>
 </geometry>
@@ -1338,7 +1311,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.027 -0.0241 -0.0446" rpy="1.5708 1.08933e-17 1.5708" />
+<origin xyz="-0.027 -0.0241 -0.0446" rpy="1.5708 3.26624e-14 1.5708" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -1347,7 +1320,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.027 -0.0241 -0.0446" rpy="1.5708 1.08933e-17 1.5708" />
+<origin xyz="-0.027 -0.0241 -0.0446" rpy="1.5708 3.26624e-14 1.5708" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -1374,7 +1347,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-2.15407e-05 -0.00799997 -0.038" rpy="1.37209e-15 2.52793e-15 1.5681" />
+<origin xyz="-2.15407e-05 -0.00799997 -0.038" rpy="-5.9304e-15 -1.79614e-14 1.5681" />
 <geometry>
 <mesh filename="package://wbh_m2x4_1.stl"/>
 </geometry>
@@ -1383,7 +1356,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-2.15407e-05 -0.00799997 -0.038" rpy="1.37209e-15 2.52793e-15 1.5681" />
+<origin xyz="-2.15407e-05 -0.00799997 -0.038" rpy="-5.9304e-15 -1.79614e-14 1.5681" />
 <geometry>
 <mesh filename="package://wbh_m2x4_1.stl"/>
 </geometry>
@@ -1392,7 +1365,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0335809 0.0239 -0.0511" rpy="3.14159 1.3072e-18 6.53077e-18" />
+<origin xyz="0.0335809 0.0239 -0.0511" rpy="3.14159 1.76359e-16 1.93389e-18" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -1401,7 +1374,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0335809 0.0239 -0.0511" rpy="3.14159 1.3072e-18 6.53077e-18" />
+<origin xyz="0.0335809 0.0239 -0.0511" rpy="3.14159 1.76359e-16 1.93389e-18" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -1410,7 +1383,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0370809 -0.0001 -0.0395" rpy="1.08933e-17 -1.3072e-18 -3.14159" />
+<origin xyz="0.0370809 -0.0001 -0.0395" rpy="1.50545e-17 -1.04441e-16 3.14159" />
 <geometry>
 <mesh filename="package://ibl-a01_open.stl"/>
 </geometry>
@@ -1419,7 +1392,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0370809 -0.0001 -0.0395" rpy="1.08933e-17 -1.3072e-18 -3.14159" />
+<origin xyz="0.0370809 -0.0001 -0.0395" rpy="1.50545e-17 -1.04441e-16 3.14159" />
 <geometry>
 <mesh filename="package://ibl-a01_open.stl"/>
 </geometry>
@@ -1428,7 +1401,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.011 0.032 -0.0028" rpy="-1.5708 -1.3072e-18 -3.14159" />
+<origin xyz="0.011 0.032 -0.0028" rpy="-1.5708 -1.1664e-14 3.14159" />
 <geometry>
 <mesh filename="package://dc12_a01_spacer_ring.stl"/>
 </geometry>
@@ -1437,7 +1410,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.011 0.032 -0.0028" rpy="-1.5708 -1.3072e-18 -3.14159" />
+<origin xyz="0.011 0.032 -0.0028" rpy="-1.5708 -1.1664e-14 3.14159" />
 <geometry>
 <mesh filename="package://dc12_a01_spacer_ring.stl"/>
 </geometry>
@@ -1446,7 +1419,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.011 0.032 -0.0028" rpy="-1.5708 -1.3072e-18 -3.14159" />
+<origin xyz="-0.011 0.032 -0.0028" rpy="-1.5708 -1.1664e-14 3.14159" />
 <geometry>
 <mesh filename="package://dc12_a01_spacer_ring.stl"/>
 </geometry>
@@ -1455,7 +1428,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.011 0.032 -0.0028" rpy="-1.5708 -1.3072e-18 -3.14159" />
+<origin xyz="-0.011 0.032 -0.0028" rpy="-1.5708 -1.1664e-14 3.14159" />
 <geometry>
 <mesh filename="package://dc12_a01_spacer_ring.stl"/>
 </geometry>
@@ -1464,7 +1437,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0245809 -0.0001 -0.0536" rpy="-6.53077e-18 1.5708 0" />
+<origin xyz="0.0245809 -0.0001 -0.0536" rpy="-9.23739e-15 1.5708 0" />
 <geometry>
 <mesh filename="package://igp-a01_open.stl"/>
 </geometry>
@@ -1473,7 +1446,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0245809 -0.0001 -0.0536" rpy="-6.53077e-18 1.5708 0" />
+<origin xyz="0.0245809 -0.0001 -0.0536" rpy="-9.23739e-15 1.5708 0" />
 <geometry>
 <mesh filename="package://igp-a01_open.stl"/>
 </geometry>
@@ -1482,7 +1455,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0335809 -0.0241 -0.0511" rpy="3.14159 1.3072e-18 6.53077e-18" />
+<origin xyz="0.0335809 -0.0241 -0.0511" rpy="3.14159 1.76359e-16 1.93389e-18" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -1491,7 +1464,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0335809 -0.0241 -0.0511" rpy="3.14159 1.3072e-18 6.53077e-18" />
+<origin xyz="0.0335809 -0.0241 -0.0511" rpy="3.14159 1.76359e-16 1.93389e-18" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -1500,7 +1473,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-4.03889e-05 -0.0149999 -0.0478" rpy="-3.14159 -3.64594e-15 -2.75989" />
+<origin xyz="-4.03889e-05 -0.0149999 -0.0478" rpy="-3.14159 -6.73621e-15 -2.75989" />
 <geometry>
 <mesh filename="package://pr33_ilr-a01.stl"/>
 </geometry>
@@ -1509,7 +1482,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-4.03889e-05 -0.0149999 -0.0478" rpy="-3.14159 -3.64594e-15 -2.75989" />
+<origin xyz="-4.03889e-05 -0.0149999 -0.0478" rpy="-3.14159 -6.73621e-15 -2.75989" />
 <geometry>
 <mesh filename="package://pr33_ilr-a01.stl"/>
 </geometry>
@@ -1518,7 +1491,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0270809 -0.0241 -0.0446" rpy="1.5708 -1.08933e-17 -1.5708" />
+<origin xyz="0.0270809 -0.0241 -0.0446" rpy="1.5708 7.77286e-14 -1.5708" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -1527,7 +1500,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0270809 -0.0241 -0.0446" rpy="1.5708 -1.08933e-17 -1.5708" />
+<origin xyz="0.0270809 -0.0241 -0.0446" rpy="1.5708 7.77286e-14 -1.5708" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -1536,7 +1509,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.01095 0.032 -0.0365" rpy="1.08933e-17 -1.3072e-18 -3.14159" />
+<origin xyz="0.01095 0.032 -0.0365" rpy="1.50545e-17 -1.04441e-16 3.14159" />
 <geometry>
 <mesh filename="package://wbh_m2_5x10.stl"/>
 </geometry>
@@ -1545,7 +1518,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.01095 0.032 -0.0365" rpy="1.08933e-17 -1.3072e-18 -3.14159" />
+<origin xyz="0.01095 0.032 -0.0365" rpy="1.50545e-17 -1.04441e-16 3.14159" />
 <geometry>
 <mesh filename="package://wbh_m2_5x10.stl"/>
 </geometry>
@@ -1554,7 +1527,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="4.03889e-05 0.0149999 -0.0478" rpy="-3.14159 7.49266e-16 0.387094" />
+<origin xyz="4.03889e-05 0.0149999 -0.0478" rpy="3.14159 5.42538e-15 0.387094" />
 <geometry>
 <mesh filename="package://pr33_ilr-a01.stl"/>
 </geometry>
@@ -1563,7 +1536,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="4.03889e-05 0.0149999 -0.0478" rpy="-3.14159 7.49266e-16 0.387094" />
+<origin xyz="4.03889e-05 0.0149999 -0.0478" rpy="3.14159 5.42538e-15 0.387094" />
 <geometry>
 <mesh filename="package://pr33_ilr-a01.stl"/>
 </geometry>
@@ -1572,7 +1545,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.01675 0.004 -0.011" rpy="-6.53077e-18 1.5708 0" />
+<origin xyz="-0.01675 0.004 -0.011" rpy="-9.23739e-15 1.5708 0" />
 <geometry>
 <mesh filename="package://wbh_m2_5x4_1.stl"/>
 </geometry>
@@ -1581,7 +1554,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.01675 0.004 -0.011" rpy="-6.53077e-18 1.5708 0" />
+<origin xyz="-0.01675 0.004 -0.011" rpy="-9.23739e-15 1.5708 0" />
 <geometry>
 <mesh filename="package://wbh_m2_5x4_1.stl"/>
 </geometry>
@@ -1590,7 +1563,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.01675 0.028 -0.011" rpy="1.5708 1.08933e-17 1.5708" />
+<origin xyz="-0.01675 0.028 -0.011" rpy="1.5708 3.26624e-14 1.5708" />
 <geometry>
 <mesh filename="package://wbh_m2_5x4_1.stl"/>
 </geometry>
@@ -1599,7 +1572,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.01675 0.028 -0.011" rpy="1.5708 1.08933e-17 1.5708" />
+<origin xyz="-0.01675 0.028 -0.011" rpy="1.5708 3.26624e-14 1.5708" />
 <geometry>
 <mesh filename="package://wbh_m2_5x4_1.stl"/>
 </geometry>
@@ -1608,7 +1581,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0336268 0.0238206 -0.0576" rpy="-1.5708 -5.37406e-16 2.61799" />
+<origin xyz="0.0336268 0.0238206 -0.0576" rpy="-1.5708 3.21415e-14 2.61799" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -1617,7 +1590,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0336268 0.0238206 -0.0576" rpy="-1.5708 -5.37406e-16 2.61799" />
+<origin xyz="0.0336268 0.0238206 -0.0576" rpy="-1.5708 3.21415e-14 2.61799" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -1626,7 +1599,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.00799997 2.15407e-05 -0.038" rpy="1.37209e-15 2.52793e-15 1.5681" />
+<origin xyz="-0.00799997 2.15407e-05 -0.038" rpy="-5.9304e-15 -1.79614e-14 1.5681" />
 <geometry>
 <mesh filename="package://wbh_m2x4_1.stl"/>
 </geometry>
@@ -1635,7 +1608,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.00799997 2.15407e-05 -0.038" rpy="1.37209e-15 2.52793e-15 1.5681" />
+<origin xyz="-0.00799997 2.15407e-05 -0.038" rpy="-5.9304e-15 -1.79614e-14 1.5681" />
 <geometry>
 <mesh filename="package://wbh_m2x4_1.stl"/>
 </geometry>
@@ -1644,7 +1617,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.0205 0.0239 -0.0446" rpy="-3.14159 1.0472 1.5708" />
+<origin xyz="-0.0205 0.0239 -0.0446" rpy="3.14159 1.0472 1.5708" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -1653,7 +1626,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.0205 0.0239 -0.0446" rpy="-3.14159 1.0472 1.5708" />
+<origin xyz="-0.0205 0.0239 -0.0446" rpy="3.14159 1.0472 1.5708" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -1662,7 +1635,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-9.02056e-17 -2.77556e-17 -0.0395" rpy="-1.37209e-15 -2.52793e-15 -1.57349" />
+<origin xyz="-8.39606e-16 6.38378e-16 -0.0395" rpy="5.63805e-15 1.82309e-14 -1.57349" />
 <geometry>
 <mesh filename="package://pr33_ica-a01.stl"/>
 </geometry>
@@ -1671,7 +1644,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-9.02056e-17 -2.77556e-17 -0.0395" rpy="-1.37209e-15 -2.52793e-15 -1.57349" />
+<origin xyz="-8.39606e-16 6.38378e-16 -0.0395" rpy="5.63805e-15 1.82309e-14 -1.57349" />
 <geometry>
 <mesh filename="package://pr33_ica-a01.stl"/>
 </geometry>
@@ -1680,7 +1653,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.0335459 0.0239794 -0.0576" rpy="-1.5708 5.37406e-16 -0.523599" />
+<origin xyz="-0.0335459 0.0239794 -0.0576" rpy="-1.5708 -3.17064e-14 -0.523599" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -1689,7 +1662,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.0335459 0.0239794 -0.0576" rpy="-1.5708 5.37406e-16 -0.523599" />
+<origin xyz="-0.0335459 0.0239794 -0.0576" rpy="-1.5708 -3.17064e-14 -0.523599" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -1698,7 +1671,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.011 -0.008 -0.00265" rpy="-1.5708 -1.3072e-18 -3.14159" />
+<origin xyz="-0.011 -0.008 -0.00265" rpy="-1.5708 -1.1664e-14 3.14159" />
 <geometry>
 <mesh filename="package://dc12_a01_spacer_ring.stl"/>
 </geometry>
@@ -1707,7 +1680,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.011 -0.008 -0.00265" rpy="-1.5708 -1.3072e-18 -3.14159" />
+<origin xyz="-0.011 -0.008 -0.00265" rpy="-1.5708 -1.1664e-14 3.14159" />
 <geometry>
 <mesh filename="package://dc12_a01_spacer_ring.stl"/>
 </geometry>
@@ -1716,7 +1689,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.00799997 -2.15407e-05 -0.038" rpy="1.37209e-15 2.52793e-15 1.5681" />
+<origin xyz="0.00799997 -2.15407e-05 -0.038" rpy="-5.9304e-15 -1.79614e-14 1.5681" />
 <geometry>
 <mesh filename="package://wbh_m2x4_1.stl"/>
 </geometry>
@@ -1725,7 +1698,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.00799997 -2.15407e-05 -0.038" rpy="1.37209e-15 2.52793e-15 1.5681" />
+<origin xyz="0.00799997 -2.15407e-05 -0.038" rpy="-5.9304e-15 -1.79614e-14 1.5681" />
 <geometry>
 <mesh filename="package://wbh_m2x4_1.stl"/>
 </geometry>
@@ -1734,7 +1707,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="4.03889e-05 0.0149999 -0.0438" rpy="1.5708 -1.86098e-16 1.95789" />
+<origin xyz="4.03889e-05 0.0149999 -0.0438" rpy="1.5708 4.95956e-14 1.95789" />
 <geometry>
 <mesh filename="package://pr33_ifb-a01.stl"/>
 </geometry>
@@ -1743,7 +1716,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="4.03889e-05 0.0149999 -0.0438" rpy="1.5708 -1.86098e-16 1.95789" />
+<origin xyz="4.03889e-05 0.0149999 -0.0438" rpy="1.5708 4.95956e-14 1.95789" />
 <geometry>
 <mesh filename="package://pr33_ifb-a01.stl"/>
 </geometry>
@@ -1752,7 +1725,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.01095 -0.008 -0.0365" rpy="1.08933e-17 -1.3072e-18 -3.14159" />
+<origin xyz="0.01095 -0.008 -0.0365" rpy="1.50545e-17 -1.04441e-16 3.14159" />
 <geometry>
 <mesh filename="package://wbh_m2_5x10.stl"/>
 </geometry>
@@ -1761,7 +1734,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.01095 -0.008 -0.0365" rpy="1.08933e-17 -1.3072e-18 -3.14159" />
+<origin xyz="0.01095 -0.008 -0.0365" rpy="1.50545e-17 -1.04441e-16 3.14159" />
 <geometry>
 <mesh filename="package://wbh_m2_5x10.stl"/>
 </geometry>
@@ -1770,7 +1743,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.037139 -7.50014e-05 -0.03955" rpy="1.5708 1.47732e-15 0.523599" />
+<origin xyz="-0.037139 -7.50014e-05 -0.03955" rpy="1.5708 -5.17004e-14 0.523599" />
 <geometry>
 <mesh filename="package://nut2_m3.stl"/>
 </geometry>
@@ -1779,7 +1752,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.037139 -7.50014e-05 -0.03955" rpy="1.5708 1.47732e-15 0.523599" />
+<origin xyz="-0.037139 -7.50014e-05 -0.03955" rpy="1.5708 -5.17004e-14 0.523599" />
 <geometry>
 <mesh filename="package://nut2_m3.stl"/>
 </geometry>
@@ -1788,7 +1761,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.0205 -0.0241 -0.0446" rpy="-2.6144e-18 -1.0472 -1.5708" />
+<origin xyz="-0.0205 -0.0241 -0.0446" rpy="1.30714e-13 -1.0472 -1.5708" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -1797,7 +1770,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.0205 -0.0241 -0.0446" rpy="-2.6144e-18 -1.0472 -1.5708" />
+<origin xyz="-0.0205 -0.0241 -0.0446" rpy="1.30714e-13 -1.0472 -1.5708" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -1806,7 +1779,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.0225 -0.0001 -0.0980657" rpy="6.53077e-18 -1.5708 0" />
+<origin xyz="-0.0225 -0.0001 -0.0980657" rpy="9.08972e-15 -1.5708 0" />
 <geometry>
 <mesh filename="package://pr33_spd-a01.stl"/>
 </geometry>
@@ -1815,7 +1788,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.0225 -0.0001 -0.0980657" rpy="6.53077e-18 -1.5708 0" />
+<origin xyz="-0.0225 -0.0001 -0.0980657" rpy="9.08972e-15 -1.5708 0" />
 <geometry>
 <mesh filename="package://pr33_spd-a01.stl"/>
 </geometry>
@@ -1824,7 +1797,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0335809 -0.0241 -0.0576" rpy="-1.5708 -1.33905e-15 3.14159" />
+<origin xyz="0.0335809 -0.0241 -0.0576" rpy="-1.5708 -1.30208e-14 3.14159" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -1833,7 +1806,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0335809 -0.0241 -0.0576" rpy="-1.5708 -1.33905e-15 3.14159" />
+<origin xyz="0.0335809 -0.0241 -0.0576" rpy="-1.5708 -1.30208e-14 3.14159" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -1842,7 +1815,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.0335 0.0239 -0.0511" rpy="3.14159 1.3072e-18 6.53077e-18" />
+<origin xyz="-0.0335 0.0239 -0.0511" rpy="3.14159 1.76359e-16 1.93389e-18" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -1851,7 +1824,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.0335 0.0239 -0.0511" rpy="3.14159 1.3072e-18 6.53077e-18" />
+<origin xyz="-0.0335 0.0239 -0.0511" rpy="3.14159 1.76359e-16 1.93389e-18" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -1860,7 +1833,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.0335 -0.0241 -0.0511" rpy="3.14159 1.3072e-18 6.53077e-18" />
+<origin xyz="-0.0335 -0.0241 -0.0511" rpy="3.14159 1.76359e-16 1.93389e-18" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -1869,7 +1842,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.0335 -0.0241 -0.0511" rpy="3.14159 1.3072e-18 6.53077e-18" />
+<origin xyz="-0.0335 -0.0241 -0.0511" rpy="3.14159 1.76359e-16 1.93389e-18" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -1878,7 +1851,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.037 -0.0001 -0.0438" rpy="1.5708 1.86098e-16 -1.1837" />
+<origin xyz="-0.037 -0.0001 -0.0438" rpy="1.5708 7.93185e-14 -1.1837" />
 <geometry>
 <mesh filename="package://pr33_ifb-a01.stl"/>
 </geometry>
@@ -1887,7 +1860,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.037 -0.0001 -0.0438" rpy="1.5708 1.86098e-16 -1.1837" />
+<origin xyz="-0.037 -0.0001 -0.0438" rpy="1.5708 7.93185e-14 -1.1837" />
 <geometry>
 <mesh filename="package://pr33_ifb-a01.stl"/>
 </geometry>
@@ -1914,7 +1887,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0205809 -0.0241 -0.0446" rpy="2.6144e-18 1.0472 1.5708" />
+<origin xyz="0.0205809 -0.0241 -0.0446" rpy="-1.31236e-13 1.0472 1.5708" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -1923,7 +1896,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0205809 -0.0241 -0.0446" rpy="2.6144e-18 1.0472 1.5708" />
+<origin xyz="0.0205809 -0.0241 -0.0446" rpy="-1.31236e-13 1.0472 1.5708" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -1932,7 +1905,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="4.03889e-05 0.0149999 -0.0494" rpy="-7.49266e-16 1.86098e-16 -1.1837" />
+<origin xyz="4.03889e-05 0.0149999 -0.0494" rpy="8.95432e-15 1.15161e-14 -1.1837" />
 <geometry>
 <mesh filename="package://wbh_m3x10.stl"/>
 </geometry>
@@ -1941,7 +1914,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="4.03889e-05 0.0149999 -0.0494" rpy="-7.49266e-16 1.86098e-16 -1.1837" />
+<origin xyz="4.03889e-05 0.0149999 -0.0494" rpy="8.95432e-15 1.15161e-14 -1.1837" />
 <geometry>
 <mesh filename="package://wbh_m3x10.stl"/>
 </geometry>
@@ -1950,7 +1923,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.01095 0.032 -0.0365" rpy="1.08933e-17 -1.3072e-18 -3.14159" />
+<origin xyz="-0.01095 0.032 -0.0365" rpy="1.50545e-17 -1.04441e-16 3.14159" />
 <geometry>
 <mesh filename="package://wbh_m2_5x10.stl"/>
 </geometry>
@@ -1959,7 +1932,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.01095 0.032 -0.0365" rpy="1.08933e-17 -1.3072e-18 -3.14159" />
+<origin xyz="-0.01095 0.032 -0.0365" rpy="1.50545e-17 -1.04441e-16 3.14159" />
 <geometry>
 <mesh filename="package://wbh_m2_5x10.stl"/>
 </geometry>
@@ -1968,7 +1941,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0270809 0.0239 -0.0446" rpy="1.5708 -1.08933e-17 -1.5708" />
+<origin xyz="0.0270809 0.0239 -0.0446" rpy="1.5708 7.77286e-14 -1.5708" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -1977,7 +1950,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0270809 0.0239 -0.0446" rpy="1.5708 -1.08933e-17 -1.5708" />
+<origin xyz="0.0270809 0.0239 -0.0446" rpy="1.5708 7.77286e-14 -1.5708" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -1986,7 +1959,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="2.15407e-05 0.00799997 -0.038" rpy="1.37209e-15 2.52793e-15 1.5681" />
+<origin xyz="2.15407e-05 0.00799997 -0.038" rpy="-5.9304e-15 -1.79614e-14 1.5681" />
 <geometry>
 <mesh filename="package://wbh_m2x4_1.stl"/>
 </geometry>
@@ -1995,7 +1968,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="2.15407e-05 0.00799997 -0.038" rpy="1.37209e-15 2.52793e-15 1.5681" />
+<origin xyz="2.15407e-05 0.00799997 -0.038" rpy="-5.9304e-15 -1.79614e-14 1.5681" />
 <geometry>
 <mesh filename="package://wbh_m2x4_1.stl"/>
 </geometry>
@@ -2004,7 +1977,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.037 -0.0001 -0.0395" rpy="-1.08933e-17 1.3072e-18 6.53077e-18" />
+<origin xyz="-0.037 -0.0001 -0.0395" rpy="1.21252e-17 -7.86926e-18 -2.02394e-17" />
 <geometry>
 <mesh filename="package://ibl-a01_open.stl"/>
 </geometry>
@@ -2013,7 +1986,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.037 -0.0001 -0.0395" rpy="-1.08933e-17 1.3072e-18 6.53077e-18" />
+<origin xyz="-0.037 -0.0001 -0.0395" rpy="1.21252e-17 -7.86926e-18 -2.02394e-17" />
 <geometry>
 <mesh filename="package://ibl-a01_open.stl"/>
 </geometry>
@@ -2022,7 +1995,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-4.03889e-05 -0.0149999 -0.0494" rpy="-3.64594e-15 -7.29373e-16 -1.1891" />
+<origin xyz="-4.03889e-05 -0.0149999 -0.0494" rpy="7.45382e-15 1.11965e-14 -1.1891" />
 <geometry>
 <mesh filename="package://wbh_m3x10.stl"/>
 </geometry>
@@ -2031,7 +2004,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-4.03889e-05 -0.0149999 -0.0494" rpy="-3.64594e-15 -7.29373e-16 -1.1891" />
+<origin xyz="-4.03889e-05 -0.0149999 -0.0494" rpy="7.45382e-15 1.11965e-14 -1.1891" />
 <geometry>
 <mesh filename="package://wbh_m3x10.stl"/>
 </geometry>
@@ -2040,7 +2013,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.01425 -6.66134e-16 -0.0395" rpy="-1.08933e-17 1.3072e-18 6.53077e-18" />
+<origin xyz="0.01425 -7.91034e-16 -0.0395" rpy="1.21252e-17 -7.86926e-18 -2.02394e-17" />
 <geometry>
 <mesh filename="package://irb-a02_open.stl"/>
 </geometry>
@@ -2049,7 +2022,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.01425 -6.66134e-16 -0.0395" rpy="-1.08933e-17 1.3072e-18 6.53077e-18" />
+<origin xyz="0.01425 -7.91034e-16 -0.0395" rpy="1.21252e-17 -7.86926e-18 -2.02394e-17" />
 <geometry>
 <mesh filename="package://irb-a02_open.stl"/>
 </geometry>
@@ -2058,7 +2031,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="1.38778e-17 0 -0.017" rpy="-1.08933e-17 1.3072e-18 6.53077e-18" />
+<origin xyz="-1.38778e-17 -1.38778e-17 -0.017" rpy="1.21252e-17 -7.86926e-18 -2.02394e-17" />
 <geometry>
 <mesh filename="package://dc12_std.stl"/>
 </geometry>
@@ -2067,7 +2040,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="1.38778e-17 0 -0.017" rpy="-1.08933e-17 1.3072e-18 6.53077e-18" />
+<origin xyz="-1.38778e-17 -1.38778e-17 -0.017" rpy="1.21252e-17 -7.86926e-18 -2.02394e-17" />
 <geometry>
 <mesh filename="package://dc12_std.stl"/>
 </geometry>
@@ -2076,7 +2049,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-1.00336e-14 0.012 0.00635" rpy="3.14159 -9.24851e-16 1.5708" />
+<origin xyz="-1.02487e-14 0.012 0.00635" rpy="3.14159 -2.10127e-14 1.5708" />
 <geometry>
 <mesh filename="package://gripperattachment.stl"/>
 </geometry>
@@ -2085,7 +2058,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-1.00336e-14 0.012 0.00635" rpy="3.14159 -9.24851e-16 1.5708" />
+<origin xyz="-1.02487e-14 0.012 0.00635" rpy="3.14159 -2.10127e-14 1.5708" />
 <geometry>
 <mesh filename="package://gripperattachment.stl"/>
 </geometry>
@@ -2094,7 +2067,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="2.01228e-16 5e-05 -0.0171" rpy="-1.08933e-17 1.3072e-18 6.53077e-18" />
+<origin xyz="1.66533e-16 5e-05 -0.0171" rpy="1.21252e-17 -7.86926e-18 -2.02394e-17" />
 <geometry>
 <mesh filename="package://dc12_std_13.stl"/>
 </geometry>
@@ -2103,7 +2076,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="2.01228e-16 5e-05 -0.0171" rpy="-1.08933e-17 1.3072e-18 6.53077e-18" />
+<origin xyz="1.66533e-16 5e-05 -0.0171" rpy="1.21252e-17 -7.86926e-18 -2.02394e-17" />
 <geometry>
 <mesh filename="package://dc12_std_13.stl"/>
 </geometry>
@@ -2112,7 +2085,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.011 -0.008 -0.0028" rpy="-1.5708 -1.3072e-18 -3.14159" />
+<origin xyz="0.011 -0.008 -0.0028" rpy="-1.5708 -1.1664e-14 3.14159" />
 <geometry>
 <mesh filename="package://dc12_a01_spacer_ring.stl"/>
 </geometry>
@@ -2121,7 +2094,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.011 -0.008 -0.0028" rpy="-1.5708 -1.3072e-18 -3.14159" />
+<origin xyz="0.011 -0.008 -0.0028" rpy="-1.5708 -1.1664e-14 3.14159" />
 <geometry>
 <mesh filename="package://dc12_a01_spacer_ring.stl"/>
 </geometry>
@@ -2130,7 +2103,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0370809 -0.0001 -0.0494" rpy="-3.64594e-15 -7.29373e-16 -1.1891" />
+<origin xyz="0.0370809 -0.0001 -0.0494" rpy="7.45382e-15 1.11965e-14 -1.1891" />
 <geometry>
 <mesh filename="package://wbh_m3x10.stl"/>
 </geometry>
@@ -2139,7 +2112,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0370809 -0.0001 -0.0494" rpy="-3.64594e-15 -7.29373e-16 -1.1891" />
+<origin xyz="0.0370809 -0.0001 -0.0494" rpy="7.45382e-15 1.11965e-14 -1.1891" />
 <geometry>
 <mesh filename="package://wbh_m3x10.stl"/>
 </geometry>
@@ -2148,7 +2121,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0372199 -7.49986e-05 -0.03955" rpy="1.5708 1.0684e-15 0.523599" />
+<origin xyz="0.0372199 -7.49986e-05 -0.03955" rpy="1.5708 -4.68155e-14 0.523599" />
 <geometry>
 <mesh filename="package://nut2_m3.stl"/>
 </geometry>
@@ -2157,7 +2130,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0372199 -7.49986e-05 -0.03955" rpy="1.5708 1.0684e-15 0.523599" />
+<origin xyz="0.0372199 -7.49986e-05 -0.03955" rpy="1.5708 -4.68155e-14 0.523599" />
 <geometry>
 <mesh filename="package://nut2_m3.stl"/>
 </geometry>
@@ -2166,7 +2139,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="4.03889e-05 0.0149999 -0.0394887" rpy="1.5708 1.74299e-15 -0.0026926" />
+<origin xyz="4.03889e-05 0.0149999 -0.0394887" rpy="1.5708 -1.1933e-14 -0.0026926" />
 <geometry>
 <mesh filename="package://nut2_m3.stl"/>
 </geometry>
@@ -2175,7 +2148,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="4.03889e-05 0.0149999 -0.0394887" rpy="1.5708 1.74299e-15 -0.0026926" />
+<origin xyz="4.03889e-05 0.0149999 -0.0394887" rpy="1.5708 -1.1933e-14 -0.0026926" />
 <geometry>
 <mesh filename="package://nut2_m3.stl"/>
 </geometry>
@@ -2184,7 +2157,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.01425 -1.60982e-15 -0.0395" rpy="-3.14159 -1.3072e-18 -3.14159" />
+<origin xyz="-0.01425 -3.19189e-16 -0.0395" rpy="3.14159 -1.04441e-16 3.14159" />
 <geometry>
 <mesh filename="package://irb-a01_open.stl"/>
 </geometry>
@@ -2193,7 +2166,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.01425 -1.60982e-15 -0.0395" rpy="-3.14159 -1.3072e-18 -3.14159" />
+<origin xyz="-0.01425 -3.19189e-16 -0.0395" rpy="3.14159 -1.04441e-16 3.14159" />
 <geometry>
 <mesh filename="package://irb-a01_open.stl"/>
 </geometry>
@@ -2202,7 +2175,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="0.0205809 0.0239 -0.0446" rpy="1.3072e-18 1.08933e-17 1.5708" />
+<origin xyz="0.0205809 0.0239 -0.0446" rpy="-5.61859e-15 -2.02506e-14 1.5708" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -2211,7 +2184,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="0.0205809 0.0239 -0.0446" rpy="1.3072e-18 1.08933e-17 1.5708" />
+<origin xyz="0.0205809 0.0239 -0.0446" rpy="-5.61859e-15 -2.02506e-14 1.5708" />
 <geometry>
 <mesh filename="package://nut2_m2_5_1.stl"/>
 </geometry>
@@ -2220,7 +2193,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-4.03903e-05 -0.0149999 -0.03955" rpy="1.5708 1.37209e-15 -0.0026926" />
+<origin xyz="-4.03903e-05 -0.0149999 -0.03955" rpy="1.5708 -1.19276e-14 -0.0026926" />
 <geometry>
 <mesh filename="package://nut2_m3.stl"/>
 </geometry>
@@ -2229,7 +2202,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-4.03903e-05 -0.0149999 -0.03955" rpy="1.5708 1.37209e-15 -0.0026926" />
+<origin xyz="-4.03903e-05 -0.0149999 -0.03955" rpy="1.5708 -1.19276e-14 -0.0026926" />
 <geometry>
 <mesh filename="package://nut2_m3.stl"/>
 </geometry>
@@ -2256,7 +2229,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.037 -0.0001 -0.0494" rpy="-1.86098e-16 -7.49266e-16 -2.7545" />
+<origin xyz="-0.037 -0.0001 -0.0494" rpy="4.30878e-15 -5.42567e-15 -2.7545" />
 <geometry>
 <mesh filename="package://wbh_m3x10.stl"/>
 </geometry>
@@ -2265,7 +2238,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.037 -0.0001 -0.0494" rpy="-1.86098e-16 -7.49266e-16 -2.7545" />
+<origin xyz="-0.037 -0.0001 -0.0494" rpy="4.30878e-15 -5.42567e-15 -2.7545" />
 <geometry>
 <mesh filename="package://wbh_m3x10.stl"/>
 </geometry>
@@ -2274,7 +2247,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-4.03889e-05 -0.0149999 -0.0438" rpy="1.5708 -3.64594e-15 -2.75989" />
+<origin xyz="-4.03889e-05 -0.0149999 -0.0438" rpy="1.5708 -4.44638e-14 -2.75989" />
 <geometry>
 <mesh filename="package://pr33_ifb-a01.stl"/>
 </geometry>
@@ -2283,7 +2256,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-4.03889e-05 -0.0149999 -0.0438" rpy="1.5708 -3.64594e-15 -2.75989" />
+<origin xyz="-4.03889e-05 -0.0149999 -0.0438" rpy="1.5708 -4.44638e-14 -2.75989" />
 <geometry>
 <mesh filename="package://pr33_ifb-a01.stl"/>
 </geometry>
@@ -2292,7 +2265,7 @@
 </material>
 </collision>
 <visual>
-<origin xyz="-0.027 0.0239 -0.0446" rpy="1.5708 1.08933e-17 1.5708" />
+<origin xyz="-0.027 0.0239 -0.0446" rpy="1.5708 3.26624e-14 1.5708" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -2301,7 +2274,7 @@
 </material>
 </visual>
 <collision>
-<origin xyz="-0.027 0.0239 -0.0446" rpy="1.5708 1.08933e-17 1.5708" />
+<origin xyz="-0.027 0.0239 -0.0446" rpy="1.5708 3.26624e-14 1.5708" />
 <geometry>
 <mesh filename="package://wbh_m2_5x8.stl"/>
 </geometry>
@@ -2317,9 +2290,36 @@
 </link>
 
 <joint name="part4" type="revolute">
-<origin xyz="0.0168036 -0.034632 0.401022" rpy="-2.93853 0.0201748 2.45243" />
+<origin xyz="4.16334e-16 -0.178438 0.03" rpy="-1.5708 1.5708 0" />
 <parent link="link_forearm" />
 <child link="link_claw" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="part3" type="revolute">
+<origin xyz="0.166399 -0.0715838 -0.0251898" rpy="-1.66708e-14 -1.48395e-14 1.16453" />
+<parent link="link_elbow" />
+<child link="link_forearm" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="part2" type="revolute">
+<origin xyz="-0.0297467 -2.91434e-16 -0.0893164" rpy="1.5708 0.960485 1.5708" />
+<parent link="link_socket" />
+<child link="link_elbow" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="part1" type="revolute">
+<origin xyz="-0.050972 -0.0908091 -0.0376234" rpy="3.14159 -4.29356e-16 2.5501" />
+<parent link="link_base_link" />
+<child link="link_socket" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
